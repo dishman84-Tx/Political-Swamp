@@ -1,0 +1,177 @@
+Final Investigative Report: The Liberty County Corruption Nexus
+DATE: September 8, 2025 SUBJECT: Analysis of Alleged Systemic Corruption, Nepotism, and Predatory Land Practices in Liberty County, Texas. Prepared By: Kelly Dishman
+Part I: Comparison of Active Lawsuits Against Colony Ridge
+This section provides a direct comparison of the two primary legal actions filed against the Colony Ridge development and its affiliates: the federal civil rights and consumer protection case brought by the U.S. Department of Justice (DOJ) and the Consumer Financial Protection Bureau (CFPB), and the state-level deceptive trade practices case brought by the Texas Attorney General (OAG).
+Aspect
+U.S. DOJ & CFPB v. Colony Ridge Development, LLC, et al.
+State of Texas v. Colony Ridge, Inc., et al.
+Case Number
+Case No. 4:23-cv-04845 (Southern District of Texas, Houston Division)
+Case No. CV2403479 (284th Judicial District, Montgomery County)
+Primary Plaintiffs
+United States Department of Justice (DOJ) & Consumer Financial Protection Bureau (CFPB)
+State of Texas, through the Office of the Attorney General (OAG)
+Key Defendants
+Corporate: Colony Ridge Development, LLC; Colony Ridge Land, LLC; Colony Ridge BV, LLC; CRI T-Rex Management, LLC; Colony Ridge Management, LLC; Loan Originator Services, LLC. <br> Individuals: John Harris, William "Trey" Harris.
+Corporate: Colony Ridge, Inc.; Colony Ridge Development, LLC; Colony Ridge Land, LLC; T-Rex Management, Inc. <br> Individuals: John Harris.
+Counties Involved
+Primarily Liberty County (location of development), with corporate entities based in Fort Bend County.
+Primarily Liberty County, with the case filed in Montgomery County.
+Core Allegations
+Federal Civil Rights Violations: "Reverse redlining" under the Fair Housing Act and Equal Credit Opportunity Act. <br> Consumer Protection Violations: Illegal "bait-and-switch" scheme under the Consumer Financial Protection Act and Interstate Land Sales Full Disclosure Act.
+State Law Violations: Deceptive Trade Practices Act (DTPA) violations, fraudulent sales and marketing, and predatory lending under Texas statutes.
+Specific Charges / Claims
+Targeting Hispanic consumers with predatory loans for underdeveloped land lacking basic infrastructure (water, sewer, electricity). Misrepresenting property conditions and using high-pressure sales tactics. Operating as an unlicensed mortgage originator.
+Operating a "foreclosure mill" by targeting foreign-born, Latino consumers with fraudulent claims. The foreclosure rate is alleged to be 50 times the 2023 national average.
+Family / PAC Affiliates Named
+The lawsuits focus on the corporate structure but implicitly target the Harris Family (John & Trey) as the orchestrators of the scheme. PACs and lobbyists are not named defendants but form the context of political influence.
+The lawsuit directly names John Harris and his network of companies. PACs and lobbyists are not named but are relevant to the broader context of developer influence.
+Case Status (July 2026)
+Settled in Feb 2026 for $68M. Denied wrongdoing but agreed to a $48M infrastructure plan, $20M for public safety/immigration, and a 3-year platting/construction ban.
+Settled in Feb 2026 alongside the federal suit under the unified $68M settlement, establishing stricter Texas ID requirements for purchasers.
+Part II: Analysis of Additional Violations and Systemic Corruption
+The federal and state lawsuits focus primarily on consumer harm. However, a deeper investigation reveals a pattern of systemic corruption, conflicts of interest, and additional violations that created the environment for the alleged fraud to occur with minimal oversight.
+A. The Legislative Framework: Engineering an Environment for Exploitation
+The rapid, unchecked growth of Colony Ridge was enabled by a series of state-level legislative actions. These bills, sponsored by legislators with documented ties to the real estate, development, and engineering industries, created a permissive environment for developer-controlled special districts, granting them significant public power while simultaneously eroding local democratic oversight.
+Bill
+Sponsor(s)
+Key Supporters / Industry Affiliations
+Damaging Impact
+HB 4341 (2017)
+Rep. Ernest Bailes, Sen. Robert Nichols
+Real Estate & Construction PACs, Texas Association of Builders, local developer interests.
+Transformed a public entity into a private instrument, granting the developer power to issue bonds and annex his own land, creating a foundational conflict of interest.
+HB 4370 (2025)
+Rep. Will Metcalf, Rep. Cecil Bell Jr.
+Real Estate & Development PACs
+Expanded the projects MUDs can finance, broadening the financial mechanisms available to special districts.
+SB 1566 (2025)
+Sen. Paul Bettencourt
+Texas Association of REALTORS® (TREPAC), various Property Tax Consultant groups.
+Accelerated unregulated growth by removing a key layer of municipal oversight, straining local infrastructure.
+HB 2715 (2025)
+Rep. Pat Curry, Rep. David Cook, Sen. Mayes Middleton
+N/A
+Standardized the removal process for local officials, a move that could potentially shield compromised local systems from internal accountability.
+SB 2419 (2025)
+Sen. Angela Paxton, Rep. Jay Dean
+Texans for Lawsuit Reform PAC, various real estate development lobbyists.
+Insulated developer-controlled districts from city oversight, preventing residents from seeking recourse from a more established local government.
+HB 447 (2025)
+Rep. Keith Bell
+Associated General Contractors of Texas PAC, Engineering & Surveying industry groups.
+Created a loophole allowing county commissioners to waive traffic studies, enabling large-scale projects to proceed without adequate infrastructure planning.
+B. Dossier of Key Individuals
+Jennifer Bergman Harkness (Liberty County District Attorney): Former Cleveland City Council member. Co-owner of Bergman Engineering, Inc., Humble Surveying Company, and Cleveland Surveying Company. As DA, she oversees a jurisdiction where her family's firms have extensive business interests. Voted on city annexation of land owned by her father's company (Windwood Development) while on council. Allegations persist that critical county drainage reports went missing during her father's tenure as County Engineer. Her selective recusal practices, such as stepping aside in the Whitmire case due to financial/budget conflicts but remaining active in cases touching her family's land interests, have drawn scrutiny. Married to Constable Zack Harkness.
+Zack Harkness (Constable, Pct. 6): Co-owner of Bergman Engineering, Inc. alongside his wife (the DA) and father-in-law. This creates a significant conflict for a law enforcement officer in a county where the firm is a major contractor. In 2024, his office faced controversy when TCOLE targeted two of his deputies' licenses for revocation due to "fundamentally inadequate" and "systemic" training failures at the College of the Mainland's academy.
+Louis W. Bergman III (Former County Engineer / Constable, Pct. 3): Father of the DA and founder of Bergman Engineering, Humble Surveying, Cleveland Surveying, Windwood Development, and El Dorado Funding. As County Engineer, he approved plans for Colony Ridge and other developments while his private firms stood to gain. He provided a sworn affidavit supporting Colony Ridge's initial plans, and critical drainage reports from his tenure are reportedly missing from county files. Deed records from 1982 (Doc. #0000956598) show him granting Power of Attorney to his associate Lloyd T. Smith for the development and sale of land in Liberty County, establishing a multi-decade history of these business practices.
+David Hunter (Constable, Pct. 5): A career law enforcement officer with close ties to the developer network. His office has received donations from companies with county contracts, such as Andco Rentals and Liberty Paving. In the 2024 election, he received significant off-balance-sheet support from the D.C.-based specific-purpose PAC American Values First (Dustin McIntyre, Treasurer) for direct mailers. Hunter also maintains cordial ties with Trey Harris through charitable events like youth livestock auctions. Implicated in a "river incident" involving the alleged harassment of minority youth and reportedly made racist remarks about Colony Ridge residents in a video circulated locally.
+John Harris (CEO, Colony Ridge, LLC): Co-owner and chief executive of the development. A major political donor, giving over $1.4 million to Governor Greg Abbott's campaigns preceding the Opportunity Zone designation. He is the subject of the federal (DOJ/CFPB) and state (Texas AG) lawsuits which resulted in a $68 million settlement in February 2026.
+William "Trey" Harris (Co-owner, Colony Ridge): Brother of John Harris and head of on-site operations. Has multiple DWI convictions and received a controversial early release from a Walker County jail after his family became the largest donor to the presiding Sheriff's campaign, suggesting a quid pro quo arrangement. Liberty Paving, LLC, a company in which he had direct financial interests, received $22.5M in contracts from the MMD board while he served as president.
+Lee Chambers (Liberty County Clerk): As the official custodian of all property, election, and campaign finance records, her office is central to the transparency of all transactions detailed in this report. Her reported candidacy for a local judgeship while holding this critical administrative role presents a potential conflict.
+David Whitmire (Former County Commissioner, Pct. 3): Indicted by a grand jury in April 2025 on charges of sexual assault, official oppression, and solicitation of prostitution. He allegedly used his public office to exploit a woman involved in a child custody case. His case was transferred to the Montgomery County DA's office following DA Jennifer Bergman's recusal.
+Jason Grindstaff (Former Liberty Police Officer): Surrendered to authorities on July 3, 2026, following a grand jury indictment for official oppression and indecent assault stemming from a Texas Rangers investigation initiated in December 2025.
+Kevin Johnson (Vice President, Tarkington ISD Board): Owner of J-Con Services, a local contracting company, creating a potential conflict if his firm bids on school district projects. He is a key member of the M Club, a powerful local fundraising non-profit.
+Jimmy Rollins (Liberty County CAD Board Director): His position on the board that determines property tax valuations is a direct conflict of interest, given his wife, Susan Rollins, is a TISD trustee on a board seeking to acquire land and reliant on those same tax revenues. He is a key organizer of the M Club.
+Cory Anderson (MUD #1 Assistant Secretary / Former TISD Board Member): Owner of Andco LLC and other affiliated companies. His concurrent service on a developer-controlled MUD board while also having served on the TISD board highlights the overlapping governance network. Public records indicate a Cory Anderson was booked in Polk County for an unspecified offense with a $2,500 bond, a matter that warrants further investigation to confirm identity and relevance.
+Klint Bush (Former Liberty County Elections Administrator / Former Housing Authority Director): Indicted in November 2023 for Abuse of Official Capacity, theft, and misapplication of fiduciary property regarding the Liberty County Housing Authority (LCHA). Faced new grand jury indictments in April 2026 for Abuse of Official Capacity and stealing/misusing public housing funds ($150,000+ across 14 transactions from 2019-2021). Court filings link him to a $2,000 "IT consulting" payment via Cypritech to Liberty mayoral candidate Tommy Brents for which no actual work was performed. Released on a personal recognizance bond.
+Emily Kebodeaux Cook (Former LCHA Commissioner / CAD Board Member / Partner, Chandler, Cook & Fitzgerald): Indicted by a grand jury in March 2026 on a felony charge of misapplication of fiduciary property, alleging unauthorized payments to herself for legal work between 2019 and 2022 while serving on the LCHA board. At the time of indictment, she was serving on the Liberty County Central Appraisal District (CAD) board. Her bond conditions barred her from governmental/nonprofit financial roles and prohibited contact with Klint Bush. She pleaded not guilty and announced a candidacy for District Attorney in the 2028 election against Jennifer Bergman.
+Tommy Brents (Former City Councilman / Mayor Pro Tem / Mayoral Candidate): Owner of Cypritech. Linked to Klint Bush's April 2026 indictment for receiving a $2,000 Housing Authority-funded payment in October 2021 under the guise of "IT consulting." Brents maintained it was a personal retainer from Bush and he was unaware public housing funds were used.
+Liberty PD Officer (Unnamed): Involved in a November 20, 2025 auto-pedestrian accident where their patrol vehicle's side-view mirror accidentally struck a pedestrian. Following an independent Texas Department of Public Safety (DPS) crash investigation, the City of Liberty took internal disciplinary action in accordance with department policy. Specific officer identity and disciplinary measures were withheld due to personnel privacy requirements.
+Lt. Ramiro Lozano (Former Liberty PD Lieutenant): Terminated in November 2025 following a Texas Rangers investigation into allegations of unauthorized jail access to Domingo Quintana in the Liberty County Jail.
+Lt. Cedric McDuffie (Former Liberty PD Lieutenant / Deputy Constable): Long-serving officer who served as a Lieutenant with Liberty PD and a Deputy with the Liberty County Constable's Office, later joining the Shenandoah Police Department.
+
+C. Dossier of Affiliated Businesses and Non-Profits
+Entity Name
+Type / Industry
+Key Personnel / Owners
+Relevance / Connection to Investigation
+Colony Ridge, Inc.
+Parent Company
+Harris Family
+The central hub overseeing all development, sales, and financial entities.
+Windwood Development / El Dorado Funding
+Development / Finance
+Louis W. Bergman III
+Bergman's private firms for land development and seller-financing, which benefited from his public role.
+Bergman Engineering, Inc.
+Engineering / Surveying
+Bergman/Harkness Family
+Held lien on Bergman/Harkness property; company of former County Engineer who approved Colony Ridge plans.
+Harkness Oilfield Rentals
+Oilfield / Construction
+Zack Harkness
+Private business interest of an elected Constable in a rapidly developing precinct.
+Burns Architecture
+Architectural Firm
+Burns Family
+Designed Colony Ridge annex & County Law Enforcement Center; linked via property deeds to Johnson family (Tarkington ISD).
+Liberty Paving, LLC
+Paving / Construction
+Linked to Trey Harris
+Received $22.5M in contracts from MMD board while Harris was president; major campaign donor to Sheriff.
+M Club Foundation / TSF
+Non-Profit / Booster Club
+Tom Johnson (founder), Rollins & Johnson Families (organizers)
+Powerful fundraising arms for Tarkington ISD that operate with limited oversight, creating a "shadow budget" that can be used to exert influence on school policy.
+Andco Rentals, LLC
+Event Rentals
+Cory & Shannon Anderson
+Donated to Constable Hunter's K-9 unit, raising concerns of a quid pro quo relationship between a private business and law enforcement.
+Protect and Serve Texas PAC
+Political Action Committee
+Statewide Pro-Law Enforcement
+Endorsed local officials, potentially allowing outside money to influence local law enforcement priorities in a way that benefits developers.
+Greater Cleveland Chamber of Commerce
+Business Network
+Local Business Leaders
+Provides the social and networking platform where many of the officials and business leaders in this report build alliances and potentially make off-the-record deals.
+D. Sourcing of Key Familial Relationships
+The familial relationships that underpin many of the central conflicts of interest in this report are substantiated by publicly available records.
+Bergman-Karbowski Connection: The relationship between District Attorney Jennifer Bergman and Commissioner Bruce Karbowski is cited in local media and genealogical records, which identify him as her uncle. This relationship is material to the nepotism indictment detailed in Section VI-A.
+Bailes Spousal Connection: The spousal relationship between State Representative Ernest Bailes and HCSET Board Member Susan Bailes is noted in official biographies and public records.
+E. MMD & MUD Board Governance: Developer Self-Regulation
+The Liberty County MMD and various MUD boards are documented as being controlled by developers and their affiliates. This structure facilitates direct self-dealing. According to the MMD's own June 2024 audit, the district owes $15.4 million to Colony Ridge Development, a clear example of the developer reimbursement model in practice. This is exemplified by the $22.5 million in contracts awarded by the MMD board to Liberty Paving, a company in which former MMD president Trey Harris had a direct financial interest. The MUD 15 election, which authorized $88 million in debt with only two votes cast, further demonstrates the manipulation of these public entities for private gain. Similarly, Liberty County MUD No. 12 (created by SB 2580 in 2023) was granted broad taxing, bond-issuing, and eminent domain powers over 764 acres, with provisions enabling it to be divided into multiple smaller developer-controlled districts. MMD No. 2 was created by SB 2594 in 2023 to expand this framework into 236 acres in the city limits and ETJ of Cleveland.
+F. The Mechanics of Malfeasance: Predatory Practices and Environmental Negligence
+Predatory Lending & "Foreclosure Mill" Model: The DOJ and Texas AG lawsuits allege a systemic "bait-and-switch" scheme targeting vulnerable, often non-English-speaking buyers with predatory, high-interest loans for land lacking basic infrastructure. The business model relies on an exceptionally high foreclosure rate—reportedly 50 times the national average—allowing the developer to reacquire and resell properties at a profit.
+Documented Environmental Violations: The developer's practices have been the subject of formal state-level reprimands. As early as June 2021, the Texas Commission on Environmental Quality (TCEQ) finalized nine separate investigations into Colony Ridge's construction practices, finding violations in eight of the nine cases, including failure to control erosion and prevent sediment from polluting public waterways. These violations have led to widespread flooding in both Liberty and Harris counties.
+G. Case Studies and Historical Parallels
+Case Study: Mutual Protection in Liberty County (The Karbowski Case): In 2020, County Commissioner Bruce Karbowski—who is familially related to DA Jennifer Bergman (reportedly her uncle)—was indicted for nepotism. After taking office, DA Bergman's office took control of the case and secured his acquittal by presenting no evidence at trial. The presiding judge, Hon. Mark Morefield, was later publicly admonished by the State Commission on Judicial Conduct for his handling of the case, in which he admitted bias and prejudice partly based on "county rumor and speculation." This sequence, confirmed in official documents (RQ-0550-KP and CJC No. 23-0537), demonstrates a breakdown of impartial justice involving the DA's office and the judiciary.
+Case Study: Selective Recusal (The David Whitmire Case): In April 2025, Pct. 3 County Commissioner David Whitmire was indicted for sexual assault, official oppression, and solicitation of prostitution. DA Jennifer Bergman's office recused itself, citing a financial conflict since the Commissioners Court controls her budget. While acknowledging this ethical boundary, critics pointed out her failure to recuse herself from land-use and developmental prosecutions where her family's engineering and surveying companies (Bergman Engineering) had direct business interests, such as in the FM 1008 corridor.
+Case Study: Cracks in Law Enforcement Integrity (Jason Grindstaff & Fire Marshal William Hergemueller): In late 2024, Liberty County Fire Marshal William Hergemueller and two deputies were fired and faced charges of performing unauthorized inspections and theft. This was followed on July 3, 2026, by the surrender and arrest of former Liberty Police Officer Jason Grindstaff after a grand jury indictment for official oppression and indecent assault following a Texas Rangers investigation. These recurring arrests highlight systemic public integrity and regulatory failures within the county's enforcement arms.
+Historical Parallel: The Trinity Savings & Loan Scandal (1980s): The current situation has deep historical roots. The Trinity Savings & Loan Association of Cleveland, TX, was at the center of a major FBI investigation during the S&L crisis for a massive criminal conspiracy involving fraudulent land flips and self-dealing, providing a historical precedent for complex, real estate-based financial malfeasance in the area.
+H. Timeline of Key Events (1982-2026)
+1982: Louis W. Bergman III grants Power of Attorney to Lloyd T. Smith for the development and sale of the Windwood subdivision, establishing a long-standing pattern of using business associates and legal instruments to manage land deals.
+2015: M Club founded, increasing Rollins family influence in Tarkington ISD. Colony Ridge accelerates development.
+2017: Jennifer Bergman becomes DA while still tied to Bergman Engineering; Zack Harkness becomes Constable.
+2018: Cleveland City Council, with Bergman as a member, annexes land owned by her father's company.
+2020: Louis Bergman III retires as County Engineer; critical development files are reportedly incomplete. Bruce Karbowski is indicted for nepotism.
+2021: TCEQ finalizes nine investigations, finding violations in eight, reprimanding Colony Ridge for its construction practices.
+2022: DA Bergman's office investigates and arrests the Liberty County Fire Marshal. Pct 1 Commissioner Bruce Karbowski is acquitted after DA Bergman's office presents no evidence at trial.
+2023: Public and political scrutiny of Colony Ridge intensifies. Trey Harris is convicted of multiple DWIs in Walker County.
+2023: Liberty County MUD No. 12 (SB 2580) and MMD No. 2 (SB 2594) are created by the Texas Legislature, expanding the regulatory and utility financing framework for the Colony Ridge development.
+Summer 2023: Constable Hunter is allegedly caught on video making racist remarks.
+Oct 2023: Trey Harris receives a controversial early release from jail after his family becomes the largest donor to the Walker County Sheriff's campaign.
+November 2023: Former LCHA Chairman Klint Bush is indicted for theft and abuse of official capacity regarding housing authority funds.
+Dec 2023: U.S. DOJ and CFPB file a federal lawsuit against Colony Ridge.
+Mar 2024: Texas Attorney General files a state lawsuit against Colony Ridge. TCOLE targets Pct. 6 Constable Zack Harkness's deputies for license revocation in the academy training scandal.
+Late 2024: Liberty County Fire Marshal William Hergemueller and two deputies are fired and charged with theft and unauthorized inspections.
+April 2025: Pct. 3 Commissioner David Whitmire is indicted for sexual assault and official oppression; DA Bergman recuses her office.
+February 2025: Longtime Liberty Police Chief Gary Martin retires; Richard (Rick) Ashe is named permanent Chief of Police in April 2025.
+October 2025: Liberty PD Lieutenant Ramiro Lozano is suspended following accusations of unauthorized jail access to Domingo Quintana in the Liberty County Jail.
+November 13, 2025: Lt. Ramiro Lozano is terminated from the Liberty Police Department.
+November 20, 2025: An unnamed Liberty PD officer's patrol vehicle accidentally strikes a pedestrian with its side-view mirror in the middle of the night; Texas DPS is requested to conduct an independent crash investigation.
+December 9, 2025: The City of Liberty releases a statement confirming the completion of the DPS investigation and announcing internal disciplinary action against the officer involved.
+Feb 2026: Colony Ridge and its affiliates reach a $68 million settlement with the DOJ, CFPB, and the State of Texas, resolving the deceptive practices and reverse redlining claims with a $48 million infrastructure plan, a 3-year platting ban, and $20 million public safety funding.
+March 2026: Former LCHA Commissioner and Central Appraisal District Board Member Emily Kebodeaux Cook is indicted for misapplication of fiduciary property related to LCHA funds; she subsequently announces a DA campaign for the 2028 election against Jennifer Bergman.
+April 2026: Klint Bush is re-indicted on felony charges for stealing and misusing over $150,000 in LCHA funds; filings link a $2,000 Cypritech retainer to mayoral candidate Tommy Brents.
+July 3, 2026: Former Liberty PD Officer Jason Grindstaff surrenders to authorities following a grand jury indictment for official oppression and indecent assault.
+IX. Conclusion: A Pattern of Systemic Corruption
+The body of evidence detailed in this report points toward a coordinated, multi-year pattern of activity consistent with a potential criminal enterprise. The facts suggest a system in which legislative authority was captured, public governance structures were co-opted, and official duties were compromised to facilitate the private financial interests of a small, interconnected network of individuals. The mutually reinforcing actions, from the dismissal of criminal charges against family members to the suspicious timing of campaign donations and official acts, created an environment where the alleged large-scale consumer fraud at the heart of the DOJ and Texas AG lawsuits could occur with minimal local oversight. This warrants a comprehensive investigation by state and federal authorities to determine the full extent of the potential corruption and to restore public trust.
+X. Investigative Recommendations
+Investigate Potential Criminal Enterprise: A formal investigation into potential racketeering and organized criminal activity should be initiated, focusing on the coordinated actions of the individuals and entities within the identified networks.
+Conduct a Forensic Audit of MMD #1 and MUD #15: A full financial audit is necessary to trace the flow of public funds, specifically focusing on the $22.5 million awarded to Liberty Paving, the $15.4 million owed to the developer, and the $88 million in debt approved by MUD 15.
+Scrutinize Financial Transactions for Quid Pro Quo Corruption: An inquiry into the direct correlation between campaign contributions and subsequent official actions is necessary across the board, including donations to Governor Abbott, the Liberty County Sheriff, and the Walker County Sheriff (in the case of Trey Harris's early release).
+Investigate Abuse of Office and Conflicts of Interest: A formal investigation into potential violations of the Texas Penal Code is warranted. This should include a full review of the DA's active law firm, her lawsuit against the CAD, the handling of the Karbowski nepotism case, and the operations of the County Clerk's office regarding election and property records.
+Audit Liberty County Commissioners Court Records: A full review of the Commissioners Court minutes, agendas, and backup materials is required to identify all votes, contracts, and appointments related to the Colony Ridge development, MUDs, and associated infrastructure projects to determine the extent of the court's complicity or negligence.
+<!-- end list -->

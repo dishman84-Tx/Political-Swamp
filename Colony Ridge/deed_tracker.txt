@@ -1,0 +1,494 @@
+Deed & Instrument Tracker — Liberty County & Related (as of Sep 7, 2025)
+This canvas centralizes deed/instrument summaries mentioned in this chat so far. Use the tables below to append new items as they appear. Keep table entries concise (keywords, numbers). Add context notes beneath a table if needed.
+How to use
+Add rows under the correct subject table when new deeds surface.
+Flag suspected conflicts in the Conflict Checks table (short phrases only).
+Background Tracker lists people/entities to watch; update the Last seen doc(s) column as we go.
+Colony Ridge — Deeds (sample set from 04/02/2025 batch and related)
+Date
+Doc #
+Type
+Grantor → Grantee
+Subdivision/Abstract
+Lot/Block/Section/Acreage
+Notes/Flags
+2025-04-02
+2025012231
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 12
+L427 B6
+internal transfer
+2025-04-02
+2025012204
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 8
+L7358 B143
+internal transfer
+2025-04-02
+2025012170
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 10
+L420 B10
+internal transfer
+2025-04-02
+2025012216
+Deed
+Cadena Joel → Colony Ridge Land LLC
+Santa Fe Sec 7
+L3865-3866 B62
+incoming to CR Land
+2025-04-02
+2025012176
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 12
+L1566 B26
+internal transfer
+2025-04-02
+2025012206
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 11
+L2510 B44
+internal transfer
+2025-04-02
+2025012094
+Deed
+Sandoval Xavier Anthony → Colony Ridge Land LLC
+Santa Fe Sec 11
+L2308 B41
+incoming to CR Land
+2025-04-02
+2025012114
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 8
+L5621 B112
+internal transfer
+2025-04-02
+2025012099
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 8
+L6877 B135
+internal transfer
+2025-04-02
+2025012103
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 7
+L3448 B55
+internal transfer
+2025-04-02
+2025012143
+Deed
+Zavala Lucas → Colony Ridge Land LLC
+Santa Fe Sec 6
+L3148 B52
+incoming to CR Land
+2025-04-02
+2025012132
+Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Santa Fe Sec 12
+L1056 B17
+internal transfer
+2025-04-02
+2025012185
+Deed
+Gomez Jose Santos; Villatoro Maria B → Colony Ridge Land LLC
+Santa Fe Sec 12
+L1565 B26
+incoming to CR Land
+2025-04-02
+2025012205
+Deed
+Avalos Emily; Ojeda Jesus Emanuel → Colony Ridge Land LLC
+Santa Fe Sec 11
+L2510 B44
+incoming to CR Land
+2025-04-02
+2025012244
+Deed
+Quiroga Inocencio → Colony Ridge Land LLC
+Santa Fe Sec 14
+L5833 B103
+incoming to CR Land
+2025-04-02
+2025012189
+Deed
+Guerra Yadier R Betancourt → Colony Ridge Land LLC
+Santa Fe Sec 4
+L6056 B64
+incoming to CR Land
+Context notes: This sample reflects the 04/02/2025 filing cluster plus a few related transfers supplied in chat. Add more rows as needed.
+T‑REX Management Inc. — Recent filings (Jul–Sep 2025 sample)
+Date
+Doc #
+Type
+Grantor → Grantee
+Subdivision/Abstract
+Lot/Block/Section/Acreage
+Notes/Flags
+2025-09-04
+2025090684
+Warranty Deed w/VL
+T REX Management Inc → Venegas Hector Limon
+Kings Colony S1
+L31 B5
+retail conveyance
+2025-09-04
+2025090672
+General Warranty Deed
+T REX Management Inc → Colony Ridge Development LLC
+Grand San Jacinto S8
+L22 B1
+internal ecosystem
+2025-09-04
+2025090671
+General Warranty Deed
+Paz Evelyn Aracely Cerrato → T REX Management Inc
+Grand San Jacinto S8
+L22 B1
+incoming to T‑REX
+2025-09-03
+2025089915
+Reinstatement
+T REX Management Inc → Orellana Maria Leonor
+Kings Colony S1
+L7 B10
+loan/workout
+2025-08-29
+2025088678
+Reinstatement
+T REX Management Inc → Rivera Cayetano Duarte
+Kings Colony Two
+L73 B11
+loan/workout
+2025-08-29
+2025088661
+Reinstatement
+T REX Management Inc → Martinez Yorlandis Mendoza
+Grand San Jacinto S8
+L1 B3
+loan/workout
+2025-08-26
+2025086846
+General Warranty Deed
+Nava Diana Marta → T REX Management Inc
+Kings Colony Two
+L21 B6
+acquisition
+2025-08-21
+2025085178
+Release of Lien
+T REX Management Inc → Alvarado Francisco Jr
+Kings Colony Two
+L20 B9
+lien release
+2025-08-20
+2025084673
+Reinstatement
+T REX Management Inc → Lopez Jose Bulmaro
+Kings Colony S1
+L31 B18
+loan/workout
+2025-07-16
+2025071196
+Warranty Deed w/VL
+T REX Management Inc → Lozano Manuel Maldonado
+Kings Colony Two
+L44 B16
+retail conveyance
+2025-07-10
+2025069004
+Warranty Deed w/VL
+T REX Management Inc → Martinez Gutierrez Jennifer
+Kings Colony Two
+L39 B9
+retail conveyance
+2025-07-10
+2025069021
+Warranty Deed w/VL
+T REX Management Inc → Melo Jorge Feliz
+Grand San Jacinto S8
+L13 B3
+retail conveyance
+Context notes: Above are representative entries from the July–September 2025 list you supplied. Continue appending.
+Timbervest Partners III Texas LLC — Key transactions
+Date
+Doc #
+Type
+Grantor → Grantee
+Survey/League
+Acreage/Abstract
+Notes/Flags
+2018-05-18
+2018010778
+Warranty Deed
+Timbervest Partners III Texas LLC → Colony Ridge Development LLC
+Ann Holshousen & others
+A-208; 5,793.857 (et al)
+large transfer to developer
+2018-05-18
+2018010780
+Deed (Quitclaim/Bill of Sale)
+Timbervest → Colony Ridge Development LLC
+—
+—
+supporting conveyance
+2018-12-14
+2018027160
+Bill of Sale
+Timbervest → T‑REX Management Inc; Colony Ridge Development LLC
+—
+—
+improvements/assets
+2019-04-24
+2019009376
+Right of Way
+Timbervest → ONEOK Arbuckle II Pipeline LLC
+Barton Tarkington League
+300.627 ac; A-354
+pipeline ROW
+2020-09-01
+2020028583
+Warranty Deed
+Timbervest → Colony Ridge Tracts LLC
+John Pleasants Survey
+6.695 ac; A-327
+targeted tract
+2020-12-15
+2020046212
+Deed
+Timbervest → Colony Ridge Development LLC
+—
+—
+additional lands
+2018-05-21
+2018010882
+Easement
+Timbervest → Grand Prix Pipeline LLC
+Barton Tarkington League
+~200 ac ref.; A-354
+easement
+2017-03-15
+2017004473/4472
+Easement
+Timbervest → Spicewood Operating Co. LLC
+F H Votaw; et al
+A-838 (et al)
+easements
+Context notes: These are the Timbervest-to-developer linkages and energy easements shown in your excerpts.
+Cory Anderson — Selected Liberty County filings
+Date
+Doc #
+Type
+Grantor → Grantee
+Location
+Legal (short)
+Notes/Flags
+2025-05-28
+W2025018238
+Warranty Deed
+ANDCO LLC → Anderson, Cory; Anderson, Shannon Amanda
+A-208
+Ann Holshousen Survey; 61.05 ac
+acquisition
+2023-08-18
+W2023033762
+Warranty Deed
+Anderson, Cory; Anderson, Shannon → Cox, Terry
+A-597
+John Havard Survey; 3.00 ac
+sale
+2022-12-20
+W2022060450
+Warranty Deed
+Elevate Land Development Inc → Anderson, Cory; Anderson, Shannon
+A-597
+John Havard Survey; 3.00 ac
+purchase
+2022-07-11
+W2022035139
+Warranty Deed
+Nelson, Calvin → Anderson, Cory
+Santa Fe
+Lots 1689–1691; Sec 1
+purchase
+2016-08-29
+E2016014762
+Easement
+Anderson, Cory & Shannon → Sam Houston EC
+—
+Utility easement
+infrastructure
+2014-06-16
+W2014009099
+Warranty Deed
+DuBois, Michael W & Pamela → Anderson, Cory & Shannon
+A-765
+A.G. Penn Survey; 4.679 ac
+purchase
+Context notes: Additional Anderson entries (2011–2017 deeds, releases, contracts, transfers) are available in the thread; add rows as needed.
+Grand San Jacinto — Section 3 (selected)
+Date
+Doc #
+Type
+Parties
+Legal
+Notes
+2022-09-30
+2022048350
+UCC
+Troncoso Rodriguez Hector Eduardo → GoodLeap LLC
+Sec 3, L1184 B31
+solar/fixture filing
+2022-05-10
+2022021926
+Warranty Deed
+Colony Ridge Land LLC → Colony Ridge Development LLC
+Sec 3, L1172 B31
+internal transfer
+2022-04-26
+2022019580
+Warranty Deed
+U.S. Customs & Border Protection; USA → Isse Sayid
+Sec 3, L1145 B31
+federal conveyance
+2020-04-30
+2020012120
+Warranty Deed
+CR Dev LLC → Almaguer Mirna I. Delgado; Ignacio F.J. Garcia
+Sec 3, L1159 B31
+retail sale
+2020-04-30
+2020012121
+Deed of Trust
+Almaguer/Igancio → Colony Ridge Land LLC
+Sec 3, L1159 B31
+seller finance
+Other Instruments & Notices
+Date
+Doc #
+Type
+Parties
+Legal/Reference
+Notes
+2023-??-??
+2023039104
+Notice to Purchasers
+Developer → Buyers
+Deed Restrictions (multiple Clerk File Nos.)
+restrictions summary noted
+1996-06-10 (term start)
+DACW64-2-96-70
+Easement (Federal)
+U.S. Army → Concha Chemical Pipeline Co. (Shell affiliate)
+10” underground propylene pipeline; Wallisville Lake Project
+federal pipeline ROW
+Conflict Checks (governance & procurement)
+Topic
+Entities
+Docs cited (short)
+Potential issue
+Status/Next step
+Liberty Paving ↔ Colony Ridge ecosystem
+Liberty Paving LLC; CH&P Mgmt (Savannah Crihfield); Patrick Thiel
+user-supplied article ref.; board minutes (not in this canvas)
+self-dealing/COI risk
+obtain official minutes; cross-check contracts vs. board affiliations
+Liberty Paving managers
+Cory Anderson; others (per user)
+need SoS/LLC mgmt filings
+undisclosed control
+pull TX SOS filings; compare to contract awards
+MUDs awarding contracts
+MUD 1, 12, 15 boards; developer affiliates
+minutes/resolutions (tbd)
+conflict under Ch. 171/176
+collect minutes; map votes vs. affiliations
+Note: Items above reflect allegations and links provided by you; verification requires minutes, filings, and statutory conflict disclosures.
+Background Tracker — Watchlist
+Entity/Person
+Role/Link
+What to watch
+Last seen doc(s)
+Colony Ridge Land LLC
+Landholder/seller
+bulk-to-affiliate transfers; seller-finance deeds
+multiple 2025-04-02 deeds
+Colony Ridge Development LLC
+Developer/affiliate
+internal deeds; resale to buyers
+multiple 2025-04-02 deeds
+T‑REX Management Inc
+Conveyances; lien actions
+retail sales; reinstatements; releases
+2025-09/08 docs
+Timbervest Partners III Texas LLC
+Prior landowner
+large 2018–2020 transfers to CR entities
+2018010778; 2020046212
+CR Farms LLC
+Related recipient
+acquisitions from Timbervest
+2020028454 et al
+Liberty Paving LLC
+Contractor
+contracts with CR ecosystem; officers/board ties
+(minutes tbd)
+CH&P Management (Savannah Crihfield)
+Mgmt/board role (per report)
+board ties to Liberty Paving
+(minutes tbd)
+Patrick Thiel
+Executive/board (per report)
+dual roles
+(minutes tbd)
+Cory Anderson
+Individual
+deeds/easements; alleged LP mgmt
+W2025018238; others
+MUD 1; MUD 12; MUD 15
+Special districts
+contract awards; board composition
+(minutes tbd)
+TISD
+School district
+land deals; payments
+(docs tbd)
+Placeholders — MUDs & TISD (append as docs surface)
+MUD 1 / MUD 12 / MUD 15 — Contracts & Conveyances
+Date
+Doc #
+Type
+Parties
+Project/Tract
+Notes/Flags
+—
+—
+—
+—
+—
+—
+TISD (Tarkington ISD) — Land/Agreements
+Date
+Doc #
+Type
+Parties
+Tract/Use
+Notes/Flags
+—
+—
+—
+—
+—
+—
+To‑Do / Sourcing Notes (non-table)
+Pull board minutes (MUDs; road districts; developer boards) to substantiate COI claims.
+Retrieve Texas SOS management/manager filings for Liberty Paving LLC; CH&P; T‑REX; CR entities; cross-map names.
+Continue adding doc numbers and short rows here as you paste new filings.

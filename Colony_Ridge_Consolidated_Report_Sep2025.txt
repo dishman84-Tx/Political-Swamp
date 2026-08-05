@@ -1,0 +1,372 @@
+External Investigative Report — Colony Ridge & Related Special Districts
+Prepared for: FBI • Texas Rangers • Texas AG • CFPB • SEC    |    Version: September 2025 (consolidated)
+What Research Shows
+Paxton–Bailes–Nichols link: AG Ken Paxton’s letter (Oct 2023) explicitly blames Sen. Robert Nichols and Rep. Ernest Bailes for enabling the creation of a Municipal Management District (MMD) for Colony Ridge via HB 4341 (2017). [Liberty Vindicator]
+Legislative inaction: Gov. Abbott spotlighted Colony Ridge in a special session, but as of late 2023 few concrete bills were filed or passed—there was a hearing and a bill by Sen. Joan Huffman for law-enforcement presence near Colony Ridge, but no comprehensive reform. [Texas Tribune; Dallas News]
+Media & public pressure: Letters from members of Congress and GOP resolutions sought investigations touching immigration, voter integrity, and environmental/infrastructure strain from Colony Ridge. [texasinsider]
+Legal action & consumer complaints: The Texas AG’s lawsuit (Mar. 2024) alleges deceptive marketing, utility/flood disclosure failures, and more—amplifying the federal case. [Texas Tribune]
+Potential Overlaps with Departures
+Nichols and Bailes are publicly tied to enabling legislation (HB 4341). If exiting/retiring, that suggests political fallout.
+Brandon Creighton: elevated visibility (TTU Chancellor finalist); no proven Colony Ridge bill linkage in cited sources—monitor.
+Legislators who signed letters or attended hearings (e.g., Jay Dean) face heightened scrutiny; some are stepping down or shifting offices.
+Current Gaps
+No firm linkage yet between the broader cohort of departing lawmakers and Colony Ridge-specific bills beyond Bailes and Nichols.
+No direct statements that any departure is ‘because of Colony Ridge’—announcements usually cite retirement or pursuit of other office.
+Add to Report (Actions)
+Build a table overlay for each departing lawmaker: sponsorship/cosponsorship of MMD/MUD bills; mentions in Paxton’s criticisms; PAC ties to developers/vendors.
+For Bailes and Nichols: trace what parts of HB 4341 (2017) remain in effect (MMD powers, district authority).
+Monitor legal exposure (consumer complaints, donor conflicts, votes) specifically tied to Colony Ridge.
+PAC Overlay — Connective Tissue
+These PAC streams appear across multiple lawmakers and developer affiliates:
+PAC / Entity
+Key Donors (developer/affiliate)
+Lawmakers funded
+Linked bills / actions
+TREPAC (Texas Real Estate PAC)
+Developers; realtor networks; Colony Ridge vendor overlaps
+Nichols, Bailes, Creighton; House cluster
+Special district expansion; real estate-aligned agenda
+Texans for Lawsuit Reform (TLR)
+Developer-aligned donors; coordinated fundraisers
+House exits cluster (Phelan, Cain, Paul, Lambert, etc.)
+Judiciary/consumer litigation posture; bond/finance posture
+Associated General Contractors PAC
+Construction & engineering vendors
+Nichols, Bailes
+Public works and district infrastructure funding
+Active Lawsuits — Side-by-Side
+Aspect
+U.S. DOJ & CFPB v. Colony Ridge (S.D. Tex. 4:23-cv-04729; filed Dec. 20, 2023)
+Texas OAG v. Colony Ridge (284th Judicial District; Mar. 2024)
+Plaintiffs
+DOJ (Civil Rights) & CFPB
+Texas Attorney General
+Corporate Defendants
+Colony Ridge Development, LLC; Colony Ridge BV, LLC; Colony Ridge Land, LLC; Loan Originator Services, LLC
+Colony Ridge, Inc.; Colony Ridge Development, LLC; Colony Ridge Land, LLC; Colony Ridge BV, LLC; T-Rex Management, Inc.; Houston El Norte POA
+Individual Defendants
+None named
+John Harris
+Core Legal Theories
+ECOA/FHA; CFPA UDAAP; ILSA
+Texas DTPA; deceptive marketing
+Key Allegations
+Spanish-language targeting; utility/flood misreps; high-interest, no ATR; ≥30% foreclosure initiation ≤3y; >92% of Liberty Co. foreclosures; ~40% flips (2019–23)
+Bait-and-switch; foreclosure churn; Spanish ads vs English contracts; concentrated harm on Hispanic buyers
+Status (July 2026)
+Settled in Feb 2026 for $68M. Denied wrongdoing but agreed to a $48M infrastructure plan, $20M for public safety/immigration, and a 3-year platting/construction ban.
+Settled in Feb 2026 alongside the federal suit under the unified $68M settlement.
+
+Liberty County Public Integrity & Housing Authority Prosecutions (2026)
+*   Emily Kebodeaux Cook: Former LCHA Commissioner, CAD Board Member, and partner at Chandler, Cook & Fitzgerald. Indicted in March 2026 for felony misapplication of fiduciary property related to LCHA funds. Her bond conditions barred her from governmental/nonprofit financial decision-making and barred contact with Klint Bush. She pleaded not guilty and announced a candidacy for District Attorney in 2028 against Jennifer Bergman.
+*   Klint Bush: Former Elections Administrator & LCHA Director. Indicted in Nov 2023 and re-indicted in April 2026 for Abuse of Official Capacity and theft of public funds ($150,000+ across 14 transactions from 2019-2021). Filings link a $2,000 "IT consulting" Cypritech payment to mayoral candidate Tommy Brents for no work. Released on a personal recognizance bond.
+*   Tommy Brents: Liberty mayoral candidate and former Councilman/Mayor Pro Tem. Linked to Bush's April 2026 indictment for receiving a $2,000 retainer from LCHA funds via Cypritech for no work. Brents claimed it was a personal retainer from Bush.
+*   Jason Grindstaff: Former Liberty Police Officer. Indicted for official oppression and indecent assault, surrendering to authorities on July 3, 2026, following a Texas Rangers investigation.
+*   Lt. Ramiro Lozano: Former Liberty PD Lieutenant. Terminated in November 2025 following a Texas Rangers investigation into allegations of unauthorized jail access to Domingo Quintana at the Liberty County Jail.
+*   Unnamed Liberty PD Officer: Involved in a November 20, 2025 auto-pedestrian accident where their patrol vehicle's side-view mirror accidentally struck a pedestrian. Following an independent Texas Department of Public Safety (DPS) crash investigation, the City of Liberty took internal disciplinary action, with details withheld under personnel privacy regulations.
+*   Lt. Cedric McDuffie: Former Liberty Police Lieutenant and Liberty County Deputy Constable. Service history documented with the City and County; later relocated to Shenandoah PD as a Sergeant.
+
+2025 Legislator Departures & Overlay
+Lawmaker
+Chamber/Seat
+2026 Status
+Link to Colony Ridge / Special District Bills
+Affiliates / Family Links
+Notes
+PAC Funnels (observed)
+Robert Nichols
+Senate (SD-3)
+Retiring
+Senate sponsor HB 4341 (2017) – Liberty County MMD No. 1
+—
+Named in AG letter
+TREPAC; AGC; TLR
+Ernest Bailes
+House (HD-18)
+Monitoring (in office)
+House author HB 4341 (2017)
+Family land interests (San Jacinto/Polk)
+Included for linkage completeness
+TREPAC; TLR
+Brandon Creighton
+Senate (SD-4)
+TTU System Chancellor finalist
+No direct CR bill identified
+Real estate ties in Montgomery Co.
+Monitor ETJ/utility/MUD votes
+TREPAC
+Brian Birdwell
+Senate (SD-22)
+Retiring
+No direct CR linkage identified
+—
+Monitor special district finance votes
+—
+Mayes Middleton
+Senate (SD-11)
+Running for Attorney General
+No direct CR bill identified
+Family oil/gas wealth
+Track AG-run funding
+TLR
+Kelly Hancock
+Senate (SD-9)
+Stepped down early
+No direct CR linkage
+—
+—
+—
+Stan Lambert
+House (HD-71)
+Retiring
+No direct CR linkage
+—
+—
+TLR
+Dade Phelan
+House (HD-21)
+Not seeking re-election
+No direct CR bill identified
+Family construction/lumber
+Monitor House agenda mgmt.
+TLR; Realtor PAC
+Tony Tinderholt
+House (HD-94)
+Not running again
+No direct CR linkage
+—
+—
+—
+Giovanni Capriglione
+House (HD-98)
+Retiring
+No direct CR linkage
+Tech finance/PE
+—
+—
+John Lujan
+House (HD-118)
+Running for U.S. Congress
+No direct CR linkage
+Business consulting
+—
+—
+Briscoe Cain
+House (HD-128)
+Retiring/other office
+No direct CR bill identified
+Law practice/consulting
+Monitor committee overlaps
+TLR
+Dennis Paul
+House (HD-129)
+Running for Senate
+No direct CR bill identified
+Engineering firm background
+—
+AGC; TLR
+Vikki Goodwin
+House (HD-47)
+Retiring
+No direct CR linkage
+Real estate brokerage
+—
+Realtor PAC
+James Talarico
+House (HD-50)
+Running for U.S. Senate
+No direct CR linkage
+Education nonprofits
+—
+—
+Ray Lopez
+House (HD-125)
+Retiring
+No direct CR linkage
+San Antonio council links
+—
+—
+Morgan Luttrell
+U.S. House (TX-8)
+Not seeking re-election (9/11/2025)
+No direct CR linkage
+Federal: family political ties
+Track federal positions
+—
+Affiliates & Shell Companies
+Entity
+Known Principal(s)
+Registered Agent / Owners
+SOS Status
+Affiliates / Notes
+Colony Ridge Land, LLC
+John & William “Trey” Harris
+RA: William Harris; Owners: Harris family
+Active
+Overlap with Colony Ridge Development, LLC
+Colony Ridge Development, LLC
+Harris family
+RA: John Harris; Owners: Harris family
+Active
+Parent developer; multiple affiliates
+Colony Ridge BV, LLC
+Harris family
+RA: William Harris; Owners: Harris family
+Active
+Affiliate
+Loan Originator Services, LLC
+Harris family
+RA: William Harris; Owners: Harris family
+Active
+In-house lender
+T-Rex Management, Inc.
+Harris family
+RA: John Harris; Owners: Harris family
+Active
+State pleading defendant
+Houston El Norte POA
+Harris-aligned
+RA: John Harris
+Active
+POA fee enforcement
+CR Farms, LLC
+Harris family
+RA: William Harris
+Active
+OAG-listed affiliate
+Colony Ridge Tracts, LLC
+Harris family
+RA: William Harris
+Active
+Land segmentation
+Liberty Water Holdings, LLC
+Harris family
+RA: John Harris
+Active
+Utilities shell
+Liberty County Utilities, LLC
+Harris family
+RA: John Harris
+Active
+Utilities shell
+Liberty Paving, LLC
+Patrick Thiel
+RA: Patrick Thiel; Owners: Thiel, execs
+Active
+Vendor; contracts via MMD #1
+Duke Vacation, LLC
+Harris family
+RA: William Harris
+Active
+OAG-listed affiliate
+Casas Houston, LLC
+Harris family
+RA: John Harris
+Active
+Sales pipeline affiliate
+HomeLand Properties, Inc.
+Andy Flack
+RA: Andy Flack
+Active
+Brokerage for large tract flips
+Special Districts & Governance
+District
+Findings
+Relevance
+Liberty County MMD No. 1 (2017)
+Board approved ~$22.5M contracts to Liberty Paving; $15.4M reimbursement structure; large TexPool balances
+Potential muni-securities disclosure risk; evidence of self-dealing
+Liberty County MUD No. 15 (Tarkington)
+Liberty County MUD No. 12 (2023)	Created by SB 2580 (codified under Chapter 7977A). Granted broad eminent domain, taxing, and bond powers for 764 acres, with division provisions.	Allows developer to establish separate self-regulated taxing districts.
+Liberty County MMD No. 2 (2023)	Created by SB 2594 to manage economic and infrastructure development for 236 acres in the city limits and ETJ of Cleveland.	Expands MMD framework to interface with municipal utility corridors.
+2025 election order to expand bond authority; TCEQ pending WWTP permit (WQ0016736001)
+Ongoing expansion tied to Colony Ridge growth
+Houston El Norte POA
+Defendant in State petition; fee/fine leverage on residents
+Supports coercive practice allegations
+Regulatory & Environmental Findings
+Agency
+Finding
+Relevance
+CFPB/DOJ
+≥30% foreclosure initiation ≤3y; >92% of Liberty Co. foreclosures; ~40% flips
+Quantifies consumer harm / churn
+TCEQ
+Multiple stormwater/sediment violations (2019–21)
+Supports misrepresentation of habitability/utilities
+EPA/USACE
+Wetlands fill/clearing oversight under CWA §404
+Federal nexus potential
+Ongoing Conduct (Post-Filing)
+Continued district expansion via 2025 legislative activity (ETJ utility reach; bond flexibility).
+Affiliate network remains active (CR Farms, Liberty Paving, Casas Houston, HomeLand Properties).
+Non-judicial foreclosure cadence persists on 21-day cycles with repeat flips.
+Boards & Local Entities
+Housing Authority (LCHA): Jim Spencer (Chair); Audrey Harrison (Vice-Chair); Letha Ferguson; Anthony Key (Resident Commissioner); one vacancy. Former: Klint Bush (Chair); Ryan Daniel (Vice Chair); Emily Kebodeaux Cook; others.
+Liberty Police Department: Chief Richard (Rick) Ashe (appointed April 2025 following the February 2025 retirement of Chief Gary Martin). Former personnel include Lt. Cedric McDuffie (Lieutenant, also served as Deputy in the Constable's Office; later joined Shenandoah PD), Lt. Ramiro Lozano (terminated November 2025), and Officer Jason Grindstaff (resigned February 2026; indicted July 2026).
+Central Appraisal District (CAD): Past members include Rick Brown, Larry Wadzeck, John Hebert Jr., Bob Edwards, Mark Sjolander, Billy Yarbrough, Bobby Ray Coats. Chief Appraiser (2018): Lana McCarty.
+Emergency Services District #3: Denny Loonam (President); Hunter Reid (VP); Melissa Jo Miguel (Secretary); James Bolton; Jerry W. Johnson. Former: Steve Williams; Brenda Childress; John Flynn; Andria Richardson; Brandon Pelton.
+Corruption Leads (Actionable)
+Issue
+Evidence
+Risk/Conflict
+Action
+Campaign $ → Contracts (Jerry Mgmt., Liberty Paving)
+Minutes show ~$22.5M to Liberty Paving after campaign ties
+Donor-to-award sequence
+Pull TEC filings; cross-check minutes/votes
+Foreclosure Cadence (Pct. 6 / Harkness)
+Trustee Deeds show fast cycles, repeat flips
+Non-judicial churn
+Subpoena trustee deed logs; reconcile lot IDs
+DA Conflicts (Bergman)
+DA office overlap with developer orbit
+Charging discretion conflict
+Review recusals; Bar grievances
+CAD Valuation Influence (Holt/Board)
+CAD affects MUD/MMD bonding
+Inflated district values
+Pull appraisal manuals; tract rolls
+Bond Counsel (Cook, Chandler & Fitzgerald)
+Repeat bond engagements
+Undisclosed conflicts
+Subpoena OS; conflict letters
+Engineering Contracts (Bergman Eng.)
+Recurring CR-adjacent work
+Self-dealing
+Pull contracts; Form 1295s
+Shell DBAs (Terrenos/Lotes)
+Refiling/abandon cycles (2014–17)
+Liability insulation
+SOSDirect officer pulls
+Foreclosures <30/60/90 Days
+Trustee Deeds vs statutory timelines
+Potential Tex. Prop. Code §51.002 violations
+Test notice-to-sale timelines
+Land Brokerage (Andy Flack / HomeLand Properties)
+Large-acreage transactions pre-expansion
+Broker–developer pipeline
+Pull deed indexes; campaign finance; probate overlaps
+Policy Recommendations
+Consumer protections: Injunction halting non-judicial foreclosures; bilingual contracts; mandated utility/flood disclosures.
+District finance oversight: Independent fiscal monitor for MMD #1 and MUD #15; freeze reimbursements pending litigation.
+Transparency reform: Update clerk/deed rules to mandate listing agent affiliations; void filings tied to inactive SOS records.
+Securities oversight: Require disclosure of insider contracting & litigation in any bond offering.
+Broader inquiry: Cross-county pulls for any CR-linked addresses/affiliates (housing authority, CAD, ESD, campaign filings).
+Source Notes (as provided)
+Liberty Vindicator — Paxton places Colony Ridge blame on Bailes, Nichols
+Texas Tribune — Legislature appetite (Oct 19, 2023); OAG lawsuit (Mar 14, 2024)
+Dallas News — Hearing recap (Oct 19, 2023)
+TexasInsider — Congressional letter calling for investigation
+Additional docket and agency records referenced in prior memos
+Annex A — Lawmaker Exposure Matrix (Two-Column Layout)
+Name / Position / Status
+Links: Bills • Investigations • Statutes • Today’s Status
+Robert Nichols — Senator (SD-3) — Retiring
+HB 4341 (2017) linkage; named in AG letter; PAC funnels: TREPAC/AGC/TLR • Today: Retiring; monitor post-office roles.
+Ernest Bailes — Rep. (HD-18) — In office
+HB 4341 (2017) author; family land interests; PAC funnels: TREPAC/TLR • Today: Under scrutiny; monitor committee roles.
+Dade Phelan — Rep. (HD-21) — Not seeking re-election
+No direct CR bill; House agenda influence; PAC: TLR/Realtor PAC • Today: Exiting; monitor donor/contract overlaps.
+Dennis Paul — Rep. (HD-129) — Running for Senate
+Engineering background; monitor district finance votes; PAC: AGC/TLR • Today: Campaign in flight.

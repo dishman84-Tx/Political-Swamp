@@ -1,0 +1,115 @@
+--- PAGE 1 --- 
+ 
+Matthew Poston 
+County Attorney 
+Matthew.Poston@LibertyCounty
+CAO.com 
+1923 SAM HOUSTON ST.  
+STE. 202, LIBERTY, TX 77575  
+P: 936.336.4650 
+F: 936.336.4658 
+Augus
+t 13, 2020 
+The Honor
+able Ken Paxton 
+Attorney General of the State of Texas 
+Att
+ention: Opinion Committee 
+via email to: opinion.committee@oag.texas.gov 
+RE:  
+Application of the nepotism prohibition to the employment by one county 
+commissioner of a prohibited relative of another commissioner in an ex officio road commissioner 
+county. 
+Dear
+ Attorney General Paxton, 
+I am
+ writing this letter to request from your office your opinion about whether the nepotism 
+statute, found in Chapter 573 of the Government Code, would be violated by the employment of a 
+county commissioner’s prohibited relative by another county commissioner in a county that 
+administers its roads pursuant to Subchapter A of Chapter 252 of the Transportation Code.   This 
+request turns on interpreting two attorney general opinions, JM-801 (1987) and DM-158 (1992).  
+Specifically, because DM-158 overrules to the extent of conflict JM-801, can it be said that JM-801’s 
+application of the nepotism statute no longer applies? 
+The nepotism prohibition relevant here is: 
+A public official may not appoint, confirm the appointment of, or vote for the 
+appointment or confirmation of the appointment of an individual to a position that is to be 
+directly or indirectly compensated from public funds or fees of office if: 
+(1) the individual is related to a public official within a degree described by
+Section 573.002; or 
+(2) the public official holds the appointment or confirmation authority as a
+member of a state or local board, the legislature, or a court and the individual is related to 
+another member of that board, legislature, or court within a degree described by Section 
+573.002.   
+Tex. Gov. Code §573.041.  
+Under the facts presented in this request, subsection (1) would not apply, as the hired 
+individual has no relationship with the hiring commissioner.  Subsection (2), on the other hand 
+would appear to apply.  The commissioner does not possess any hiring authority but for his status as 
+a commissioner on commissioners court.  It is impossible to be an ex officio road commissioner but 
+for also being a commissioner sitting on commissioners court.  But that explanation seems lacking if 
+RQ-0372-KP
+FILE# ML-48854-20
+I.D.#  48854
+--- PAGE 2 --- 
+2 
+ 
+no other member of the commissioners court or the court itself does not have the authority to make 
+employment decisions for the position in question.  How could it be said that a person exercised an 
+authority he has by virtue of his membership on a board if the board itself lacks that authority?   
+ Your office has previously addressed a closely related issue in a situation where a county 
+judge hired a prohibited relative of a county commissioner.  County judges are members of the 
+commissioners court and therefore sit on the same “local board”. See Tex. Loc. Gov. Code 
+§81.001(a). Your office determined that in hiring a secretary in his office, the county judge was not 
+acting as a member of commissioners court.  Tex. Att’y Gen. Let. Adv. No. 115 (1975).    
+ In the context of other local governmental entities, prior opinions of your office have looked 
+repeatedly at what entity or person has the hiring authority and whether that authority has been 
+sufficiently delegated.  “The right to control, whether exercised or not, was found to be the decisive 
+factor in several instances in which this office found the nepotism statute to be applicable.”  Tex. 
+Att’y Gen. Op. JM-801, at 3 (1987).  If a home-rule municipality has delegated hiring authority to a 
+city manager through its charter, a relative of a city commissioner may be hired by the city manager 
+without violating the nepotism prohibition so long as that individual isn’t related to the city manager.  
+Tex. Att’y Gen. Op. No. GA-0595 (2008).  But where the city council has kept some oversight by 
+way of a revocable ordinance rather than through the city’s charter, or where delegation to a city 
+manager is less-than-complete, the same employment would violate nepotism.  Tex. Att’y Gen. Op. 
+No. DM-2, at 2 (1991); Tex. Att’y Gen. Op. No. GA-0226, at 5 (2004) (A delegation of authority to 
+‘appoint, subject to consultation with” the city council allows city council to retain some authority 
+and therefore is insufficient.) 
+ School boards, similarly, may delegate “final authority” over “selection of personnel” to 
+superintendents.  Tex. Educ. Code §11.163(a)(1).  If that authority is delegated by the school board, 
+then nepotism does not prohibit the hiring by the superintendent of relatives of the school board.  
+Tex. Att’y Gen. Op. No. GA-0123 (2003). 
+ The facts presented in this request are virtually identical to those presented in 1987 to your 
+office.  Tex. Att’y Gen. Op. No. JM-801 (1987).  There, your office concluded that “the 
+commissioners court has authority to approve or disapprove the hiring decisions of an ex officio 
+road commissioner”.  Id. at 5.  Nepotism would apply, therefore, if a commissioner hired another’s 
+son.  Id.  In large part this appears to be based on legislative history and this opinion reasoned that 
+while, “The 1981 amendment [to the Road and Bridge Act] was necessary to allow ex officio road 
+commissioners to make hiring decisions at all”, “[n]othing in the statutory language or legislative 
+history indicates that the 1981 amendment was intended to prevent the commissioners court from 
+exercising supervision over the hiring decisions of each individual road commissioner.”  Id. at 4, 5.   
+ A subsequent opinion took the opposite view.  Tex. Att’y Gen. Op. No. DM-158 at 4 
+(1992).  (“However, we believe that [JM-801] incorrectly concluded that ‘[n]othing in the statutory 
+language or the legislative history indicates that the 1981 amendment was intended to prevent the 
+commissioners court from exercising supervisions’ over an ex officio road commissioners’ individual 
+hiring or firing decisions”.  The opinion concluded that, “Rather, we feel that the statutory language 
+and legislative history of the 1981 amendment clearly evidence the legislature’s intent to delegate the 
+authority to hire and fire road and bridge employees to the ex officio commissioner, once the 
+commissioners court has authorized the employee positions.”  Id.  Other than this, DM-158 does 
+--- PAGE 3 --- 
+3 
+ 
+not further address the applicability of the nepotism statute in light of that fact, even though it 
+would seem that it renders application of nepotism impossible to these facts. 
+ In summary, it appears that there is a conflict between prior opinions of this office.  Opinion 
+DM-158 appears to nullify the foundation reached by the prior opinion, JM-801, but it stops short 
+of nullifying its conclusion.  In the context of an ex officio road system county, does DM-158 render 
+application of the nepotism statute impossible to a situation where one commissioner hires the 
+prohibited relative of another? 
+  I thank you and your office very much for an opinion on this matter.  If you have any 
+questions regarding this, just let me know.   
+ 
+Sincerely, 
+ 
+ 
+ 
+Matthew C. Poston 
+County Attorney 
