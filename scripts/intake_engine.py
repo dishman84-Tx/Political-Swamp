@@ -135,6 +135,55 @@ class ForensicIntakeEngine:
         }
 
 
+    def log_to_firestore(self, doc_record, extraction_results=None):
+        """Logs ingested document and extraction results into Cloud Firestore."""
+        try:
+            from firestore_sync import get_firestore_client, log_audit_event
+            db = get_firestore_client()
+            doc_id = doc_record["sha256"][:16]
+            doc_data = {
+                "file_name": doc_record["file_name"],
+                "file_path": doc_record["file_path"],
+                "file_size": doc_record["file_size"],
+                "sha256": doc_record["sha256"],
+                "doc_type": doc_record["doc_type"],
+                "upload_date": doc_record["extracted_at"],
+                "status": "extracted" if extraction_results else "queued",
+                "extracted_elements": extraction_results.get("total_extracted_elements", 0) if extraction_results else 0
+            }
+            db.collection("documents").document(doc_id).set(doc_data, merge=True)
+            log_audit_event(
+                action="document_ingested",
+                actor="intake_engine",
+                details=f"Ingested {doc_record['file_name']} (SHA-256: {doc_record['sha256'][:8]}...)",
+                metadata={"doc_id": doc_id, "size": doc_record["file_size"]}
+            )
+            print(f"[+] Ingested and logged to Firestore: {doc_record['file_name']}")
+            return doc_id
+        except Exception as e:
+            print(f"ℹ Firestore document logging skipped: {e}")
+            return None
+
+    def process_inbox(self, inbox_dir=None):
+        """Scans the inbox folder, ingests all pending documents, and syncs to Firestore."""
+        inbox = Path(inbox_dir or (self.workspace_root / "01_evidence" / "inbox"))
+        inbox.mkdir(parents=True, exist_ok=True)
+        files = [f for f in inbox.iterdir() if f.is_file() and not f.name.startswith("~$")]
+        if not files:
+            print(f"[*] Inbox is empty: {inbox}")
+            return []
+
+        processed = []
+        for f in files:
+            print(f"[*] Processing intake file: {f.name}...")
+            record = self.parse_file(f)
+            self.log_to_firestore(record)
+            processed.append(record)
+        return processed
+
+
 if __name__ == "__main__":
     engine = ForensicIntakeEngine()
     print("ForensicIntakeEngine initialized successfully.")
+    engine.process_inbox()
+

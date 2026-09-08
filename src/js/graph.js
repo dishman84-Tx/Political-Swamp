@@ -304,7 +304,14 @@ export function resetLayout() {
 export function fitGraph() {
   if (!cy) return;
   cy.stop();
-  cy.fit(cy.elements(), 60);
+  cy.resize();
+  cy.animate({
+    fit: {
+      eles: cy.elements(),
+      padding: 60
+    },
+    duration: 350
+  });
 }
 
 /**
@@ -312,9 +319,20 @@ export function fitGraph() {
  */
 export function zoomIn() {
   if (!cy) return;
-  cy.zoom({
-    level: cy.zoom() * 1.3,
-    renderedPosition: { x: cy.width() / 2, y: cy.height() / 2 }
+  cy.stop();
+  const currentZoom = cy.zoom();
+  const targetZoom = Math.min(cy.maxZoom(), currentZoom * 1.35);
+  const pan = cy.pan();
+  const w = cy.width() || window.innerWidth;
+  const h = cy.height() || window.innerHeight;
+  const center = { x: w / 2, y: h / 2 };
+  
+  cy.animate({
+    zoom: {
+      level: targetZoom,
+      renderedPosition: center
+    },
+    duration: 250
   });
 }
 
@@ -323,9 +341,19 @@ export function zoomIn() {
  */
 export function zoomOut() {
   if (!cy) return;
-  cy.zoom({
-    level: cy.zoom() / 1.3,
-    renderedPosition: { x: cy.width() / 2, y: cy.height() / 2 }
+  cy.stop();
+  const currentZoom = cy.zoom();
+  const targetZoom = Math.max(cy.minZoom(), currentZoom / 1.35);
+  const w = cy.width() || window.innerWidth;
+  const h = cy.height() || window.innerHeight;
+  const center = { x: w / 2, y: h / 2 };
+
+  cy.animate({
+    zoom: {
+      level: targetZoom,
+      renderedPosition: center
+    },
+    duration: 250
   });
 }
 
@@ -342,4 +370,13 @@ export function focusNode(nodeId) {
   }
 }
 
+// Expose on window for direct access
+if (typeof window !== 'undefined') {
+  window.__zoomIn = zoomIn;
+  window.__zoomOut = zoomOut;
+  window.__fitGraph = fitGraph;
+  window.__resetLayout = resetLayout;
+}
+
 export function getCy() { return cy; }
+

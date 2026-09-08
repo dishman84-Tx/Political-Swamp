@@ -77,24 +77,42 @@
         </div>
       </div>
 
-      <!-- Center: 5 Sleek Workspace Tabs -->
-      <nav class="flex items-center space-x-1 overflow-x-auto no-scrollbar">
-        <button data-tab="graph" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
-          Network Graph
-        </button>
-        <button data-tab="entities" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
-          Entity Matrix
-        </button>
-        <button data-tab="intake" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
-          Intake Studio
-        </button>
-        <button data-tab="timeline" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
-          Timeline
-        </button>
-        <button data-tab="auditlog" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
-          Audit Log
-        </button>
-      </nav>
+      <!-- Center: 5 Sleek Workspace Tabs + High-Visibility Graph Controls -->
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
+        <nav class="flex items-center space-x-1">
+          <button data-tab="graph" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
+            Network Graph
+          </button>
+          <button data-tab="entities" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
+            Entity Matrix
+          </button>
+          <button data-tab="intake" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
+            Intake Studio
+          </button>
+          <button data-tab="timeline" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
+            Timeline
+          </button>
+          <button data-tab="auditlog" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
+            Audit Log
+          </button>
+        </nav>
+
+        <!-- HIGH-VISIBILITY COLOR-CODED GRAPH CONTROLS (BY MATRIX/TABS) -->
+        <div id="navGraphControls" class="flex items-center gap-1.5 pl-2 border-l border-zinc-800 shrink-0">
+          <button id="btnNavZoomIn" onclick="window.__zoomIn && window.__zoomIn()" title="Zoom In (+)" class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-teal-500/20 text-teal-300 border border-teal-500/50 hover:bg-teal-500 hover:text-zinc-950 transition-all shadow-sm active:scale-95 flex items-center gap-1 cursor-pointer">
+            <span class="text-sm leading-none font-black">+</span> ZOOM IN
+          </button>
+          <button id="btnNavZoomOut" onclick="window.__zoomOut && window.__zoomOut()" title="Zoom Out (-)" class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50 hover:bg-amber-500 hover:text-zinc-950 transition-all shadow-sm active:scale-95 flex items-center gap-1 cursor-pointer">
+            <span class="text-sm leading-none font-black">−</span> ZOOM OUT
+          </button>
+          <button id="btnNavFitGraph" onclick="window.__fitGraph && window.__fitGraph()" title="Fit Entire Network" class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-purple-500/20 text-purple-300 border border-purple-500/50 hover:bg-purple-500 hover:text-zinc-950 transition-all shadow-sm active:scale-95 flex items-center gap-1 cursor-pointer">
+            <span>⛶</span> FIT ALL
+          </button>
+          <button id="btnNavResetLayout" onclick="window.__resetLayout && window.__resetLayout()" title="Re-Spread Network" class="px-2 py-1 rounded-md text-xs font-mono font-bold bg-zinc-800 text-zinc-300 border border-zinc-700 hover:bg-zinc-700 hover:text-zinc-100 transition-all active:scale-95 cursor-pointer">
+            SPREAD
+          </button>
+        </div>
+      </div>
 
       <!-- Right: Jump Search & User Profile -->
       <div class="flex items-center gap-2.5 shrink-0">
@@ -120,9 +138,9 @@
         <div id="graphDesktop" class="hidden md:block w-full h-full relative flex-1">
           <!-- Floating HUD: Cartel Legend (Top-Left Pill) -->
           <div class="absolute top-3 left-3 z-20 flex flex-wrap items-center gap-2.5 px-3 py-1.5 rounded-lg bg-zinc-950/85 backdrop-blur-md border border-zinc-800 shadow-xl text-[11px] font-mono pointer-events-auto">
-            <span class="flex items-center gap-1 text-teal-300 font-medium"><span class="w-2 h-2 rounded-full bg-teal-500"></span> Developer (12)</span>
+            <span class="flex items-center gap-1 text-teal-300 font-medium"><span class="w-2 h-2 rounded-full bg-teal-500"></span> Developer (13)</span>
             <span class="text-zinc-700">•</span>
-            <span class="flex items-center gap-1 text-red-300 font-medium"><span class="w-2 h-2 rounded-full bg-red-500"></span> Law Enf (10)</span>
+            <span class="flex items-center gap-1 text-red-300 font-medium"><span class="w-2 h-2 rounded-full bg-red-500"></span> Law Enf (9)</span>
             <span class="text-zinc-700">•</span>
             <span class="flex items-center gap-1 text-amber-300 font-medium"><span class="w-2 h-2 rounded-full bg-amber-500"></span> School/CAD (12)</span>
             <span class="text-zinc-700">•</span>

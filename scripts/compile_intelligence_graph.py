@@ -150,9 +150,36 @@ def main():
     print("[SYNC] Checking Obsidian Contacts/ directory...")
     synced = compiler.sync_obsidian_contacts(updated_data)
     print(f"✓ Synced {synced} contact nodes into Obsidian vault.")
+
+    # Firestore Cloud Synchronization
+    try:
+        from firestore_sync import get_firestore_client, log_audit_event
+        db = get_firestore_client()
+        batch = db.batch()
+        count = 0
+        for node in updated_data["nodes"]:
+            doc_ref = db.collection("entities").document(str(node["id"]))
+            batch.set(doc_ref, node, merge=True)
+            count += 1
+        for edge in updated_data["edges"]:
+            edge_id = edge.get("id") or f"{edge.get('source')}__{edge.get('target')}"
+            doc_ref = db.collection("edges").document(edge_id)
+            batch.set(doc_ref, edge, merge=True)
+            count += 1
+        batch.commit()
+        log_audit_event(
+            action="graph_compilation_sync",
+            actor="compile_intelligence_graph",
+            details=f"Synced {len(updated_data['nodes'])} entities and {len(updated_data['edges'])} edges to Firestore."
+        )
+        print(f"✓ Synced {count} elements directly to Cloud Firestore.")
+    except Exception as fs_err:
+        print(f"ℹ Cloud Firestore sync skipped or unavailable: {fs_err}")
+
     print("[SUCCESS] Intelligence graph compiled and deployed.")
     return 0
 
 
 if __name__ == "__main__":
     sys.exit(main())
+

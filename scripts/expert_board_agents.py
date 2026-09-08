@@ -9,8 +9,10 @@ Deploys specialized domain parsers:
 4. Trial Defense Tactician & Constitutional Scholar (Inquests CCP 49, TPIA 552.108, Brady)
 """
 
+import os
 import re
 import json
+
 
 class ExpertBoardExtractionEngine:
     def __init__(self):
@@ -158,13 +160,47 @@ class ExpertBoardExtractionEngine:
             })
         return findings
 
+    def extract_with_gemini(self, text):
+        """Deep multimodal entity & corruption vector extraction using Gemini 2.0 Flash."""
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            return []
+
+        try:
+            from google import genai
+            client = genai.Client()
+            prompt = f"""You are the Lead Auditor on an 18-Persona Public Integrity Expert Board investigating municipal, judicial, law enforcement, and real estate corruption in Liberty County, Texas.
+
+Analyze the following documentary excerpt and extract entities, roles, cartel nexus, and statutory violations:
+Text:
+{text[:4000]}
+
+Return pure JSON array of objects with keys:
+- "persona": Expert persona name (e.g. "Forensic Toxicologist", "Petroleum Landman", "TCOLE Auditor", "Trial Tactician")
+- "entity_type": Classification (e.g. "official", "developer", "agency", "statute", "survey")
+- "match": The exact entity or finding extracted
+- "vector": One of ["DEVELOPER_BOND", "DEATH_SUPPRESSION", "CAD_BOND_ARBITRAGE", "JUDICIAL_PROSECUTORIAL"]
+"""
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=prompt,
+                config={"response_mime_type": "application/json"}
+            )
+            if response.text:
+                return json.loads(response.text)
+        except Exception as e:
+            # Fall back gracefully to deterministic rule engine
+            return []
+        return []
+
     def analyze_intake_payload(self, text):
         """Executes all 18-Persona board extractions in unified pass."""
         results = {
             "title_real_estate": self.extract_title_real_estate_entities(text),
             "municipal_mud": self.extract_municipal_mud_entities(text),
             "tcole_police": self.extract_tcole_police_entities(text),
-            "trial_constitutional": self.extract_trial_constitutional_entities(text)
+            "trial_constitutional": self.extract_trial_constitutional_entities(text),
+            "gemini_flash_inferences": self.extract_with_gemini(text)
         }
         total_extracted = sum(len(v) for v in results.values())
         results["total_extracted_elements"] = total_extracted
@@ -176,3 +212,4 @@ if __name__ == "__main__":
     sample = "Lt. James McQueen and JP Ralph Fuller processed the Sherry Novosad scene under Inquest 2024-11 on Aaron Cherry Survey A-10."
     res = extractor.analyze_intake_payload(sample)
     print("Extraction sample output:", json.dumps(res, indent=2))
+

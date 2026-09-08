@@ -68,7 +68,15 @@ def extract_entities(filename):
     if "brents" in name_lower: entities.append("[[Tommy Brents]]")
     return ", ".join(entities) if entities else "General Jurisdictional"
 
-# Group files
+# Category directories mapping
+CATEGORY_FOLDERS = [
+    ("01_evidence", "01_EVIDENCE_EXHIBITS", "Primary Evidence & Instruments"),
+    ("02_reports", "02_INVESTIGATIVE_REPORTS", "Investigative Reports & Special Briefs"),
+    ("03_media", "03_SOCIAL_AND_VISUAL_INTAKE", "Social Media & Visual Intake"),
+    ("04_data", "04_REGULATORY_AND_AGENDAS", "Regulatory Agendas & Master Trackers"),
+    ("05_tools", "05_TRACKERS_AND_DATA", "Automation Tools & Analytical Scripts")
+]
+
 catalog = {
     "01_EVIDENCE_EXHIBITS": [],
     "02_INVESTIGATIVE_REPORTS": [],
@@ -77,32 +85,58 @@ catalog = {
     "05_TRACKERS_AND_DATA": []
 }
 
-for f in sorted(files, key=lambda x: x.name.lower()):
-    cat_code, cat_name = classify_file(f.name)
-    entities = extract_entities(f.name)
-    size_kb = round(f.stat().st_size / 1024, 1)
-    catalog[cat_code].append({
-        "name": f.name,
-        "cat_name": cat_name,
-        "size_kb": size_kb,
-        "entities": entities,
-        "ext": f.suffix.lower()
-    })
+total_files = 0
+
+# 1. Scan categorized subdirectories
+for folder_name, cat_code, display_name in CATEGORY_FOLDERS:
+    folder_path = workspace / folder_name
+    if not folder_path.exists():
+        continue
+    for f in sorted(folder_path.iterdir(), key=lambda x: x.name.lower()):
+        if f.is_file() and not f.name.startswith("~$"):
+            total_files += 1
+            rel_path = f"{folder_name}/{f.name}"
+            size_kb = round(f.stat().st_size / 1024, 1)
+            entities = extract_entities(f.name)
+            catalog[cat_code].append({
+                "name": f.name,
+                "rel_path": rel_path,
+                "size_kb": size_kb,
+                "entities": entities,
+                "ext": f.suffix.lower()
+            })
+
+# 2. Scan root files (gdoc, gsheet, xlsx, csv, md)
+for f in sorted(workspace.iterdir(), key=lambda x: x.name.lower()):
+    if f.is_file() and not f.name.startswith("~$"):
+        if f.suffix.lower() in [".gdoc", ".gsheet", ".xlsx", ".csv"]:
+            total_files += 1
+            size_kb = round(f.stat().st_size / 1024, 1) if f.stat().st_size > 0 else 0.1
+            entities = extract_entities(f.name)
+            target_cat = "04_REGULATORY_AND_AGENDAS" if f.suffix.lower() in [".xlsx", ".csv"] else "02_INVESTIGATIVE_REPORTS"
+            catalog[target_cat].append({
+                "name": f.name,
+                "rel_path": f.name,
+                "size_kb": size_kb,
+                "entities": entities,
+                "ext": f.suffix.lower()
+            })
 
 # Build Markdown
+now_str = datetime.now().strftime('%Y-%m-%d')
 md = f"""---
 title: Master Political Swamp Evidence & Document Catalog
 aliases: [Political Swamp Index, Liberty County Evidence Register]
 tags: [catalog, public-integrity, liberty-county, evidence-manifest, obsidian-architecture]
 status: active
-date_updated: {datetime.now().strftime('%Y-%m-%d')}
-total_indexed_files: {len(files)}
+date_updated: {now_str}
+total_indexed_files: {total_files}
 ---
 
-# ?? MASTER POLITICAL SWAMP EVIDENCE & DOCUMENT CATALOG
+# 🏛️ MASTER POLITICAL SWAMP EVIDENCE & DOCUMENT CATALOG
 **Jurisdiction:** Liberty County &bull; Montgomery County &bull; Harris County &bull; Polk County  
 **Single Source of Truth:** `C:/Users/kelly/My Drive/POLITICAL SWAMP/`  
-**Total Tracked Files:** {len(files)} Active Files
+**Total Tracked Files:** {total_files} Active Files
 
 > **CATALOG PURPOSE & RULES:**
 > 1. All investigative reports, public filings, grand jury indictments, and social media leaks are cataloged here with [[Wikilinks]] for instant Obsidian graph connectivity.
@@ -111,7 +145,7 @@ total_indexed_files: {len(files)}
 
 ---
 
-## 1. EVIDENCE & PRIMARY INSTRUMENTS (`01_EVIDENCE_EXHIBITS`)
+## 1. EVIDENCE & PRIMARY INSTRUMENTS (`01_evidence/`)
 *Primary court filings, TexasFile county clerk recordings, TCEQ water dockets, and verified public records.*
 
 | File Name | Entities Linked | Size | Type |
@@ -119,12 +153,12 @@ total_indexed_files: {len(files)}
 """
 
 for item in catalog["01_EVIDENCE_EXHIBITS"]:
-    md += f"| `[{item['name']}]({item['name']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
+    md += f"| `[{item['name']}]({item['rel_path']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
 
 md += f"""
 ---
 
-## 2. INVESTIGATIVE REPORTS & SPECIAL BRIEFS (`02_INVESTIGATIVE_REPORTS`)
+## 2. INVESTIGATIVE REPORTS & SPECIAL BRIEFS (`02_reports/`)
 *Consolidated dossiers, vulnerability audits, forensic memos, and matrix files.*
 
 | File Name | Entities Linked | Size | Type |
@@ -132,12 +166,12 @@ md += f"""
 """
 
 for item in catalog["02_INVESTIGATIVE_REPORTS"]:
-    md += f"| `[{item['name']}]({item['name']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
+    md += f"| `[{item['name']}]({item['rel_path']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
 
 md += f"""
 ---
 
-## 3. SOCIAL MEDIA & VISUAL INTAKE (`03_SOCIAL_AND_VISUAL_INTAKE`)
+## 3. SOCIAL MEDIA & VISUAL INTAKE (`03_media/`)
 *Screenshots, whistleblower message leaks, TikTok video captures, and photographic exhibits.*
 
 | File Name | Entities Linked | Size | Type |
@@ -145,36 +179,36 @@ md += f"""
 """
 
 for item in catalog["03_SOCIAL_AND_VISUAL_INTAKE"]:
-    md += f"| `[{item['name']}]({item['name']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
+    md += f"| `[{item['name']}]({item['rel_path']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
 
 md += f"""
 ---
 
-## 4. REGULATORY AGENDAS & VOTER RECORDS (`04_REGULATORY_AND_AGENDAS`)
-*Commissioners Court regular meeting agendas, TCEQ permits, and daily voter registration poll lists.*
+## 4. REGULATORY AGENDAS & MASTER TRACKERS (`04_data/`)
+*Commissioners Court regular meeting agendas, TCEQ permits, and voter registration poll lists.*
 
 | File Name | Entities Linked | Size | Type |
 |---|---|---|---|
 """
 
 for item in catalog["04_REGULATORY_AND_AGENDAS"]:
-    md += f"| `[{item['name']}]({item['name']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
+    md += f"| `[{item['name']}]({item['rel_path']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
 
 md += f"""
 ---
 
-## 5. DATA REGISTERS & MASTER TRACKERS (`05_TRACKERS_AND_DATA`)
-*Master Excel spreadsheets, Google Sheets links, CSV logs, and JSON telemetry feeds.*
+## 5. AUTOMATION TOOLS & ANALYTICAL SCRIPTS (`05_tools/`)
+*Standalone utility scripts, webhook dispatchers, and pipeline helpers.*
 
 | File Name | Entities Linked | Size | Type |
 |---|---|---|---|
 """
 
 for item in catalog["05_TRACKERS_AND_DATA"]:
-    md += f"| `[{item['name']}]({item['name']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
+    md += f"| `[{item['name']}]({item['rel_path']})` | {item['entities']} | {item['size_kb']} KB | `{item['ext']}` |\n"
 
 catalog_out = workspace / "00_MASTER_POLITICAL_SWAMP_CATALOG.md"
 with open(catalog_out, "w", encoding="utf-8") as f:
     f.write(md)
 
-print(f"[SUCCESS] Generated {catalog_out} indexing {len(files)} files.")
+print(f"[SUCCESS] Generated {catalog_out} indexing {total_files} files.")

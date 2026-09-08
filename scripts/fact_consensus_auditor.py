@@ -19,10 +19,21 @@ class FactConsensusAuditor:
         self.ground_truth = self._load_ground_truth()
 
     def _load_ground_truth(self):
+        try:
+            from firestore_sync import get_firestore_client
+            db = get_firestore_client()
+            nodes = [d.to_dict() for d in db.collection("entities").stream()]
+            edges = [d.to_dict() for d in db.collection("edges").stream()]
+            if nodes:
+                return {"nodes": nodes, "edges": edges}
+        except Exception:
+            pass
+
         if self.graph_path.exists():
             with open(self.graph_path, "r", encoding="utf-8") as f:
                 return json.load(f)
         return {"nodes": [], "edges": []}
+
 
     def verify_candidate_entities(self, extracted_payload):
         """
