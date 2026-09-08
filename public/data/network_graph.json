@@ -1,11 +1,11 @@
 {
   "version": "3.0.0",
-  "generated_at": "2026-09-08T10:28:01.322605",
+  "generated_at": "2026-09-08T10:31:59.757935",
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
     "total_nodes": 43,
-    "total_edges": 63,
+    "total_edges": 69,
     "cartels": 4,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
@@ -27,7 +27,9 @@
       ],
       "surveys": [
         "Aaron Cherry A-10",
-        "J.F. DeRumayor A-103"
+        "J.F. DeRumayor A-103",
+        "Ann Holshousen A-208",
+        "Barton Tarkington A-354"
       ],
       "notes": "Bypassed direct victim restitution; $68M settlement split into $48M SWPPP/drainage and $20M law enforcement facilitation.",
       "degree_connectivity": 12
@@ -119,7 +121,8 @@
       ],
       "surveys": [
         "Aaron Cherry A-10",
-        "J.F. DeRumayor A-103"
+        "J.F. DeRumayor A-103",
+        "Isaiah Fields A-35"
       ],
       "notes": "Controls strategic perimeter blocking tracts positioned along development boundary to receive drainage buyout flips.",
       "degree_connectivity": 2
@@ -173,7 +176,7 @@
       ],
       "surveys": [],
       "notes": "Spouse is Pct 6 Constable Zack Harkness; Father was County Engineer Louis Bergman; Uncle is Comm. Bruce Karbowski.",
-      "degree_connectivity": 5
+      "degree_connectivity": 6
     },
     {
       "id": "louis_bergman",
@@ -256,7 +259,7 @@
       ],
       "surveys": [],
       "notes": "Suppressed deputy bodycam and cell phone extraction for 14+ months under Gov Code \u00a7 552.108 pretext; attempted mandatory NDA.",
-      "degree_connectivity": 8
+      "degree_connectivity": 10
     },
     {
       "id": "james_mcqueen",
@@ -270,7 +273,9 @@
         "National Screening Center STR/Y-STR Lab Report",
         "LCSO IA Complaint 2024-11-N"
       ],
-      "surveys": [],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
       "notes": "Romantic partner to Sherry Novosad; refused voluntary buccal swab despite independent lab finding foreign male DNA at scene.",
       "degree_connectivity": 3
     },
@@ -286,9 +291,11 @@
         "Liberty County Inquest Death Certificate",
         "Independent Ballistics & Pathology Audit"
       ],
-      "surveys": [],
-      "notes": "Staged death scene against front door with .410 derringer; rubber-stamped suicide within hours by JP Fuller.",
-      "degree_connectivity": 3
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Staged death scene at 178 CR 2223 (Tarkington Woods, Aaron Cherry Survey A-10) with .410 derringer; rubber-stamped suicide within hours by JP Fuller to insulate law enforcement personnel.",
+      "degree_connectivity": 4
     },
     {
       "id": "ted_novosad",
@@ -302,7 +309,9 @@
         "STR Comparative Buccal Analysis (Bruce Jeffries)",
         "DA Indictment Dismissal Order"
       ],
-      "surveys": [],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
       "notes": "Voluntarily provided buccal swab; conclusively excluded from foreign male blood found on window curtain and clock pendulum.",
       "degree_connectivity": 1
     },
@@ -340,7 +349,7 @@
       ],
       "surveys": [],
       "notes": "Forensic investigative media firm uncovering multi-county corruption: (1) Liberty: Novosad death cover-up/DNA suppression, Liberty PD pedestrian collision logs; (2) Montgomery: Judge Vince Santini refusal to recuse ('The Cozy Courthouse'), Splendora sports complex retaliation; (3) Harris: Probate court cronyism and NewQuest court secrecy.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "david_hunter",
@@ -356,23 +365,25 @@
       ],
       "surveys": [],
       "notes": "LCSO administrative conduit for commissioning off-balance-sheet deputies and absorbing Fund B law enforcement settlement capital.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "cedric_mcduffie",
       "label": "Lt. Cedric McDuffie",
       "category": "law_enforcement",
       "cartel": "Law Enforcement, Inquest & Death Suppression",
-      "role": "LCSO Surveillance Coordinator",
+      "role": "Lieutenant, Liberty PD Patrol / Flock ALPR Command",
       "status": "Flock ALPR Dragnet Operator",
       "risk_score": 87,
       "anchors": [
         "Maria Acevedo Flock Camera TPIA Audit",
-        "ALPR Interlocal Agreements"
+        "Cleveland City Council Place 3 Recall (May 14, 2011)",
+        "Liberty PD Patrol Division Command Roster",
+        "Cross-County ALPR Interlocal Agreements"
       ],
       "surveys": [],
-      "notes": "Oversees cross-county ALPR surveillance grid linking Liberty and Montgomery counties without statutory audit trails.",
-      "degree_connectivity": 1
+      "notes": "Command Lieutenant over Liberty PD Patrol Division (direct supervisor of Jason Grindstaff); operational commander of multi-county Flock ALPR surveillance hotlists. Recalled from Cleveland City Council Place 3 (May 14, 2011) after firing City Manager Philip Cook, creating deep political rivalry with DA Jennifer Bergman. Key bridge between Liberty PD municipal operations, LCSO joint surveillance, and county prosecutorial gatekeeping.",
+      "degree_connectivity": 5
     },
     {
       "id": "klint_bush",
@@ -412,17 +423,18 @@
       "label": "Jason Grindstaff",
       "category": "indicted_official",
       "cartel": "Law Enforcement, Inquest & Death Suppression",
-      "role": "Former Liberty PD Officer",
+      "role": "Former Liberty PD Patrol Officer",
       "status": "Indicted (Official Oppression & Indecent Assault)",
       "risk_score": 95,
       "anchors": [
-        "Texas Rangers Complaint Dec 2025",
-        "F-5 Resignation Feb 27, 2026",
-        "Surrendered July 3, 2026"
+        "Texas Rangers Grand Jury Indictment July 2026",
+        "Liberty PD F-5 Separation Feb 27, 2026",
+        "Liberty County Jail Booking July 3, 2026",
+        "City of Liberty PD Patrol Division Chain of Command"
       ],
       "surveys": [],
-      "notes": "Resigned while under Texas Ranger investigation; surrendered July 2026; subject of SB 1445 F-5 compliance audit.",
-      "degree_connectivity": 0
+      "notes": "Patrol officer under Lt. Cedric McDuffie at City of Liberty PD; resigned Feb 27, 2026 under Texas Rangers investigation; indicted for Official Oppression and Indecent Assault; surrendered July 3, 2026 and held at Liberty County Jail under Sheriff Bobby Rader. Core link between municipal police misconduct and county jail detention apparatus.",
+      "degree_connectivity": 2
     },
     {
       "id": "burns_arch",
@@ -750,7 +762,9 @@
         "Comptroller Taxpayer No. 32040797154",
         "1532 Greenleaf Dr, Aledo, TX"
       ],
-      "surveys": [],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
       "notes": "Registered agent of Wasteline Engineering, Inc. and managing officer of affiliated engineering/survey entity Breisch & Associates, PLLC in Parker County.",
       "degree_connectivity": 1
     },
@@ -1213,6 +1227,48 @@
       "relation": "REGIONAL_JUDICIAL_NETWORK",
       "evidence": "9th Administrative Judicial Region Coordination",
       "weight": 3
+    },
+    {
+      "source": "jason_grindstaff",
+      "target": "cedric_mcduffie",
+      "relation": "Liberty PD Patrol Chain of Command",
+      "type": "police_command",
+      "weight": 0.95
+    },
+    {
+      "source": "jason_grindstaff",
+      "target": "bobby_rader",
+      "relation": "Liberty County Jail Surrender & Custody",
+      "type": "custody_and_booking",
+      "weight": 0.9
+    },
+    {
+      "source": "cedric_mcduffie",
+      "target": "jennifer_bergman",
+      "relation": "Cleveland Council Rivalry & Prosecution Gatekeeper",
+      "type": "political_rivalry",
+      "weight": 0.92
+    },
+    {
+      "source": "cedric_mcduffie",
+      "target": "david_hunter",
+      "relation": "Pct 5 Interlocal & ALPR Sharing",
+      "type": "law_enforcement_network",
+      "weight": 0.82
+    },
+    {
+      "source": "bobby_rader",
+      "target": "sherry_novosad",
+      "relation": "Contested Death Scene & Bodycam Suppression",
+      "type": "investigative_suppression",
+      "weight": 0.96
+    },
+    {
+      "source": "wayne_dolcefino",
+      "target": "cedric_mcduffie",
+      "relation": "Investigating Liberty PD Nov 2025 Hit-and-Run Logs",
+      "type": "investigative_inquiry",
+      "weight": 0.9
     }
   ],
   "vectors": [
