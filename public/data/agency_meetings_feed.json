@@ -1,0 +1,187 @@
+{
+  "last_synced": "2026-09-08T06:00:02.438967",
+  "records": [
+    {
+      "id": "MCTX-COMM-20240514",
+      "body": "Liberty County Commissioners Court",
+      "meeting_type": "Regular Meeting Minutes",
+      "date": "2024-05-14",
+      "keywords": [
+        "liberty county",
+        "commissioners court",
+        "infrastructure",
+        "drainage",
+        "culverts",
+        "cr 2223"
+      ],
+      "summary": "County road decay, flooding mitigation interlocals, and infrastructure allocation proceedings in Pct 2 & 3.",
+      "file_ref": "PUBLIC_OFFICIALS_AND_COUNTY_REGISTRY.md (\u00a75)",
+      "impact_area": "Liberty County Road Decay & Drainage Claims (\u00a7 101.101)"
+    },
+    {
+      "id": "TCEQ-DATA-CENTER-20201424",
+      "body": "Texas Commission on Environmental Quality (TCEQ)",
+      "meeting_type": "Commissioners Integrated Database / Docket",
+      "date": "2020-1424-WR",
+      "keywords": [
+        "tceq",
+        "water permits",
+        "data center",
+        "raywood",
+        "colony ridge",
+        "wastewater",
+        "select energy"
+      ],
+      "summary": "Docket 2020-1424-WR-PICR / WRTP 13674 water draw permit and industrial watershed runoff compliance.",
+      "file_ref": "POLITICAL SWAMP / 2020-1424-WR-PICR_TCEQ_DATA CENTER.pdf",
+      "impact_area": "TCEQ Watershed Violations & Drainage Runoff"
+    },
+    {
+      "id": "MUD-COLONYRIDGE-20250325",
+      "body": "Colony Ridge MUD Boards (MUD 10-15)",
+      "meeting_type": "Board Meeting Minutes & Bond Authorizations",
+      "date": "2025-03-25",
+      "keywords": [
+        "mud",
+        "colony ridge",
+        "bonds",
+        "special district",
+        "plum grove",
+        "retention basins"
+      ],
+      "summary": "MUD 10-15 bond issuances, developer reimbursement resolutions, and stormwater retention deficits.",
+      "file_ref": "POLITICAL SWAMP / Colony Ridge / 2025-03-25-minutes.pdf",
+      "impact_area": "MUD Bond Authorizations & Developer Subsidies"
+    },
+    {
+      "id": "MCSO-IA-20251228",
+      "body": "Montgomery County Sheriff's Office (Internal Affairs)",
+      "meeting_type": "Official Citizen Misconduct Complaint",
+      "date": "2025-12-28",
+      "keywords": [
+        "mcso",
+        "internal affairs",
+        "citizen complaint",
+        "murphy",
+        "tcole 2184",
+        "spoliation"
+      ],
+      "summary": "Formal administrative complaint documenting unlit bridge shoulder, physical injury, and failure to render medical aid.",
+      "file_ref": "PUBLIC_OFFICIALS_AND_COUNTY_REGISTRY.md (\u00a76)",
+      "impact_area": "MCSO Internal Affairs & TCOLE Non-Compliance"
+    },
+    {
+      "id": "TPIA-OAG-25PIA543",
+      "body": "Office of the Texas Attorney General / Open Records Division",
+      "meeting_type": "TPIA Ruling Request & Briefing",
+      "date": "2026-01-15",
+      "keywords": [
+        "tpia",
+        "open records",
+        "mcso",
+        "murphy",
+        "tcole",
+        "michael morton act",
+        "ccp 39.14",
+        "texas attorney general"
+      ],
+      "summary": "State's formal admission of responsive training records for Deputy Murphy, withheld under \u00a7 552.108 and directly discoverable under CCP Art. 39.14.",
+      "file_ref": "Kelly_Dishman_Defense_Evidence_Investigation_Report.md (\u00a71.2)",
+      "impact_area": "Michael Morton Act & Brady Discovery"
+    },
+    {
+      "id": "TFSC-MINUTES-20260417",
+      "body": "Texas Forensic Science Commission (TFSC)",
+      "meeting_type": "Quarterly Commission Meeting Minutes & Quality Disclosures",
+      "date": "2026-04-17",
+      "keywords": [
+        "tfsc",
+        "forensic science commission",
+        "dps lab",
+        "gas chromatography",
+        "augustyn",
+        "canela",
+        "morin",
+        "blood alcohol",
+        "fermentation"
+      ],
+      "summary": "Forensic quality disclosures regarding DPS Houston Crime Lab blood-alcohol GC-FID testing protocols, analyst corrective action plans (Zachary Augustyn / State v. Morin), and microbial post-draw alcohol generation audit under Tex. CCP Art. 38.35.",
+      "file_ref": "CASE_METADATA.json / app/index.html (\u00a707)",
+      "impact_area": "DPS Houston Crime Lab & Forensic Blood GC-FID Reliability"
+    },
+    {
+      "id": "TFSC-QFT-25-10",
+      "body": "Texas Forensic Science Commission (TFSC)",
+      "meeting_type": "Quality Incident Self-Disclosure",
+      "date": "2025-04-11",
+      "keywords": [
+        "tfsc",
+        "quality forensic toxicology",
+        "qft",
+        "gc-fid",
+        "column swap",
+        "agilent",
+        "bac1",
+        "bac2"
+      ],
+      "summary": "RETROACTIVE TRACKING (Dec 2025 Incident): QFT self-disclosed BAC1 and BAC2 columns reinstalled into incorrect outlets by Agilent field tech. Tabled pending revised root cause analysis.",
+      "file_ref": "TFSC_QFT_Public_Records_Report.md",
+      "impact_area": "QFT Blood Alcohol Accuracy Challenge (Case 25.10)"
+    },
+    {
+      "id": "TFSC-QFT-25-64",
+      "body": "Texas Forensic Science Commission (TFSC)",
+      "meeting_type": "Quality Incident Self-Disclosure",
+      "date": "2026-01-30",
+      "keywords": [
+        "tfsc",
+        "quality forensic toxicology",
+        "qft",
+        "unlicensed analyst",
+        "casework"
+      ],
+      "summary": "RETROACTIVE TRACKING (Dec 2025 Incident Range): QFT toxicology analyst performed casework before being licensed by the Commission. Closed with 'no further action', but supports Art. 38.35 inadmissibility.",
+      "file_ref": "TFSC_QFT_Public_Records_Report.md",
+      "impact_area": "QFT Analyst Licensing & Admissibility (Case 25.64)"
+    },
+    {
+      "id": "TCOLE-COMM-20260305",
+      "body": "Texas Commission on Law Enforcement (TCOLE)",
+      "meeting_type": "Commission Quarterly Meeting & Licensing Standards",
+      "date": "2026-03-05",
+      "keywords": [
+        "tcole",
+        "licensing",
+        "reactivation",
+        "219.11",
+        "sfst",
+        "2184",
+        "seated battery",
+        "murphy",
+        "derby",
+        "f-5"
+      ],
+      "summary": "Adoption of 37 Tex. Admin. Code \u00a7 219.11 peace officer reactivation training mandates, Course 2184 Seated Battery physical infirmity standards, and law enforcement agency F-5 separation report compliance rules.",
+      "file_ref": "Kelly_Dishman_Defense_Evidence_Investigation_Report.md (\u00a72.1-\u00a72.4)",
+      "impact_area": "TCOLE Statutory Officer Qualifications & SFST Standards"
+    },
+    {
+      "id": "DPS-COMM-20260212",
+      "body": "Texas Public Safety Commission (DPS)",
+      "meeting_type": "Commission Regular Meeting & Crime Lab Division Review",
+      "date": "2026-02-12",
+      "keywords": [
+        "dps",
+        "public safety commission",
+        "crime lab",
+        "toxicology",
+        "specimen storage",
+        "chain of custody",
+        "37 tac ch 19"
+      ],
+      "summary": "DPS Crime Laboratory Division compliance review, whole-blood specimen refrigeration logging standards, tube preservative inspection rules, and measurement uncertainty calculation budgets under 37 TAC Part 1 Ch 19.",
+      "file_ref": "app/index.html (\u00a707) / Kelly_Dishman_Defense_Evidence_Investigation_Report.md",
+      "impact_area": "DPS Crime Lab Specimen Integrity & Chain of Custody"
+    }
+  ]
+}

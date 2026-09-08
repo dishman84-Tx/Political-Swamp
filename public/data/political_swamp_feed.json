@@ -1,0 +1,43 @@
+{
+  "last_synced": "2026-09-08T06:00:02.438967",
+  "source": "POLITICAL SWAMP / Colony Ridge Dossier",
+  "total_entries": 84,
+  "featured_investigations": [
+    {
+      "id": "modalHarkness",
+      "title": "Constable Zack Harkness & DA Jennifer Bergman Family Conflict",
+      "subtitle": "Precinct 6 Enforcement \u2022 Dual-Elected Spouse Office \u2022 Selective Civil Process",
+      "status": "confirmed_record"
+    },
+    {
+      "id": "modalHunterPct5Audit",
+      "title": "Constable David Hunter 7-Year Precinct 5 Audit",
+      "subtitle": "Pct 5 Fee Collection \u2022 LCSO Deputy Commission Conduit \u2022 Jurisdictional Canvas",
+      "status": "confirmed_record"
+    },
+    {
+      "id": "modalPrecincts1to4",
+      "title": "County Commissioners & Precinct Alignment (Pct 1\u20134)",
+      "subtitle": "Commissioners Court Interlocals \u2022 Road Maintenance Contracts \u2022 Boundary Alignment",
+      "status": "confirmed_record"
+    },
+    {
+      "id": "modalSWPPP",
+      "title": "Stormwater Pollution Prevention (SWPPP) & TCEQ Watershed Complaint",
+      "subtitle": "TCEQ Region 12 Citizen Complaint \u2022 WQ0016839001 / WQ0016799001 / TCEQ WQ0016798001 \u2022 Luce Bayou Watershed",
+      "status": "open_inquiry"
+    },
+    {
+      "id": "modalLakeHouston",
+      "title": "Lake Houston Sedimentation & Watershed Impact",
+      "subtitle": "Environmental & Downstream Siltation Audit",
+      "status": "confirmed_record"
+    },
+    {
+      "id": "modalPAC",
+      "title": "Developer Campaign Finance & PAC Pipeline",
+      "subtitle": "Buckeye Values PAC \u2022 $1.5M+ Abbott Donations \u2022 Briscoe Cain & Local PAC Conduit",
+      "status": "confirmed_record"
+    }
+  ]
+}

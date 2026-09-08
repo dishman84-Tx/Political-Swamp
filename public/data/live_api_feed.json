@@ -1,0 +1,75 @@
+{
+  "last_synced": "2026-09-08T06:00:02.438967",
+  "courtlistener_records": {
+    "McNeely": {
+      "query": "Missouri v. McNeely",
+      "status": "CONNECTED (Cached)"
+    },
+    "Brady": {
+      "query": "Brady v. Maryland",
+      "count": 29300,
+      "status": "LIVE & VERIFIED"
+    },
+    "Franks": {
+      "query": "Franks v. Delaware",
+      "count": 22801,
+      "status": "LIVE & VERIFIED"
+    },
+    "Swanzy": {
+      "query": "Swanzy v. State",
+      "count": 85,
+      "status": "LIVE & VERIFIED"
+    }
+  },
+  "pubmed_clinical_studies": {
+    "psvt_somnolence": {
+      "query": "paroxysmal supraventricular tachycardia somnolence",
+      "count": 20,
+      "pmids": [
+        "42100848",
+        "42016453",
+        "37671261",
+        "34148375",
+        "32561703"
+      ],
+      "status": "LIVE & VERIFIED"
+    },
+    "candida_blood_fermentation": {
+      "query": "candida albicans alcohol blood fermentation",
+      "count": 10,
+      "pmids": [
+        "41942867",
+        "36199211",
+        "24606409",
+        "16856767",
+        "16772842"
+      ],
+      "status": "LIVE & VERIFIED"
+    },
+    "cervical_dystonia_balance": {
+      "query": "cervical dystonia balance impairment",
+      "count": 20,
+      "pmids": [
+        "42260058",
+        "41553471",
+        "41464464",
+        "41308342",
+        "41306656"
+      ],
+      "status": "LIVE & VERIFIED"
+    }
+  },
+  "openalex_research": {
+    "arrhythmia_hemodynamics": {
+      "query": "PSVT arrhythmia hemodynamic collapse",
+      "count": 43,
+      "status": "LIVE & VERIFIED"
+    },
+    "blood_microbial_alcohol": {
+      "query": "blood specimen microbial alcohol production",
+      "count": 16590,
+      "status": "LIVE & VERIFIED"
+    }
+  },
+  "nhtsa_specs": {}
+}

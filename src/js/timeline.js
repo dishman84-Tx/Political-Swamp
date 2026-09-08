@@ -4,6 +4,30 @@
 
 const TIMELINE_EVENTS = [
   {
+    date: '2026-09-04',
+    title: "Montgomery County — Dolcefino Confronts Judge Vince Santini ('The Cozy Courthouse')",
+    entities: ['wayne_dolcefino', 'judge_vince_santini'],
+    cartel: 'Judicial & DA',
+    detail: "Wayne Dolcefino calls on 457th District Court Judge Vince Santini to recuse and cease hearing cases involving the spouse of another sitting Montgomery County judge (Tucker). Investigation exposes cronyism, judicial favors, and refusal to step down from conflicted dockets.",
+    anchors: ["Dolcefino Media 'The Cozy Courthouse' (Sept 4, 2026)", '457th District Court Recusal Motions'],
+  },
+  {
+    date: '2026-08-24',
+    title: 'Mont Belvieu — Dolcefino Exposes Municipal Towing Monopoly',
+    entities: ['wayne_dolcefino'],
+    cartel: 'Developer & Bond Syndicate',
+    detail: 'Dolcefino investigation reveals exclusive municipal towing and impound monopoly in Mont Belvieu on the Harris/Chambers county line, highlighting predatory fees and city hall contract steering without competitive bidding.',
+    anchors: ["Dolcefino Media 'Monopoly in Mont Belvieu' (Aug 24, 2026)"],
+  },
+  {
+    date: '2026-08-21',
+    title: "Liberty County — Dolcefino Files New Legal Action in Novosad Cover-Up ('Chasing Justice')",
+    entities: ['wayne_dolcefino', 'bobby_rader', 'james_mcqueen', 'sherry_novosad'],
+    cartel: 'Novosad Homicide',
+    detail: 'Dolcefino Consulting files new legal actions targeting Liberty County officials and local judges for withholding deputy bodycam footage from the Sherry Novosad death scene, following Texas OAG orders mandating disclosure under the Public Information Act.',
+    anchors: ["Dolcefino Media 'Chasing Justice' (Aug 21, 2026)", 'Cause No. CV24-00192 (Dolcefino v. LCSO)'],
+  },
+  {
     date: '2026-08-01',
     title: 'Klint Bush Indicted — 11 Counts Child Pornography',
     entities: ['klint_bush'],
@@ -19,6 +43,23 @@ const TIMELINE_EVENTS = [
     detail: 'Former Liberty PD officer surrendered on indictment for Official Oppression and Indecent Assault. Resigned Feb 27, 2026 while under Texas Rangers investigation.',
     anchors: ['June 2026 Indictment', 'SB 1445 F-5 Separation Audit'],
   },
+  {
+    date: '2025-11-20',
+    title: 'City of Liberty PD — Veteran Struck by Patrol Vehicle / Bodycam Cover-up Exposed',
+    entities: ['wayne_dolcefino', 'bobby_rader'],
+    cartel: 'Law Enforcement & Police',
+    detail: 'City of Liberty PD patrol unit strikes local veteran pedestrian. City police logs minimize crash as accidental side-mirror clip. Dolcefino Consulting uncovers bodycam and DPS Region 2 crash reconstruction proving violent direct impact and narrative manipulation.',
+    anchors: ["Dolcefino Consulting Investigation 'Liberty Lies'", 'DPS Region 2 Reconstruction Report'],
+  },
+  {
+    date: '2025-06-15',
+    title: 'MUD 15 / Wasteline Engineering — Sludge Export & WWTP Permit WQ0016839001',
+    entities: ['wasteline_eng', 'glenn_breisch', 'mud_15'],
+    cartel: 'Developer & Bond Syndicate',
+    detail: 'Wasteline Engineering, Inc. (Glenn Breisch, President / Jason Breisch, Agent) submits engineering designs for MUD 15 Tarkington WWTP #1 (TCEQ WQ0016839001), authorizing sludge export to Austin and unpermitted drainage bypass into Luce Bayou watershed.',
+    anchors: ['TCEQ Permit WQ0016839001', 'Texas SOS File No. 0066609400', 'MUD 15 Minutes'],
+  },
+
   {
     date: '2026-06-01',
     title: 'Emily Kebodeaux Cook — Bond Revoked, GPS Ankle Monitor',
