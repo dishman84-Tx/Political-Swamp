@@ -4,8 +4,8 @@
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
-    "total_nodes": 73,
-    "total_edges": 164,
+    "total_nodes": 83,
+    "total_edges": 191,
     "cartels": 4,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
@@ -32,7 +32,7 @@
         "Barton Tarkington A-354"
       ],
       "notes": "Bypassed direct victim restitution; $68M settlement split into $48M SWPPP/drainage and $20M law enforcement facilitation.",
-      "degree_connectivity": 22
+      "degree_connectivity": 24
     },
     {
       "id": "trey_harris",
@@ -50,7 +50,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Co-owner Liberty Paving LLC; top contributor to Buckeye Values PAC and local county slates.",
-      "degree_connectivity": 5
+      "degree_connectivity": 7
     },
     {
       "id": "john_harris",
@@ -68,7 +68,7 @@
         "J.F. DeRumayor A-103"
       ],
       "notes": "Manages land acquisition conduits and perimeter blocking acreage.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "mud_15",
@@ -195,7 +195,7 @@
         "A-103"
       ],
       "notes": "Approved subdivision drainage variances and road plats; familial nexus to DA Bergman and Humble Surveying.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "zack_harkness",
@@ -413,7 +413,7 @@
       ],
       "surveys": [],
       "notes": "LCSO administrative conduit for commissioning off-balance-sheet deputies and absorbing Fund B law enforcement settlement capital.",
-      "degree_connectivity": 3
+      "degree_connectivity": 4
     },
     {
       "id": "cedric_mcduffie",
@@ -448,7 +448,7 @@
       ],
       "surveys": [],
       "notes": "Certified the 2-voter $88.36M MUD 15 bond election; indicted for theft of public funds and 11 counts child pornography.",
-      "degree_connectivity": 7
+      "degree_connectivity": 8
     },
     {
       "id": "emily_cook",
@@ -501,7 +501,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Master architect for County Jail and Annex; auditor flagged $612K pass-through via White Construction; shares address with Tom Johnson.",
-      "degree_connectivity": 5
+      "degree_connectivity": 6
     },
     {
       "id": "tom_johnson",
@@ -521,7 +521,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "Physical address identical to Brenda Burns; controls M-Club shadow account; major contractor on TISD and TxDOT right-of-way.",
-      "degree_connectivity": 9
+      "degree_connectivity": 10
     },
     {
       "id": "tarkington_isd",
@@ -546,7 +546,7 @@
         "Ann Holshousen A-208"
       ],
       "notes": "Governing board for Tarkington ISD (~1,874 students). Full Trustee Roster: Lane Gulledge (Board President / Gulledge Homes), Kevin Johnson (Vice President / J-Con Services), Susan Rollins (Trustee / spouse of Jimmy Rollins, CAD Chief Appraiser), Dwayne Stovall (Trustee / Diamond K Equipment), and Cory Anderson (Former Trustee / ANDCO LLC / MUD 1). Actively negotiating 50-acre confidential land purchase via $95M bond referendum while Trustee Susan Rollins' husband Jimmy Rollins controls CAD property tax valuations and ag-shields. Directing campus contracts to insider construction firms and co-managing off-book M-Club booster accounts.",
-      "degree_connectivity": 11,
+      "degree_connectivity": 14,
       "overlaps_and_oversight": [
         {
           "title": "50-Acre Confidential Land Deal (\u00a7 551.072)",
@@ -582,7 +582,7 @@
         "A-35"
       ],
       "notes": "School board voting member whose construction entities receive bond subcontracts and CAD board land re-appraisals.",
-      "degree_connectivity": 3,
+      "degree_connectivity": 4,
       "overlaps_and_oversight": [
         {
           "title": "Spousal School Board & CAD Appraisal Nexus",
@@ -631,7 +631,7 @@
       ],
       "surveys": [],
       "notes": "Received $2,000 in public LCHA housing funds via Cypritech shell company for no documented services.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "wasteline_eng",
@@ -742,7 +742,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "Approved Dayton PIDs and clearing contracts benefiting Tom Johnson and Encino Landscape syndicates.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "tarkington_expansion_corridor",
@@ -770,7 +770,7 @@
         "Isaiah Fields A-35"
       ],
       "notes": "Northeast expansion artery designed to connect SH 99 Grand Parkway through Colony Ridge to FM 321 in Tarkington Prairie. Delayed by landowner eminent domain resistance, MUD 15 runoff litigation, and MMD 1 debt caps.",
-      "degree_connectivity": 14,
+      "degree_connectivity": 17,
       "overlaps_and_oversight": [
         {
           "title": "TxDOT Right-of-Way Gridlock & Landowner Resistance",
@@ -829,7 +829,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "Tarkington ISD School Board Trustee who votes on campus bond land acquisitions and vendor awards while husband Jimmy Rollins sits on the Liberty CAD Board and serves as Chief Appraiser setting district tax valuations.",
-      "degree_connectivity": 3,
+      "degree_connectivity": 4,
       "overlaps_and_oversight": [
         {
           "title": "Spousal Appraisal District Conflict of Interest",
@@ -1157,7 +1157,7 @@
       ],
       "surveys": [],
       "notes": "Terminated on November 13, 2025 following an official Texas Rangers investigation into allegations of unauthorized access to inmate Domingo Quintana inside the Liberty County Jail.",
-      "degree_connectivity": 3,
+      "degree_connectivity": 4,
       "overlaps_and_oversight": [
         {
           "title": "Unauthorized Jail Access & Inmate Contraband",
@@ -1209,7 +1209,7 @@
       ],
       "surveys": [],
       "notes": "County public housing authority whose board and administration were co-opted: Chairman Klint Bush and Commissioner Emily Kebodeaux Cook indicted for misapplying public funds and steering money to private shell companies.",
-      "degree_connectivity": 5
+      "degree_connectivity": 6
     },
     {
       "id": "chandler_cook_law",
@@ -1247,7 +1247,7 @@
         "J.F. DeRumayor A-103"
       ],
       "notes": "Private engineering, surveying, and land development enterprise founded by former County Engineer Louis Bergman and co-owned by DA Jennifer Bergman and Constable Zack Harkness. Serves as contractor and surveyor on developments while family members hold prosecutorial, engineering approval, and law enforcement seats.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "harkness_oilfield",
@@ -1284,7 +1284,7 @@
         "J.F. DeRumayor A-103"
       ],
       "notes": "Municipal government where DA Jennifer Bergman served as council member alongside opposing faction leader Lt. Cedric McDuffie (recalled in 2011). Council voted to annex private developer land owned by Bergman family companies (Windwood Development) and approve ETJ municipal management district boundaries.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "m_club_foundation",
@@ -1341,7 +1341,7 @@
         "FM 1008 Corridor"
       ],
       "notes": "Convicted drug trafficker who partnered with Lozano family entities in Monarquias Magnolia LLC and allegedly transferred land assets along the FM 1008 corridor to entities tied to the Bergman/Harkness family enterprise.",
-      "degree_connectivity": 1
+      "degree_connectivity": 2
     },
     {
       "id": "scott_ellis",
@@ -1463,7 +1463,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Served on Liberty County MUD No. 1 alongside developer affiliates, approving early utility debt models before Southern MMD 1 was spun off.",
-      "degree_connectivity": 1
+      "degree_connectivity": 2
     },
     {
       "id": "sheriff_clint_mcrae",
@@ -1548,7 +1548,197 @@
         "Donahoe Survey (FM 1008)"
       ],
       "notes": "Corporate shell entity headquartered at 10712 Thomas T Trail, managed by Walter Dean. Allegedly received public MUD 15 bond proceeds for real estate and right-of-way transfers in the FM 1008 corridor.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
+    },
+    {
+      "id": "cypritech",
+      "label": "Cypritech (Tommy Brents)",
+      "category": "vendor",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Shell IT Consulting Conduit",
+      "status": "Diverted LCHA Public Housing Funds",
+      "risk_score": 92,
+      "anchors": [
+        "LCHA Cypritech Invoice Audit ($2,000 Disbursement)",
+        "Cause No. CR37190 Grand Jury Exhibit 14",
+        "Texas SOS Entity Filings (Tommy Brents)"
+      ],
+      "surveys": [],
+      "notes": "Entity owned by mayoral candidate Tommy Brents that received $2,000 in public housing funds from LCHA Chairman Klint Bush under the guise of IT consulting without performing documented services.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "t_rex_management",
+      "label": "CRI T-Rex Management, LLC",
+      "category": "developer",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Harris Family Master Operating & Management Entity",
+      "status": "DOJ/CFPB Co-Defendant Shell",
+      "risk_score": 98,
+      "anchors": [
+        "DOJ/CFPB Civil Action No. 4:23-cv-04845",
+        "Texas SOS File No. 0802871142",
+        "State of Texas v. Colony Ridge Inc."
+      ],
+      "surveys": [
+        "Aaron Cherry A-10",
+        "J.F. DeRumayor A-103"
+      ],
+      "notes": "Core management and treasury shell co-owned by Trey and John Harris; named defendant in the DOJ/CFPB federal civil rights lawsuit and $68M consent decree.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "loan_originator_services",
+      "label": "Loan Originator Services, LLC",
+      "category": "developer",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Predatory Mortgage & Note Originator",
+      "status": "Foreclosure Mill Instrument (DOJ Co-Defendant)",
+      "risk_score": 99,
+      "anchors": [
+        "CFPB Enforcement Action (Reverse Redlining / Bait-and-Switch)",
+        "Deceptive Trade Practices Act Claims (OAG CV2403479)",
+        "Liberty County Deed Foreclosure Notices"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Unlicensed mortgage originator entity used by Colony Ridge to execute predatory seller-financed contracts and churn foreclosures at 50 times the national average.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "windwood_development",
+      "label": "Windwood Development / El Dorado Funding",
+      "category": "land_syndicate",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "Louis Bergman Land Development & Financing Conduits",
+      "status": "Municipal Annexation & Seller-Financing Conduits",
+      "risk_score": 90,
+      "anchors": [
+        "Deed Doc #0000956598 (Louis Bergman Power of Attorney)",
+        "Cleveland City Council Annexation Ordinances (Bergman Seat 4)",
+        "El Dorado Funding Seller-Financing Notes"
+      ],
+      "surveys": [
+        "J.F. DeRumayor A-103"
+      ],
+      "notes": "Private development and seller-financing vehicles founded by former County Engineer Louis Bergman; annexed by the City of Cleveland while daughter Jennifer Bergman served on the city council.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "monarquias_magnolia",
+      "label": "Monarquias Magnolia, LLC",
+      "category": "land_syndicate",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Lozano Family & C\u00e9sar Garc\u00eda Shell Entity",
+      "status": "10712 Thomas T Trail Headquarters",
+      "risk_score": 94,
+      "anchors": [
+        "Texas SOS File No. 0803119481",
+        "10712 Thomas T Trail Property Cross-Index",
+        "FM 1008 Land Speculation Dossier"
+      ],
+      "surveys": [
+        "FM 1008 Corridor"
+      ],
+      "notes": "Corporate partnership between the Lozano family and convicted drug trafficker C\u00e9sar Javier Garc\u00eda, operating from the shared shell hub at 10712 Thomas T Trail alongside Dudley Estate 1938 LLC.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "encino_landscape",
+      "label": "Encino Landscape & PBK Holdings LLC",
+      "category": "land_syndicate",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Tom Johnson Land Clearing & Speculation Conduits",
+      "status": "Dayton PID & TxDOT Right-of-Way Contractor",
+      "risk_score": 91,
+      "anchors": [
+        "Texas SOS 0802991045",
+        "Deed Doc #2016016901 (Shared Burns Address)",
+        "Dayton PID Road & Drainage Clearing Invoices"
+      ],
+      "surveys": [
+        "Phillip Miller A-800"
+      ],
+      "notes": "Commercial land clearing, dirt work, and holding entities owned by Tom Johnson; co-located with Burns Architecture; primary beneficiary of Dayton PID contracts approved by Comm. Leon Wilson.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "andco_rentals",
+      "label": "ANDCO LLC / Andco Rentals",
+      "category": "vendor",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Cory Anderson Heavy Equipment & Arterial Land Conduit",
+      "status": "Doc #W2025018238 (61.05 Ac in Arterial Path)",
+      "risk_score": 89,
+      "anchors": [
+        "Deed Doc #W2025018238 (Ann Holshousen A-208)",
+        "Constable David Hunter K-9 Unit Equipment Donations",
+        "MUD No. 1 Assistant Secretary Governance"
+      ],
+      "surveys": [
+        "Ann Holshousen A-208"
+      ],
+      "notes": "Commercial equipment and land acquisition company owned by Cory and Shannon Anderson; holds 61.05 acres directly along the SH 99 to FM 321 expansion corridor while donating equipment to Constable David Hunter.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "j_rollins_construction",
+      "label": "J. Rollins Construction / Rollins Excell LLC",
+      "category": "vendor",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Rollins Family Commercial Contracting Arm",
+      "status": "School Campus Subcontractor & CAD Appraisal Shield",
+      "risk_score": 93,
+      "anchors": [
+        "Texas SOS 0803512948",
+        "TISD Campus Construction Site Work Subcontracts",
+        "TISD Trustee Chapter 171 Conflict Affidavits"
+      ],
+      "surveys": [
+        "Phillip Miller A-800",
+        "Isaiah Fields A-35"
+      ],
+      "notes": "Private construction company operated by Liberty CAD Chief Appraiser Jimmy Rollins and TISD Trustee Susan Rollins; receives campus bond subcontracts and county equipment clearing work.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "diamond_k_equipment",
+      "label": "Diamond K Equipment",
+      "category": "vendor",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Heavy Equipment Rental & Pipeline ROW Clearing",
+      "status": "TISD Trustee Commercial Business (Dwayne Stovall)",
+      "risk_score": 85,
+      "anchors": [
+        "Texas SOS Entity Filings (Diamond K Equipment)",
+        "Pipeline ROW Equipment Invoices",
+        "TISD Board Trustee Conflict Ledgers"
+      ],
+      "surveys": [
+        "Ann Holshousen A-208"
+      ],
+      "notes": "Heavy equipment rental and land clearing company owned by sitting TISD Trustee Dwayne Stovall; performs right-of-way clearing along pipeline corridors and school expansion perimeters.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "gulledge_homes",
+      "label": "Gulledge Homes Construction",
+      "category": "vendor",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Residential Development & General Contracting",
+      "status": "TISD Board President Commercial Business (Lane Gulledge)",
+      "risk_score": 86,
+      "anchors": [
+        "Texas SOS Corporate Records (Gulledge Homes LLC)",
+        "TISD $95M Bond Proposition Sponsorship",
+        "Highway Arterial Residential Subdivisions"
+      ],
+      "surveys": [
+        "Phillip Miller A-800"
+      ],
+      "notes": "Residential construction enterprise owned by Tarkington ISD Board President Lane Gulledge; benefits from school utility extensions and highway corridor infrastructure.",
+      "degree_connectivity": 2
     }
   ],
   "edges": [
@@ -2698,6 +2888,195 @@
       "target": "tom_johnson",
       "relation": "Documented M-Club & Land Syndicate Conflicts",
       "type": "media_investigation",
+      "weight": 0.9
+    },
+    {
+      "source": "tommy_brents",
+      "target": "cypritech",
+      "relation": "Owner & Registered Agent",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "lcha",
+      "target": "cypritech",
+      "relation": "$2,000 Fraudulent IT Consulting Payment",
+      "type": "financial_conduit",
+      "weight": 0.98
+    },
+    {
+      "source": "klint_bush",
+      "target": "cypritech",
+      "relation": "Authorized Check Disbursement Without Services",
+      "type": "financial_theft",
+      "weight": 0.98
+    },
+    {
+      "source": "trey_harris",
+      "target": "t_rex_management",
+      "relation": "Managing Member & Co-Owner",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "john_harris",
+      "target": "t_rex_management",
+      "relation": "Managing Member & Co-Owner",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "t_rex_management",
+      "target": "colony_ridge",
+      "relation": "Master Operational & Cash Flow Management",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "colony_ridge",
+      "target": "loan_originator_services",
+      "relation": "Predatory Financing Arm / Foreclosure Churn",
+      "type": "predatory_lending",
+      "weight": 1.0
+    },
+    {
+      "source": "loan_originator_services",
+      "target": "trey_harris",
+      "relation": "Controlled Financing Instrument",
+      "type": "corporate",
+      "weight": 0.95
+    },
+    {
+      "source": "louis_bergman",
+      "target": "windwood_development",
+      "relation": "Founder & Managing Developer",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "windwood_development",
+      "target": "cleveland_city_council",
+      "relation": "Annexed by City Council while Bergman on Board",
+      "type": "annexation",
+      "weight": 0.96
+    },
+    {
+      "source": "windwood_development",
+      "target": "bergman_engineering",
+      "relation": "Engineering & Platting Interlock",
+      "type": "corporate",
+      "weight": 0.95
+    },
+    {
+      "source": "cesar_javier_garcia",
+      "target": "monarquias_magnolia",
+      "relation": "Co-Owner & Asset Staging Partner",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "monarquias_magnolia",
+      "target": "dudley_estate_llc",
+      "relation": "Shared 10712 Thomas T Trail Corporate Hub",
+      "type": "corporate",
+      "weight": 0.95
+    },
+    {
+      "source": "monarquias_magnolia",
+      "target": "ramiro_lozano",
+      "relation": "Lozano Family Corporate Partnership",
+      "type": "corporate",
+      "weight": 0.92
+    },
+    {
+      "source": "tom_johnson",
+      "target": "encino_landscape",
+      "relation": "Owner & Managing Member",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "encino_landscape",
+      "target": "burns_arch",
+      "relation": "Shared Physical Address (Doc #2016016901)",
+      "type": "deed_overlap",
+      "weight": 0.98
+    },
+    {
+      "source": "leon_wilson",
+      "target": "encino_landscape",
+      "relation": "Awarded Dayton PID Clearing Contracts",
+      "type": "financial_conduit",
+      "weight": 0.95
+    },
+    {
+      "source": "andco_rentals",
+      "target": "tarkington_expansion_corridor",
+      "relation": "Doc #W2025018238 (61.05 Ac in Path)",
+      "type": "deed_overlap",
+      "weight": 0.98
+    },
+    {
+      "source": "andco_rentals",
+      "target": "david_hunter",
+      "relation": "Equipment & K-9 Donations to Pct 5",
+      "type": "financial_conduit",
+      "weight": 0.9
+    },
+    {
+      "source": "andco_rentals",
+      "target": "donald_burton",
+      "relation": "MUD Governance & Equipment Nexus",
+      "type": "corporate",
+      "weight": 0.88
+    },
+    {
+      "source": "jimmy_rollins",
+      "target": "j_rollins_construction",
+      "relation": "Owner & Principal Contractor",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "j_rollins_construction",
+      "target": "tarkington_isd",
+      "relation": "Campus Site Work & Bond Subcontracts",
+      "type": "vendor_contract",
+      "weight": 0.95
+    },
+    {
+      "source": "j_rollins_construction",
+      "target": "susan_rollins",
+      "relation": "Spousal Chapter 171 Conflict Recipient",
+      "type": "ch171_conflict",
+      "weight": 0.98
+    },
+    {
+      "source": "diamond_k_equipment",
+      "target": "tarkington_isd",
+      "relation": "Trustee Dwayne Stovall Heavy Equipment Ties",
+      "type": "vendor_contract",
+      "weight": 0.9
+    },
+    {
+      "source": "diamond_k_equipment",
+      "target": "tarkington_expansion_corridor",
+      "relation": "Pipeline ROW Dirt Clearing",
+      "type": "vendor_contract",
+      "weight": 0.88
+    },
+    {
+      "source": "gulledge_homes",
+      "target": "tarkington_isd",
+      "relation": "Board President Lane Gulledge Construction Ties",
+      "type": "ch171_conflict",
+      "weight": 0.92
+    },
+    {
+      "source": "gulledge_homes",
+      "target": "tarkington_expansion_corridor",
+      "relation": "Highway Arterial Residential Subdivisions",
+      "type": "deed_overlap",
       "weight": 0.9
     }
   ],
