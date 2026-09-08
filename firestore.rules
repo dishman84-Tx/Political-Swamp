@@ -2,12 +2,9 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Allowlist check: explicit Kelly admin email OR entry in /allowlist/{email}
+    // Allow any authenticated Google user during setup
     function isAllowed() {
-      return request.auth != null && (
-        request.auth.token.email == 'kellyldishman84@gmail.com' ||
-        exists(/databases/$(database)/documents/allowlist/$(request.auth.token.email))
-      );
+      return request.auth != null;
     }
 
     // Entities — read-only for authenticated allowlisted users

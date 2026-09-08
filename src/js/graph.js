@@ -118,7 +118,7 @@ export function initGraph(entities, edges) {
       },
       // Hover Node
       {
-        selector: 'node:hover',
+        selector: 'node.hovered',
         style: {
           'border-width': 5,
           'border-color': '#ffffff',
@@ -164,7 +164,7 @@ export function initGraph(entities, edges) {
       },
       // Highlighted/Connected Edge — Shows label brightly with dark pill outline
       {
-        selector: 'edge.highlighted, edge:hover',
+        selector: 'edge.highlighted, edge.hovered',
         style: {
           'width': 4,
           'line-opacity': 1,
@@ -192,17 +192,19 @@ export function initGraph(entities, edges) {
     ],
     layout: {
       name: 'cose',
-      animate: true,
-      animationDuration: 900,
-      nodeRepulsion: () => 7500000,
-      idealEdgeLength: () => 290,
-      edgeElasticity: () => 32,
-      gravity: 0.12,
-      padding: 70,
-      nodeOverlap: 50,
+      animate: false, // Instant exact calculation
+      nodeRepulsion: () => 3800000,
+      idealEdgeLength: () => 190,
+      edgeElasticity: () => 40,
+      gravity: 0.22,
+      padding: 60,
+      nodeOverlap: 20,
       randomize: false,
     }
   });
+
+  // Fit all elements immediately upon initialization
+  cy.fit(cy.elements(), 60);
 
   // Node Click -> Isolate Cluster & Open Drawer
   cy.on('tap', 'node', (evt) => {
@@ -220,14 +222,18 @@ export function initGraph(entities, edges) {
     }
   });
 
-  // Edge hover -> show label
+  // Hover effects
+  cy.on('mouseover', 'node', (evt) => {
+    evt.target.addClass('hovered');
+  });
+  cy.on('mouseout', 'node', (evt) => {
+    evt.target.removeClass('hovered');
+  });
   cy.on('mouseover', 'edge', (evt) => {
-    evt.target.addClass('highlighted');
+    evt.target.addClass('hovered');
   });
   cy.on('mouseout', 'edge', (evt) => {
-    if (!evt.target.hasClass('locked')) {
-      evt.target.removeClass('highlighted');
-    }
+    evt.target.removeClass('hovered');
   });
 
   // Update footer count
@@ -279,16 +285,17 @@ export function updateGraph(entities, edges) {
 export function resetLayout() {
   if (!cy) return;
   resetHighlights();
-  cy.layout({
+  const l = cy.layout({
     name: 'cose',
-    animate: true,
-    animationDuration: 800,
-    nodeRepulsion: () => 7500000,
-    idealEdgeLength: () => 290,
-    edgeElasticity: () => 32,
-    gravity: 0.12,
-    padding: 70,
-  }).run();
+    animate: false,
+    nodeRepulsion: () => 3800000,
+    idealEdgeLength: () => 190,
+    edgeElasticity: () => 40,
+    gravity: 0.22,
+    padding: 60,
+  });
+  l.run();
+  cy.fit(cy.elements(), 60);
 }
 
 /**
@@ -296,7 +303,8 @@ export function resetLayout() {
  */
 export function fitGraph() {
   if (!cy) return;
-  cy.fit(null, 60);
+  cy.stop();
+  cy.fit(cy.elements(), 60);
 }
 
 /**

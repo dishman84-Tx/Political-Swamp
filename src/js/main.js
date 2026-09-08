@@ -4,7 +4,7 @@
  */
 import { initAuth, handleSignIn, handleSignOut } from './auth.js';
 import { initFirestore, getEntities, getEdges } from './firestore.js';
-import { initGraph, updateGraph, resetLayout, fitGraph, zoomIn, zoomOut, focusNode } from './graph.js';
+import { initGraph, updateGraph, resetLayout, fitGraph, zoomIn, zoomOut, focusNode, getCy } from './graph.js';
 import { initDrawer } from './drawer.js';
 import { initEntities, updateEntities } from './entities.js';
 import { initIntake, updateProcessingQueue } from './intake.js';
@@ -29,6 +29,16 @@ function switchTab(tabId) {
     if (panel) panel.classList.toggle('hidden', id !== tabId);
     if (btn) btn.classList.toggle('active', id === tabId);
   });
+
+  if (tabId === 'graph') {
+    setTimeout(() => {
+      const cy = getCy();
+      if (cy) {
+        cy.resize();
+        cy.fit(null, 60);
+      }
+    }, 50);
+  }
 }
 
 // Tab button listeners
@@ -129,6 +139,15 @@ function showApp(user) {
     avatarEl.src = user.photoURL;
     avatarEl.classList.remove('hidden');
   }
+
+  // Ensure Cytoscape recalculates viewport dimensions now that container is visible
+  setTimeout(() => {
+    const cy = getCy();
+    if (cy) {
+      cy.resize();
+      cy.fit(cy.elements(), 60);
+    }
+  }, 100);
 }
 
 function showAuthGate() {
@@ -139,36 +158,30 @@ function showAuthGate() {
 // ============================
 // INITIALIZATION
 // ============================
-async function init() {
-  // Initialize drawer
+function init() {
+  // 1. Immediately bind Sign In & Sign Out buttons synchronously
+  const signInBtn = document.getElementById('btnGoogleSignIn');
+  if (signInBtn) {
+    signInBtn.onclick = handleSignIn;
+  }
+  const signOutBtn = document.getElementById('btnSignOut');
+  if (signOutBtn) {
+    signOutBtn.onclick = handleSignOut;
+  }
+
+  // 2. Initialize drawer
   initDrawer();
 
-  // Set default active tab
+  // 3. Set default active tab
   switchTab('graph');
 
-  // Auth listener
-  initAuth(async (user) => {
-    if (user) {
-      showApp(user);
-      await bootApp();
-    } else {
-      showAuthGate();
-    }
-  });
-
-  // Sign in button
-  document.getElementById('btnGoogleSignIn')?.addEventListener('click', handleSignIn);
-
-  // Sign out button
-  document.getElementById('btnSignOut')?.addEventListener('click', handleSignOut);
-
-  // Graph controls
+  // 4. Graph controls
   document.getElementById('btnResetLayout')?.addEventListener('click', resetLayout);
   document.getElementById('btnFitGraph')?.addEventListener('click', fitGraph);
   document.getElementById('btnZoomIn')?.addEventListener('click', zoomIn);
   document.getElementById('btnZoomOut')?.addEventListener('click', zoomOut);
 
-  // Jump to entity search
+  // 5. Jump to entity search
   const searchInput = document.getElementById('graphEntitySearch');
   searchInput?.addEventListener('change', (e) => {
     const val = e.target.value.trim().toLowerCase();
@@ -182,9 +195,27 @@ async function init() {
       searchInput.value = '';
     }
   });
+
+  // 6. Auth listener — triggers app boot only upon verified auth
+  initAuth(async (user) => {
+    if (user) {
+      showApp(user);
+      try {
+        await bootApp();
+      } catch (bootErr) {
+        console.error('[App] Boot error:', bootErr);
+      }
+    } else {
+      showAuthGate();
+    }
+  });
 }
 
+let isBooted = false;
 async function bootApp() {
+  if (isBooted) return;
+  isBooted = true;
+
   // Initialize Firestore with real-time callbacks
   await initFirestore({
     onEntities: (entities) => {
@@ -221,5 +252,5 @@ async function bootApp() {
   initAuditLog();
 }
 
-// Boot
+// Synchronous Boot
 init();

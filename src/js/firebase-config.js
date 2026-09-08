@@ -3,10 +3,18 @@
  * Project: mission-political-swamp
  */
 import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, browserLocalPersistence, setPersistence } from 'firebase/auth';
-import { getFirestore, collection, doc, getDoc, getDocs, onSnapshot, addDoc, query, orderBy, limit, where, serverTimestamp } from 'firebase/firestore';
+import {
+  getAuth, GoogleAuthProvider,
+  signInWithPopup, signInWithRedirect, getRedirectResult,
+  signOut, onAuthStateChanged,
+  browserLocalPersistence, setPersistence
+} from 'firebase/auth';
+import {
+  getFirestore, collection, doc, getDoc, getDocs,
+  onSnapshot, addDoc, query, orderBy, limit, where, serverTimestamp
+} from 'firebase/firestore';
 
-// Firebase config for mission-political-swamp
+// Verified config from CLI for mission-political-swamp
 const firebaseConfig = {
   apiKey: "AIzaSyBrCja2euNptyn_vquFL-8XW6J_ytIMfIM",
   authDomain: "mission-political-swamp.firebaseapp.com",
@@ -20,12 +28,17 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
+
+// Always ensure local persistence is set immediately on startup
+setPersistence(auth, browserLocalPersistence).catch(err => console.warn('[Auth] setPersistence:', err));
+
 const googleProvider = new GoogleAuthProvider();
+googleProvider.setCustomParameters({ prompt: 'select_account' });
 
 export {
   app, auth, db, googleProvider,
-  signInWithPopup, signOut, onAuthStateChanged,
-  setPersistence, browserLocalPersistence,
+  signInWithPopup, signInWithRedirect, getRedirectResult,
+  signOut, onAuthStateChanged,
   collection, doc, getDoc, getDocs, onSnapshot,
   addDoc, query, orderBy, limit, where, serverTimestamp
 };
