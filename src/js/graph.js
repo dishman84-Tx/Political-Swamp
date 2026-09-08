@@ -9,13 +9,16 @@ let cy = null;
 
 export const CARTEL_COLORS = {
   'Developer & Bond Syndicate':                    '#14b8a6', // Teal
+  'Business, Corporate Shells & Financial Conduits': '#10b981', // Emerald Green
   'Law Enforcement, Inquest & Death Suppression':  '#ef4444', // Red
   'School Board, CAD & Construction Arbitrage':    '#f59e0b', // Amber / Gold
   'Judicial & Prosecutorial Family Dynasty':       '#a855f7', // Purple
 };
 
 const EDGE_TYPE_COLORS = {
-  corporate:            '#14b8a6',
+  corporate:            '#10b981',
+  corporate_shell:      '#10b981',
+  vendor_contract:      '#10b981',
   campaign_finance:     '#f59e0b',
   familial:             '#f97316',
   ch171_conflict:       '#a855f7',
@@ -24,9 +27,11 @@ const EDGE_TYPE_COLORS = {
   deed_overlap:         '#14b8a6',
   bond_authorization:   '#14b8a6',
   election_admin:       '#f59e0b',
-  financial_conduit:    '#f59e0b',
+  financial_conduit:    '#10b981',
   forensic_suppression: '#ef4444',
   dna_exclusion:        '#ef4444',
+  governance:           '#38bdf8',
+  electoral_fraud:      '#ef4444',
   default:              '#71717a',
 };
 
@@ -139,11 +144,34 @@ export function initGraph(entities, edges) {
           'z-index': 100,
         }
       },
-      // Dimmed Node when another is focused
+      // Dimmed Node when another is focused — Multi-category context preserved
       {
         selector: 'node.dimmed',
         style: {
-          'opacity': 0.2,
+          'opacity': 0.45,
+          'border-width': 2,
+          'border-color': 'data(color)',
+          'border-opacity': 0.6,
+          'font-size': '11px',
+          'color': '#d4d4d8',
+          'text-outline-width': 2,
+          'text-outline-color': '#09090b',
+        }
+      },
+      // 1st-Degree Connected Neighbors — Crisp white outline and category color
+      {
+        selector: 'node.neighbor',
+        style: {
+          'opacity': 1,
+          'border-width': 4.5,
+          'border-color': '#ffffff',
+          'border-opacity': 1,
+          'font-size': '14px',
+          'font-weight': 800,
+          'color': '#ffffff',
+          'text-outline-width': 3,
+          'text-outline-color': '#09090b',
+          'z-index': 95,
         }
       },
       // Base Edge — Clean line, hidden label by default to eradicate clutter
@@ -186,7 +214,7 @@ export function initGraph(entities, edges) {
       {
         selector: 'edge.dimmed',
         style: {
-          'opacity': 0.08,
+          'opacity': 0.12,
         }
       }
     ],
@@ -245,6 +273,7 @@ export function initGraph(entities, edges) {
   // Update HUD Cartel Legend Counts Dynamically
   const counts = {
     'Developer & Bond Syndicate': 0,
+    'Business, Corporate Shells & Financial Conduits': 0,
     'Law Enforcement, Inquest & Death Suppression': 0,
     'School Board, CAD & Construction Arbitrage': 0,
     'Judicial & Prosecutorial Family Dynasty': 0
@@ -255,6 +284,8 @@ export function initGraph(entities, edges) {
 
   const devEl = document.getElementById('countDeveloper');
   if (devEl) devEl.textContent = counts['Developer & Bond Syndicate'];
+  const bizEl = document.getElementById('countBusiness');
+  if (bizEl) bizEl.textContent = counts['Business, Corporate Shells & Financial Conduits'];
   const leEl = document.getElementById('countLawEnf');
   if (leEl) leEl.textContent = counts['Law Enforcement, Inquest & Death Suppression'];
   const scEl = document.getElementById('countSchoolCad');
@@ -273,11 +304,13 @@ function isolateCluster(node) {
   const connectedNodes = connectedEdges.connectedNodes();
 
   // Dim all
-  cy.elements().addClass('dimmed').removeClass('highlighted locked');
+  cy.elements().addClass('dimmed').removeClass('highlighted neighbor locked');
 
-  // Highlight connected neighborhood
+  // Highlight selected node
   node.removeClass('dimmed').addClass('highlighted');
-  connectedNodes.removeClass('dimmed');
+
+  // Highlight connected neighborhood with full opacity and neighbor badge
+  connectedNodes.removeClass('dimmed').addClass('neighbor');
   connectedEdges.removeClass('dimmed').addClass('highlighted locked');
 }
 
@@ -286,7 +319,7 @@ function isolateCluster(node) {
  */
 export function resetHighlights() {
   if (!cy) return;
-  cy.elements().removeClass('dimmed highlighted locked');
+  cy.elements().removeClass('dimmed highlighted neighbor locked');
 }
 
 /**

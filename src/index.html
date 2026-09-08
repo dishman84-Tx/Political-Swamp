@@ -89,7 +89,7 @@
           Intake Studio
         </button>
         <button data-tab="timeline" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
-          Timeline
+          Schemes &amp; Timeline
         </button>
         <button data-tab="auditlog" class="tab-btn px-3 py-1 rounded-md text-xs font-medium transition-all">
           Audit Log
@@ -120,13 +120,15 @@
         <div id="graphDesktop" class="hidden md:block w-full h-full relative flex-1">
           <!-- Floating HUD: Cartel Legend (Top-Left Pill) -->
           <div class="absolute top-3 left-3 z-20 flex flex-wrap items-center gap-2.5 px-3 py-1.5 rounded-lg bg-zinc-950/85 backdrop-blur-md border border-zinc-800 shadow-xl text-[11px] font-mono pointer-events-auto">
-            <span class="flex items-center gap-1 text-teal-300 font-medium"><span class="w-2 h-2 rounded-full bg-teal-500"></span> Developer (<span id="countDeveloper">17</span>)</span>
+            <span class="flex items-center gap-1 text-teal-300 font-medium"><span class="w-2 h-2 rounded-full bg-teal-500"></span> Developer (<span id="countDeveloper">28</span>)</span>
             <span class="text-zinc-700">•</span>
-            <span class="flex items-center gap-1 text-red-300 font-medium"><span class="w-2 h-2 rounded-full bg-red-500"></span> Law Enf (<span id="countLawEnf">13</span>)</span>
+            <span class="flex items-center gap-1 text-emerald-300 font-medium"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Business (<span id="countBusiness">30</span>)</span>
             <span class="text-zinc-700">•</span>
-            <span class="flex items-center gap-1 text-amber-300 font-medium"><span class="w-2 h-2 rounded-full bg-amber-500"></span> School/CAD (<span id="countSchoolCad">14</span>)</span>
+            <span class="flex items-center gap-1 text-red-300 font-medium"><span class="w-2 h-2 rounded-full bg-red-500"></span> Law Enf (<span id="countLawEnf">23</span>)</span>
             <span class="text-zinc-700">•</span>
-            <span class="flex items-center gap-1 text-purple-300 font-medium"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Judicial (<span id="countJudicial">9</span>)</span>
+            <span class="flex items-center gap-1 text-amber-300 font-medium"><span class="w-2 h-2 rounded-full bg-amber-500"></span> School/CAD (<span id="countSchoolCad">20</span>)</span>
+            <span class="text-zinc-700">•</span>
+            <span class="flex items-center gap-1 text-purple-300 font-medium"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Judicial (<span id="countJudicial">19</span>)</span>
           </div>
 
           <!-- Floating HUD: Controls (Top-Right Pill) -->
@@ -172,6 +174,7 @@
             <select id="entityFilter" class="px-3 py-2 rounded-lg text-sm bg-zinc-900 border border-zinc-700 text-zinc-200 focus:border-teal-500 focus:outline-none">
               <option value="all">All Cartels</option>
               <option value="Developer & Bond Syndicate">Developer & Bond Syndicate</option>
+              <option value="Business, Corporate Shells & Financial Conduits">Business & Corporate Shells</option>
               <option value="Law Enforcement, Inquest & Death Suppression">Law Enforcement & Death Suppression</option>
               <option value="School Board, CAD & Construction Arbitrage">School Board, CAD & Arbitrage</option>
               <option value="Judicial & Prosecutorial Family Dynasty">Judicial & Prosecutorial Dynasty</option>

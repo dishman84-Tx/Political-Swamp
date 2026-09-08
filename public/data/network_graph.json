@@ -1,12 +1,12 @@
 {
-  "version": "3.0.0",
-  "generated_at": "2026-09-08T10:58:27.388999",
+  "version": "4.5.0",
+  "generated_at": "2026-09-08T16:22:10.784811Z",
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
-    "total_nodes": 83,
-    "total_edges": 191,
-    "cartels": 4,
+    "total_nodes": 125,
+    "total_edges": 305,
+    "cartels": 5,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
     "bond_authorizations": "$183,360,000"
@@ -32,7 +32,7 @@
         "Barton Tarkington A-354"
       ],
       "notes": "Bypassed direct victim restitution; $68M settlement split into $48M SWPPP/drainage and $20M law enforcement facilitation.",
-      "degree_connectivity": 24
+      "degree_connectivity": 28
     },
     {
       "id": "trey_harris",
@@ -50,7 +50,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Co-owner Liberty Paving LLC; top contributor to Buckeye Values PAC and local county slates.",
-      "degree_connectivity": 7
+      "degree_connectivity": 11
     },
     {
       "id": "john_harris",
@@ -68,7 +68,7 @@
         "J.F. DeRumayor A-103"
       ],
       "notes": "Manages land acquisition conduits and perimeter blocking acreage.",
-      "degree_connectivity": 5
+      "degree_connectivity": 6
     },
     {
       "id": "mud_15",
@@ -86,7 +86,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Authorized $88.36M in public developer debt via exactly 2 voters; primary vehicle to absorb $48M Fund A infrastructure capital.",
-      "degree_connectivity": 10
+      "degree_connectivity": 18
     },
     {
       "id": "mmd_1",
@@ -105,13 +105,13 @@
         "A-103"
       ],
       "notes": "Awarded $22.5M in road paving contracts to board member-owned entities via Tex. Loc. Gov't Code \u00a7 171.004 loop.",
-      "degree_connectivity": 4
+      "degree_connectivity": 13
     },
     {
       "id": "daniel_land_co",
       "label": "Daniel Land Co. LLC",
       "category": "land_syndicate",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Perimeter Blocking Land Conduit",
       "status": "CAD PID 10125 Speculation Anchor",
       "risk_score": 90,
@@ -131,7 +131,7 @@
       "id": "liberty_paving",
       "label": "Liberty Paving LLC",
       "category": "vendor",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Public Infrastructure Contractor",
       "status": "Ch. 171 Conflict Beneficiary",
       "risk_score": 88,
@@ -151,15 +151,17 @@
       "category": "pac",
       "cartel": "Developer & Bond Syndicate",
       "role": "Developer Political Conduit",
-      "status": "$1.5M+ Campaign Warchest",
+      "status": "$1.5M+ Coordinated County Slate",
       "risk_score": 94,
       "anchors": [
         "Texas Ethics Commission PAC #00086542",
-        "2024-2026 Finance Reports"
+        "2024-2026 Campaign Finance Reports",
+        "Liberty County Elections Dept Candidate C/OH Filings",
+        "Protect and Serve Texas PAC Interlock"
       ],
       "surveys": [],
-      "notes": "Funded heavily by Trey Harris and Colony Ridge affiliates to finance county judge, DA, and commissioner slates.",
-      "degree_connectivity": 6
+      "notes": "Texas Ethics Commission PAC #00086542 ($1.5M+ Campaign Warchest). Underwritten by Trey & John Harris (Colony Ridge / T-Rex Management) and bond-funded vendor conduits (Liberty Paving). Funded the coordinated county slate to guarantee 100% vote unanimity on Commissioners Court (Judge Jay Knight, Comm. Bruce Karbowski, Comm. Greg Arthur, Comm. David Whitmire, Comm. Leon Wilson), prosecutorial insulation (DA Jennifer Bergman, County Attorney Matthew Poston), law enforcement protection (Sheriff Bobby Rader, Constables Zack Harkness, David Hunter, Tammy Bishop, Robbie Thornton, John Tucker), and tax/records administration (Tax Assessor Ricky Brown, County Clerk Lee Haidusek Chambers). Campaign strategy executed via Austin consulting firm Murphy Nasica & Associates in tandem with American Values First PAC.",
+      "degree_connectivity": 20
     },
     {
       "id": "jennifer_bergman",
@@ -176,7 +178,7 @@
       ],
       "surveys": [],
       "notes": "Spouse is Pct 6 Constable Zack Harkness; Father was County Engineer Louis Bergman; Uncle is Comm. Bruce Karbowski. Dismissed nepotism indictment against uncle; county paid private legal defense fees via AG RQ-0550-KP.",
-      "degree_connectivity": 14
+      "degree_connectivity": 21
     },
     {
       "id": "louis_bergman",
@@ -201,7 +203,7 @@
       "id": "zack_harkness",
       "label": "Zack Harkness",
       "category": "law_enforcement",
-      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
       "role": "Constable, Precinct 6",
       "status": "Dual-Elected Spouse Conduit",
       "risk_score": 91,
@@ -211,7 +213,7 @@
       ],
       "surveys": [],
       "notes": "Elected Constable married to DA Jennifer Bergman; selective civil process enforcement and Colony Ridge off-duty security.",
-      "degree_connectivity": 3
+      "degree_connectivity": 4
     },
     {
       "id": "bruce_karbowski",
@@ -228,7 +230,7 @@
       ],
       "surveys": [],
       "notes": "Former County Commissioner for Precinct 1. Maternal uncle of DA Jennifer Bergman. Indicted for nepotism in 2020; after Bergman took office, her office prosecuted the case and presented zero evidence at trial, securing an acquittal. Presiding Judge Mark Morefield was later publicly admonished by SCJC.",
-      "degree_connectivity": 3
+      "degree_connectivity": 6
     },
     {
       "id": "chap_cain",
@@ -260,7 +262,7 @@
       ],
       "surveys": [],
       "notes": "Suppressed deputy bodycam and cell phone extraction for 14+ months under Gov Code \u00a7 552.108 pretext; attempted mandatory NDA.",
-      "degree_connectivity": 15
+      "degree_connectivity": 17
     },
     {
       "id": "james_mcqueen",
@@ -278,7 +280,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Romantic partner to Sherry Novosad; refused voluntary buccal swab despite independent lab finding foreign male DNA at scene.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "sherry_novosad",
@@ -289,14 +291,16 @@
       "status": "Forensic Contested Homicide",
       "risk_score": 50,
       "anchors": [
-        "Liberty County Inquest Death Certificate",
-        "Independent Ballistics & Pathology Audit"
+        "Inquest Docket 2024-11 (JP Ralph Fuller Suicide Ruling)",
+        "Sherry Novosad Scene CAD & Dispatch Audio (178 CR 2223)",
+        "Independent Forensic DNA Lab Exclusion Report (Ted Novosad Excluded, Foreign Male Identified)",
+        "Dolcefino Consulting Bodycam TPIA Demand"
       ],
       "surveys": [
         "Aaron Cherry A-10"
       ],
-      "notes": "Staged death scene at 178 CR 2223 (Tarkington Woods, Aaron Cherry Survey A-10) with .410 derringer; rubber-stamped suicide within hours by JP Fuller to insulate law enforcement personnel.",
-      "degree_connectivity": 4
+      "notes": "Died November 18, 2024 at 178 CR 2223 from a .410 caliber gunshot wound to the neck. Ruled 'suicide' within hours by JP Ralph Fuller under Tex. CCP Art. 49.04 without ballistics, GSR, or autopsy. Independent forensics commissioned by mother Kathy Hatcher and Wayne Dolcefino discovered foreign male DNA on bloody scene clothing and curtains, excluding husband Ted Novosad. LCSO Detective Lt. James McQueen had an ongoing extramarital affair with decedent and was present at scene, yet refused a voluntary buccal swab. Subject of massive Dolcefino Consulting bodycam disclosure lawsuit against Sheriff Bobby Rader and DA Jennifer Bergman.",
+      "degree_connectivity": 6
     },
     {
       "id": "ted_novosad",
@@ -360,7 +364,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Under Texas CCP Art. 49.04, non-medical JPs serve as sole coroners in Liberty County. Fuller routinely responds to unattended deaths, industrial fatalities, Colony Ridge drownings, and firearm scenes. In the Sherry Novosad case (178 CR 2223, A-10), ruled a .410 gunshot wound to the neck as 'suicide' within hours without gunshot residue testing or forensic ballistics, effectively shutting down an active homicide investigation and shielding LCSO detective Lt. James McQueen.",
-      "degree_connectivity": 4,
+      "degree_connectivity": 5,
       "overlaps_and_oversight": [
         {
           "title": "Statutory Non-Medical Coroner Ruling",
@@ -385,19 +389,17 @@
       "category": "investigator",
       "cartel": "Law Enforcement, Inquest & Death Suppression",
       "role": "President, Dolcefino Consulting",
-      "status": "Investigative Media / TPIA Plaintiff",
+      "status": "Active TPIA Mandamus & Homicide Probe",
       "risk_score": 10,
       "anchors": [
-        "Cause No. CV24-00192 (Dolcefino v. LCSO & Sheriff Rader)",
-        "457th District Court Santini Recusal ('The Cozy Courthouse')",
-        "Liberty PD Nov 20 2025 Pedestrian Crash Investigation",
-        "Splendora Municipal Retaliation Probe ('Let's Play Ball')",
-        "Harris County Probate Cronyism Audit ('DAMN LAWYERS')",
-        "Mont Belvieu Towing Monopoly Investigation"
+        "Dolcefino Consulting TPIA Petitions vs. Sheriff Bobby Rader",
+        "Texas OAG Open Records Mandamus Rulings",
+        "Sherry Novosad Independent DNA Lab Report (Foreign Male DNA)",
+        "Judge Chap Cain & Judge Vince Santini Recusal Orders"
       ],
       "surveys": [],
-      "notes": "Forensic investigative media firm uncovering multi-county corruption: (1) Liberty: Novosad death cover-up/DNA suppression, Liberty PD pedestrian collision logs; (2) Montgomery: Judge Vince Santini refusal to recuse ('The Cozy Courthouse'), Splendora sports complex retaliation; (3) Harris: Probate court cronyism and NewQuest court secrecy.",
-      "degree_connectivity": 6
+      "notes": "President, Dolcefino Consulting; former KTRK investigative journalist. Retained by Kathy Hatcher (mother of Sherry Lee Novosad) to investigate the November 18, 2024 death of Sherry Novosad at 178 CR 2223. Commissioned independent forensic testing recovering unidentified foreign male DNA on Sherry's bloody clothing, excluding husband Ted Novosad. Exposed LCSO Detective Lt. James McQueen's refusal to provide a voluntary buccal swab despite being on scene and having an active affair with decedent. Filed TPIA mandamus actions against Sheriff Bobby Rader and DA Jennifer Bergman for illegally concealing scene bodycam footage following Texas OAG disclosure mandates.",
+      "degree_connectivity": 10
     },
     {
       "id": "david_hunter",
@@ -413,7 +415,7 @@
       ],
       "surveys": [],
       "notes": "LCSO administrative conduit for commissioning off-balance-sheet deputies and absorbing Fund B law enforcement settlement capital.",
-      "degree_connectivity": 4
+      "degree_connectivity": 6
     },
     {
       "id": "cedric_mcduffie",
@@ -431,7 +433,7 @@
       ],
       "surveys": [],
       "notes": "Command Lieutenant over Liberty PD Patrol Division (direct supervisor of Jason Grindstaff); operational commander of multi-county Flock ALPR surveillance hotlists. Recalled from Cleveland City Council Place 3 (May 14, 2011) after firing City Manager Philip Cook, creating deep political rivalry with DA Jennifer Bergman. Key bridge between Liberty PD municipal operations, LCSO joint surveillance, and county prosecutorial gatekeeping.",
-      "degree_connectivity": 10
+      "degree_connectivity": 12
     },
     {
       "id": "klint_bush",
@@ -488,7 +490,7 @@
       "id": "burns_arch",
       "label": "Burns Architecture LLC (Kenny & Brenda Burns)",
       "category": "vendor",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "County Jail & Colony Ridge Annex Architect",
       "status": "$612K Auditor-Flagged Pass-Through",
       "risk_score": 94,
@@ -521,7 +523,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "Physical address identical to Brenda Burns; controls M-Club shadow account; major contractor on TISD and TxDOT right-of-way.",
-      "degree_connectivity": 10
+      "degree_connectivity": 11
     },
     {
       "id": "tarkington_isd",
@@ -637,7 +639,7 @@
       "id": "wasteline_eng",
       "label": "Wasteline Engineering, Inc.",
       "category": "vendor",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Civil & Wastewater Engineering Firm (MUD 15)",
       "status": "TCEQ Permit WQ0016839001 Applicant / Active TX Corp (Inc. 1983)",
       "risk_score": 92,
@@ -652,13 +654,13 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Texas corporation founded 08/01/1983 (Aledo/Willow Park, TX). President & Director: Glenn Breisch. Registered Agent: Jason Breisch. Contracted engineering firm for Liberty County MUD 15 wastewater plant, sludge export pipeline, and drainage detention bypass into Luce Bayou watershed affecting Tarkington Woods.",
-      "degree_connectivity": 6
+      "degree_connectivity": 8
     },
     {
       "id": "heath_marek",
       "label": "Heath Marek",
       "category": "developer",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "MMD 1 Board Vice President / Contractor",
       "status": "Ch. 171 Conflict Signatory",
       "risk_score": 92,
@@ -670,7 +672,7 @@
         "A-10"
       ],
       "notes": "Chairs bond allocations to his own paving entity while serving on district governing board.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "judge_jay_knight",
@@ -687,13 +689,13 @@
       ],
       "surveys": [],
       "notes": "Presides over Commissioners Court 100% developer consent votes; appointed LCHA board whose administrators were indicted for theft.",
-      "degree_connectivity": 10
+      "degree_connectivity": 13
     },
     {
       "id": "david_whitmire",
       "label": "Comm. David Whitmire",
       "category": "official",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
       "role": "County Commissioner, Precinct 3 (Cleveland / Tarkington)",
       "status": "Indicted (April 2025 Sexual Assault & Official Oppression)",
       "risk_score": 97,
@@ -706,13 +708,13 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Voted for MMD 1 paving approvals funding Liberty Paving LLC; indicted April 2025; key voting nexus for Colony Ridge expansion.",
-      "degree_connectivity": 7
+      "degree_connectivity": 8
     },
     {
       "id": "greg_arthur",
       "label": "Comm. Greg Arthur",
       "category": "official",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
       "role": "County Commissioner, Precinct 2",
       "status": "MUD 15 & Wastewater Consent Signatory",
       "risk_score": 88,
@@ -724,13 +726,13 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Voted to approve MUD 15 utility easements and sludge transport conduits connecting developer lots to regional basins.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "leon_wilson",
       "label": "Comm. Leon Wilson",
       "category": "official",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
       "role": "County Commissioner, Precinct 4 (Dayton)",
       "status": "Dayton PID / MUD 13A Tax Roll Signatory",
       "risk_score": 87,
@@ -770,7 +772,7 @@
         "Isaiah Fields A-35"
       ],
       "notes": "Northeast expansion artery designed to connect SH 99 Grand Parkway through Colony Ridge to FM 321 in Tarkington Prairie. Delayed by landowner eminent domain resistance, MUD 15 runoff litigation, and MMD 1 debt caps.",
-      "degree_connectivity": 17,
+      "degree_connectivity": 18,
       "overlaps_and_oversight": [
         {
           "title": "TxDOT Right-of-Way Gridlock & Landowner Resistance",
@@ -810,7 +812,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "TISD Trustee directing school bond contracts to his own clearing entities and co-managing off-book booster accounts with Tom Johnson.",
-      "degree_connectivity": 5
+      "degree_connectivity": 6
     },
     {
       "id": "susan_rollins",
@@ -829,7 +831,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "Tarkington ISD School Board Trustee who votes on campus bond land acquisitions and vendor awards while husband Jimmy Rollins sits on the Liberty CAD Board and serves as Chief Appraiser setting district tax valuations.",
-      "degree_connectivity": 4,
+      "degree_connectivity": 5,
       "overlaps_and_oversight": [
         {
           "title": "Spousal Appraisal District Conflict of Interest",
@@ -888,7 +890,7 @@
       "id": "white_construction",
       "label": "White Construction Co.",
       "category": "vendor",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "General Contractor, County Jail & Annex",
       "status": "$612K Pass-Through Conduit for Burns",
       "risk_score": 91,
@@ -906,7 +908,7 @@
       "id": "glenn_breisch",
       "label": "Glenn Breisch, P.E.",
       "category": "vendor",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "President & Director, Wasteline Engineering, Inc.",
       "status": "Lead Engineer for MUD 15 Drainage & WWTP",
       "risk_score": 86,
@@ -925,7 +927,7 @@
       "id": "jason_breisch",
       "label": "Jason Breisch",
       "category": "vendor",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Registered Agent, Wasteline Eng / Manager, Breisch & Associates PLLC",
       "status": "Corporate Agent & LLC Manager",
       "risk_score": 76,
@@ -1082,7 +1084,7 @@
         "Ann Holshousen A-208"
       ],
       "notes": "Created by SB 2580 in 2023 granting broad taxing, bond-issuing, and eminent domain powers over 764 acres within Colony Ridge expansion perimeter, structured with provisions enabling division into multiple subsidiary developer-controlled districts.",
-      "degree_connectivity": 3,
+      "degree_connectivity": 9,
       "overlaps_and_oversight": [
         {
           "title": "Legislative Special District Arbitrage",
@@ -1184,7 +1186,7 @@
       ],
       "surveys": [],
       "notes": "Independent press and citizen journalism outlets that broke the silence on Liberty County public corruption: Bluebonnet News (indictments, meetings), The Liberty Vindicator (public legal notices), Houston Chronicle (predatory lending/DOJ suits), ABC 13 & Dolcefino (Sherry Novosad death cover-up), Montgomery County Police Reporter (arrests, SWAT calls, scene footage), and Grizzy's Hood News (unfiltered community reporting).",
-      "degree_connectivity": 6,
+      "degree_connectivity": 8,
       "overlaps_and_oversight": [
         {
           "title": "First Amendment & Texas Anti-SLAPP Shield",
@@ -1215,7 +1217,7 @@
       "id": "chandler_cook_law",
       "label": "Chandler, Cook & Fitzgerald Law Firm",
       "category": "vendor",
-      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Private Law Firm / Municipal & Real Estate Counsel",
       "status": "Conduit for Self-Dealt Legal Fee Payments",
       "risk_score": 90,
@@ -1232,7 +1234,7 @@
       "id": "bergman_engineering",
       "label": "Bergman Engineering, Inc. / Humble Surveying",
       "category": "vendor",
-      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Family Engineering & Surveying Enterprise",
       "status": "Commercial Lienholder & Drainage Contractor",
       "risk_score": 92,
@@ -1253,7 +1255,7 @@
       "id": "harkness_oilfield",
       "label": "Harkness Oilfield Rentals LLC",
       "category": "vendor",
-      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Commercial Oilfield & Heavy Equipment Vendor",
       "status": "Elected Constable Commercial Business",
       "risk_score": 86,
@@ -1303,13 +1305,13 @@
         "Phillip Miller A-800"
       ],
       "notes": "Off-book 501(c)(3) foundation co-managed by Tom Johnson, Kevin Johnson, and Jimmy Rollins. Bypasses Texas Education Code competitive bidding and TPIA oversight for athletic equipment, land improvements, and campus projects.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "walter_dean",
       "label": "Walter Dean",
       "category": "land_syndicate",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Managing Member, Dudley Estate 1938 LLC / Financial Conduit",
       "status": "MUD 15 Fund Absorption Conduit",
       "risk_score": 91,
@@ -1359,7 +1361,7 @@
         "Donahoe Survey"
       ],
       "notes": "Sitting member of the Liberty CAD Appraisal Review Board whose family/commercial surname appears repeatedly across property transactions in the FM 1008 development corridor, creating an internal tax protest conflict.",
-      "degree_connectivity": 1
+      "degree_connectivity": 2
     },
     {
       "id": "john_p_hebert",
@@ -1394,7 +1396,7 @@
       ],
       "surveys": [],
       "notes": "Official custodian of all Liberty County deed, probate, commissioners court, and local campaign finance filings; announced local judicial candidacy while maintaining sole control over courthouse document access.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "gary_martin",
@@ -1535,7 +1537,7 @@
       "id": "dudley_estate_llc",
       "label": "Dudley Estate 1938, LLC",
       "category": "land_syndicate",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Developer Shell Entity (Managed by Walter Dean)",
       "status": "MUD 15 Public Fund Recipient",
       "risk_score": 93,
@@ -1554,7 +1556,7 @@
       "id": "cypritech",
       "label": "Cypritech (Tommy Brents)",
       "category": "vendor",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Shell IT Consulting Conduit",
       "status": "Diverted LCHA Public Housing Funds",
       "risk_score": 92,
@@ -1610,7 +1612,7 @@
       "id": "windwood_development",
       "label": "Windwood Development / El Dorado Funding",
       "category": "land_syndicate",
-      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "cartel": "Developer & Bond Syndicate",
       "role": "Louis Bergman Land Development & Financing Conduits",
       "status": "Municipal Annexation & Seller-Financing Conduits",
       "risk_score": 90,
@@ -1629,7 +1631,7 @@
       "id": "monarquias_magnolia",
       "label": "Monarquias Magnolia, LLC",
       "category": "land_syndicate",
-      "cartel": "Developer & Bond Syndicate",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Lozano Family & C\u00e9sar Garc\u00eda Shell Entity",
       "status": "10712 Thomas T Trail Headquarters",
       "risk_score": 94,
@@ -1648,7 +1650,7 @@
       "id": "encino_landscape",
       "label": "Encino Landscape & PBK Holdings LLC",
       "category": "land_syndicate",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Tom Johnson Land Clearing & Speculation Conduits",
       "status": "Dayton PID & TxDOT Right-of-Way Contractor",
       "risk_score": 91,
@@ -1667,7 +1669,7 @@
       "id": "andco_rentals",
       "label": "ANDCO LLC / Andco Rentals",
       "category": "vendor",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Cory Anderson Heavy Equipment & Arterial Land Conduit",
       "status": "Doc #W2025018238 (61.05 Ac in Arterial Path)",
       "risk_score": 89,
@@ -1680,13 +1682,13 @@
         "Ann Holshousen A-208"
       ],
       "notes": "Commercial equipment and land acquisition company owned by Cory and Shannon Anderson; holds 61.05 acres directly along the SH 99 to FM 321 expansion corridor while donating equipment to Constable David Hunter.",
-      "degree_connectivity": 3
+      "degree_connectivity": 6
     },
     {
       "id": "j_rollins_construction",
       "label": "J. Rollins Construction / Rollins Excell LLC",
       "category": "vendor",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Rollins Family Commercial Contracting Arm",
       "status": "School Campus Subcontractor & CAD Appraisal Shield",
       "risk_score": 93,
@@ -1706,7 +1708,7 @@
       "id": "diamond_k_equipment",
       "label": "Diamond K Equipment",
       "category": "vendor",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Heavy Equipment Rental & Pipeline ROW Clearing",
       "status": "TISD Trustee Commercial Business (Dwayne Stovall)",
       "risk_score": 85,
@@ -1725,7 +1727,7 @@
       "id": "gulledge_homes",
       "label": "Gulledge Homes Construction",
       "category": "vendor",
-      "cartel": "School Board, CAD & Construction Arbitrage",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
       "role": "Residential Development & General Contracting",
       "status": "TISD Board President Commercial Business (Lane Gulledge)",
       "risk_score": 86,
@@ -1739,6 +1741,718 @@
       ],
       "notes": "Residential construction enterprise owned by Tarkington ISD Board President Lane Gulledge; benefits from school utility extensions and highway corridor infrastructure.",
       "degree_connectivity": 2
+    },
+    {
+      "id": "matthew_poston",
+      "label": "Matthew Poston",
+      "category": "official",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "County Attorney (Liberty County)",
+      "status": "Ch. 171 Non-Enforcement Conduit",
+      "risk_score": 90,
+      "anchors": [
+        "Liberty County Attorney Filings 2020-2026",
+        "Tex. Loc. Gov't Code Ch. 171 Conflict Non-Prosecution",
+        "Subdivision Platting Variance Authorizations"
+      ],
+      "surveys": [],
+      "notes": "County Attorney since 2017; failed to seek injunctions against Chapter 171 developer self-dealing on MMD/MUD boards or illegal road bond allocations.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "ricky_brown",
+      "label": "Richard 'Ricky' L. Brown",
+      "category": "official",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Tax Assessor-Collector (Liberty County)",
+      "status": "CAD Interlock & Appraisal Suppression",
+      "risk_score": 88,
+      "anchors": [
+        "Liberty County Tax Assessor Filings 2023-2025",
+        "Liberty CAD Appraisal Roll Interlock",
+        "Buckeye Values PAC Slate Backing"
+      ],
+      "surveys": [],
+      "notes": "Tax Assessor-Collector operating in tandem with Liberty CAD board; backed by the developer PAC slate to protect agricultural exemptions on undeveloped Colony Ridge blocking acreage.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "tammy_bishop",
+      "label": "Tammy Bishop",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Constable, Precinct 1 (Liberty County)",
+      "status": "Developer Slate Backed Incumbent",
+      "risk_score": 82,
+      "anchors": [
+        "Campaign Finance Reports Nov 2023 - Jan 2025",
+        "Buckeye Values PAC Coordinated Slate"
+      ],
+      "surveys": [],
+      "notes": "Pct 1 Constable endorsed and financed as part of the county-wide developer preservation slate.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "robbie_thornton",
+      "label": "Robbie Thornton",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Constable, Precinct 4 (Liberty County)",
+      "status": "Developer Slate Backed Incumbent",
+      "risk_score": 82,
+      "anchors": [
+        "Campaign Finance Reports Jan 2024 - July 2025",
+        "Buckeye Values PAC Coordinated Slate"
+      ],
+      "surveys": [],
+      "notes": "Pct 4 Constable underwritten by the county developer campaign slate to secure law enforcement unanimity across Dayton/Kenefick corridors.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "john_tucker",
+      "label": "John Tucker",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Constable, Precinct 2 (Liberty County)",
+      "status": "Developer Slate Backed Incumbent",
+      "risk_score": 80,
+      "anchors": [
+        "Campaign Finance Reports Jan 2024 - July 2025",
+        "Buckeye Values PAC Slate Alignment"
+      ],
+      "surveys": [],
+      "notes": "Pct 2 Constable included in the county-wide developer campaign slate.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "murphy_nasica",
+      "label": "Murphy Nasica & Associates",
+      "category": "consultant",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Political Consulting & PAC Campaign Machine (Austin)",
+      "status": "Seven-Figure Direct Mail & Slating Engine",
+      "risk_score": 89,
+      "anchors": [
+        "TEC PAC Filings #00086542",
+        "Jennifer Bergman Campaign Finance Reports 2024-2025",
+        "Protect and Serve Texas PAC Austin Disclosures"
+      ],
+      "surveys": [],
+      "notes": "Austin-based political campaign consulting firm hired by Buckeye Values PAC, Jennifer Bergman, and developer-backed candidates to execute high-volume slate mailers and district-wide media campaigns.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "american_values_first_pac",
+      "label": "American Values First PAC",
+      "category": "pac",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Companion Developer Political Action Committee",
+      "status": "Secondary Warchest Conduit",
+      "risk_score": 93,
+      "anchors": [
+        "Texas Ethics Commission Filings",
+        "Liberty County Commissioners Court Campaign Cycles"
+      ],
+      "surveys": [],
+      "notes": "Operated alongside Buckeye Values PAC to bypass individual contribution limits and funnel corporate developer funds into Liberty County judicial, prosecutorial, and commissioner races.",
+      "degree_connectivity": 5
+    },
+    {
+      "id": "savannah_crihfield",
+      "label": "Savannah Crihfield",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "MUD Board Member (Tarkington Special Utility District / MUD)",
+      "status": "Special District Board Governance",
+      "risk_score": 84,
+      "anchors": [
+        "Liberty County Officials Financial Review",
+        "Special Utility District Registry"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Board member in developer utility network; votes on district infrastructure debt authorizations.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "ryan_crihfield",
+      "label": "Ryan Crihfield",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "MUD Board Member (Tarkington SUD / MUD)",
+      "status": "Special District Board Governance",
+      "risk_score": 84,
+      "anchors": [
+        "Liberty County Officials Financial Review",
+        "MUD Governance Filings"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Co-director in developer special district network with familial alignment.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "damaris_watson",
+      "label": "Damaris Watson",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "MUD Board Member (Tarkington SUD / MUD)",
+      "status": "Special District Board Governance",
+      "risk_score": 83,
+      "anchors": [
+        "Liberty County Officials Financial Review"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Governing board member approving district contracts and bond debt allocations.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "clifton_cadle",
+      "label": "Clifton C. Cadle",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "MUD Board Member (Tarkington SUD / MUD)",
+      "status": "Special District Board Governance",
+      "risk_score": 83,
+      "anchors": [
+        "Liberty County Officials Financial Review"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "MUD board member voting on utility expansion agreements and bond issuances.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "patrick_thiel",
+      "label": "Patrick Thiel",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "MUD Board Member (Tarkington SUD / MUD)",
+      "status": "Special District Board Governance",
+      "risk_score": 82,
+      "anchors": [
+        "Liberty County Officials Financial Review"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "MUD board director participating in special district resolutions.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "cory_anderson",
+      "label": "Cory Anderson",
+      "category": "special_district",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Assistant Secretary MUD 1 / Former TISD Trustee / Andco LLC Co-Owner",
+      "status": "Public-School / Developer / Vendor Interlock",
+      "risk_score": 92,
+      "anchors": [
+        "Liberty County Master Tracker (Officials & Network)",
+        "MUD 1 Minutes",
+        "Andco LLC Commercial Invoices"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Assistant Secretary of MUD 1; co-owner of Andco LLC (which received developer/county contracts); former Tarkington ISD trustee bridging school bonds and developer utility debt.",
+      "degree_connectivity": 5
+    },
+    {
+      "id": "ernesto_garcia",
+      "label": "Ernesto Garcia",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "MUD Board Member (Tarkington SUD / MUD)",
+      "status": "Special District Board Governance",
+      "risk_score": 81,
+      "anchors": [
+        "Liberty County Officials Financial Review"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Special district governing member.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "mud_14",
+      "label": "Liberty County MUD No. 14",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Special Utility & Water Infrastructure District",
+      "status": "Developer Bond Debt Vehicle",
+      "risk_score": 89,
+      "anchors": [
+        "TCEQ Special District Filings",
+        "Combined Master Tracker"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10",
+        "J.F. DeRumayor A-103"
+      ],
+      "notes": "Companion utility district created alongside MUD 12 and MUD 15 to absorb capital improvement costs across northern Colony Ridge expansions.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "trinity_valley_sud",
+      "label": "Trinity Valley Special Utility District",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Regional Water & Wastewater Provider",
+      "status": "Public Infrastructure Interlock",
+      "risk_score": 86,
+      "anchors": [
+        "Texas Water Development Board Records",
+        "Trinity Valley SUD Board Minutes"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Regional utility authority whose service boundary and wastewater interconnects border the Tarkington basin.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "daryl_farrell",
+      "label": "Daryl Farrell",
+      "category": "official",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Board Member, Trinity Valley SUD",
+      "status": "Utility Board Governance",
+      "risk_score": 80,
+      "anchors": [
+        "Liberty County Officials Financial Review"
+      ],
+      "surveys": [],
+      "notes": "Trinity Valley SUD board member governing water/wastewater capacity agreements.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "steven_howsmon",
+      "label": "Steven T. Howsmon",
+      "category": "official",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Board Member, Trinity Valley SUD",
+      "status": "Utility Board Governance",
+      "risk_score": 80,
+      "anchors": [
+        "Liberty County Officials Financial Review"
+      ],
+      "surveys": [],
+      "notes": "Trinity Valley SUD board member governing regional utility easements and supply lines.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "dwayne_stovall",
+      "label": "Dwayne Stovall",
+      "category": "school_board",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Trustee, Tarkington ISD Board",
+      "status": "School Board Governance",
+      "risk_score": 82,
+      "anchors": [
+        "TISD Board Minutes",
+        "Officials Financial Review"
+      ],
+      "surveys": [
+        "Barton Tarkington A-354"
+      ],
+      "notes": "TISD Trustee participating in district bond authorizations and campus land acquisitions.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "brenda_burns",
+      "label": "Brenda Burns",
+      "category": "school_board",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Trustee, Tarkington ISD Board / Burns Architecture",
+      "status": "School Governance & Architecture Vendor Interlock",
+      "risk_score": 91,
+      "anchors": [
+        "TISD Board Minutes",
+        "Liberty County Master Tracker (Officials & Network)"
+      ],
+      "surveys": [
+        "Barton Tarkington A-354"
+      ],
+      "notes": "TISD Trustee tied to Burns Architecture; voted on facility expansion plans and vendor selections across regional school bond programs.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "burns_architecture",
+      "label": "Burns Architecture",
+      "category": "vendor",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Public School Architectural Contractor",
+      "status": "School Bond Vendor Interlock",
+      "risk_score": 87,
+      "anchors": [
+        "TISD Procurement Records",
+        "Combined Master Tracker"
+      ],
+      "surveys": [],
+      "notes": "Architectural firm tied to TISD leadership; retained for public educational facility buildouts.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "mckenna_contracting",
+      "label": "McKenna Contracting",
+      "category": "vendor",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Civil & Drainage Contractor",
+      "status": "Public Infrastructure Vendor",
+      "risk_score": 86,
+      "anchors": [
+        "Liberty County Purchasing Disclosures",
+        "Master Tracker Index"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Contractor utilized across Liberty County and special districts for infrastructure and earthmoving operations.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "marek_brothers_co",
+      "label": "Marek Brothers Company LLC",
+      "category": "vendor",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Commercial Construction & Material Supplier",
+      "status": "Lien Registry & Credit Line Nexus",
+      "risk_score": 89,
+      "anchors": [
+        "County Clerk Mechanic's Lien Registry",
+        "Combined Master Tracker"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Major regional commercial contractor affiliated with Heath Marek (MMD 1 VP); maintains active credit lines and construction liens across Colony Ridge subdivisions.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "bell_silva",
+      "label": "Bell Silva",
+      "category": "business",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Credit Manager, Marek Brothers Company LLC",
+      "status": "Construction Lien Controller",
+      "risk_score": 85,
+      "anchors": [
+        "Liberty County Deed Records",
+        "Combined Master Tracker"
+      ],
+      "surveys": [],
+      "notes": "Credit Manager for Marek Brothers Company LLC; manages filings of construction and material liens in the county clerk's registry; relative of Bluebonnet News reporter Cynthia Silva.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "cynthia_silva",
+      "label": "Cynthia Silva",
+      "category": "media",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Reporter, Bluebonnet News",
+      "status": "Media Access & Vendor Family Tie",
+      "risk_score": 75,
+      "anchors": [
+        "Bluebonnet News Editorial Records",
+        "Combined Master Tracker"
+      ],
+      "surveys": [],
+      "notes": "Reporter covering Liberty County municipal, commissioner, and developer proceedings; family relative of Bell Silva (Credit Manager for Marek Brothers Co.).",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "ernest_bailes",
+      "label": "Ernest J. Bailes",
+      "category": "official",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "Former State Representative (R-HD-18)",
+      "status": "MMD 1 & MUD 12 Legislative Creator",
+      "risk_score": 93,
+      "anchors": [
+        "Texas House HB 4341 (Created MMD 1 in 2017)",
+        "Texas House HB 5323 (Created MUD 12 in 2023)",
+        "Texas Ethics Commission Campaign Filings"
+      ],
+      "surveys": [],
+      "notes": "Authored HB 4341 granting Colony Ridge quasi-municipal taxing/bonding power (MMD 1) and HB 5323 creating MUD 12; unseated in 2024 GOP primary by Janis Holt after massive conservative backlash over developer enabling.",
+      "degree_connectivity": 6
+    },
+    {
+      "id": "susan_bailes",
+      "label": "Susan Bailes",
+      "category": "official",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "Board Member, Health Center of Southeast Texas",
+      "status": "Bergman Board Interlock & Spousal Nexus",
+      "risk_score": 85,
+      "anchors": [
+        "Health Center of Southeast Texas Board Minutes",
+        "Liberty County PAC/Lobby Matrix"
+      ],
+      "surveys": [],
+      "notes": "Spouse of former State Rep. Ernest Bailes; served on the board of the Health Center of Southeast Texas directly alongside District Attorney Jennifer Bergman.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "robert_nichols",
+      "label": "Robert Nichols",
+      "category": "official",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "State Senator (R-SD-3)",
+      "status": "MMD 1 Senate Sponsor",
+      "risk_score": 88,
+      "anchors": [
+        "Texas Senate HB 4341 Sponsorship",
+        "TEC Donor Exports"
+      ],
+      "surveys": [],
+      "notes": "Sponsored HB 4341 in the Texas Senate, passing the enabling legislation that created Liberty County MMD 1 with unanimous consent.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "janis_holt",
+      "label": "Janis Holt",
+      "category": "official",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "State Representative (R-HD-18)",
+      "status": "Legislative Reform & Anti-Colony Ridge Sponsor",
+      "risk_score": 70,
+      "anchors": [
+        "Texas House HB 2519 (Contract-for-Deed Reform)",
+        "Freedom Caucus Legislative Docket"
+      ],
+      "surveys": [],
+      "notes": "Defeated Ernest Bailes in 2024 primary with Governor Abbott's backing; authored HB 2519 targeting Colony Ridge owner-financed contract-for-deed loops and advocating closure of the 2-voter MUD loophole.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "bruce_stratton",
+      "label": "C. Bruce Stratton",
+      "category": "official",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "President, Liberty County Hospital District No. 1",
+      "status": "Public Healthcare Conduit & Political Elder",
+      "risk_score": 83,
+      "anchors": [
+        "Hospital District Board Minutes",
+        "Liberty County PAC/Lobby Matrix"
+      ],
+      "surveys": [],
+      "notes": "Long-serving President of Hospital District No. 1; key figure in county-wide board appointments and political endorsement networks.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "higher_spirit_holding",
+      "label": "Higher Spirit Holding LLC (QYK Brands)",
+      "category": "business",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Data Center Speculator & Land Buyer",
+      "status": "561.6-Acre Raywood Site Acquirer",
+      "risk_score": 88,
+      "anchors": [
+        "Liberty County Deed Doc #2022045918",
+        "TCEQ Industrial Stormwater Permits"
+      ],
+      "surveys": [
+        "Phillip Miller A-800"
+      ],
+      "notes": "Purchased 561.60 acres along US-90 in Raywood for hyper-scale data center campus; converted pandemic PPE profits into physical real estate positions.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "zachary_yanta",
+      "label": "Zachary Xavier Yanta",
+      "category": "business",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Cattle Pasture Tenant / Ag-Exemption Tax Shield",
+      "status": "CAD 1-D-1 Ag Exemption Operator",
+      "risk_score": 82,
+      "anchors": [
+        "Liberty CAD Appraisal Roll #800-001-00",
+        "Pasture Grazing Agreements"
+      ],
+      "surveys": [
+        "Phillip Miller A-800"
+      ],
+      "notes": "Holds cattle grazing lease over industrial data center acreage to maintain agricultural tax valuation, suppressing millions in ad valorem taxes.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "kathy_hatcher",
+      "label": "Kathy Hatcher",
+      "category": "citizen_whistleblower",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Mother of Sherry Lee Novosad / Independent Forensic Requester",
+      "status": "Commissioned DNA Re-Test & Retained Dolcefino",
+      "risk_score": 78,
+      "anchors": [
+        "Independent DNA Laboratory Analysis (Foreign Male Profile)",
+        "TPIA Bodycam Compulsion Petition",
+        "Novosad Autopsy Rebuttal"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Mother of decedent Sherry Novosad; retained Dolcefino Consulting to challenge JP Ralph Fuller's rushed suicide ruling and commissioned independent forensic testing revealing foreign male DNA at the death scene.",
+      "degree_connectivity": 4
+    },
+    {
+      "id": "maria_acevedo",
+      "label": "Mar\u00eda Acevedo",
+      "category": "citizen_whistleblower",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Whistleblower, Federal Witness & Predatory Foreclosure Target",
+      "status": "DOJ Settlement Objector & TPIA Petitioner",
+      "risk_score": 85,
+      "anchors": [
+        "Formal Objection Brief to DOJ/CFPB $68M Consent Decree",
+        "TPIA Flock Safety ALPR & TLETS Audit Request (July 2026)",
+        "Recorded Liberty County Deed Records & Mechanic Liens (Social Media)",
+        "Consumer Financial Protection Bureau Witness Statement"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Purchased a $40,000 Colony Ridge lot and invested $60,000 in dirt work and surveying before being subjected to an unserviced-lien foreclosure. Filed formal federal objection brief in the DOJ/CFPB $68M settlement protesting zero direct victim restitution. Broadcast recorded deed documents and predatory owner-financing notes across public social media, and filed a formal Texas Public Information Act (TPIA) request auditing cross-county Flock ALPR surveillance and license plate hotlist targeting under Lt. Cedric McDuffie.",
+      "degree_connectivity": 5
+    },
+    {
+      "id": "mandy_anderson",
+      "label": "Mandy Anderson",
+      "category": "business",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Co-Owner, Andco Rentals / Title & Commercial Conduit",
+      "status": "Vendor & Commercial Interlock",
+      "risk_score": 84,
+      "anchors": [
+        "Texas Secretary of State Filings (Andco, LLC)",
+        "Liberty County Deed Records",
+        "Tarkington Community Business Register"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Spouse and commercial partner of Cory Anderson; co-owner of Andco Rentals / Andco, LLC; signatory on equipment leasing and commercial property deeds servicing developer and county accounts.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "melanie_hunter",
+      "label": "Melanie Hunter",
+      "category": "business",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Pct 5 Campaign Treasurer / Constable Spousal Interlock",
+      "status": "Campaign Finance & Booster Conduit",
+      "risk_score": 85,
+      "anchors": [
+        "Constable Pct. 5 Campaign Finance C/OH Disclosures",
+        "Liberty County Elections Department Filings",
+        "Tarkington Local Network Filings"
+      ],
+      "surveys": [],
+      "notes": "Spouse of Constable David Hunter (Pct. 5); serves as campaign treasurer managing campaign accounts, American Values First PAC coordination, and private business sponsorships.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "tarkington_student_foundation",
+      "label": "Tarkington Student Foundation",
+      "category": "agency",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "501(c)(3) Off-Balance-Sheet School Land & Asset Entity",
+      "status": "Shadow Land Acquisition Conduit",
+      "risk_score": 89,
+      "anchors": [
+        "Tarkington Student Foundation IRS Form 990",
+        "TISD Prop B Confidential Land Purchase Records",
+        "Liberty County Deed Doc #2024-009182"
+      ],
+      "surveys": [
+        "Barton Tarkington A-354"
+      ],
+      "notes": "Non-profit entity operating parallel to Tarkington ISD Board and M Club; utilized to facilitate off-balance-sheet real estate transactions, confidential land acquisitions for campus expansions, and private booster allocations bypassing school board competitive procurement mandates.",
+      "degree_connectivity": 5
+    },
+    {
+      "id": "david_meyers",
+      "label": "Capt. David Meyers",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Captain of Criminal Investigative Division (CID) & Agency Spokesperson, LCSO",
+      "status": "Active Command / Primary Media & Ranger Liaison",
+      "risk_score": 88,
+      "anchors": [
+        "LCSO CID Command Roster",
+        "Sherry Novosad Death Scene Press Briefings",
+        "Texas Rangers Liaison Records",
+        "Inquest Docket 2024-11 Narrative Statements"
+      ],
+      "notes": "Captain in the Criminal Investigative Division of the Liberty County Sheriff's Office under Sheriff Bobby Rader. Primary official spokesperson on county homicides, shootings, and high-profile deaths. Acts as the primary LCSO liaison when the Texas Rangers are summoned into Liberty County, while managing internal agency narrative control surrounding officer-involved incidents and the Sherry Lee Novosad death scene."
+    },
+    {
+      "id": "kenny_burns",
+      "label": "Kenny Burns",
+      "category": "contractor",
+      "cartel": "Business, Corporate Shells & Financial Conduits",
+      "role": "Principal / Co-Owner, Burns Architecture LLC",
+      "status": "Active County Vendor / ARPA Lock Audit Flag",
+      "risk_score": 82,
+      "anchors": [
+        "White Construction $612K Audit Flag",
+        "Liberty County Jail Expansion Contract",
+        "ARPA $5M Allocation Schedule"
+      ],
+      "notes": "Co-principal of Burns Architecture alongside Brenda Burns. Awarded master architectural contracts for the Liberty County Jail and Colony Ridge Annex; implicated in county auditor findings regarding $612K in questionable fund transfers routed through White Construction."
+    },
+    {
+      "id": "domingo_quintana",
+      "label": "Domingo Quintana",
+      "category": "resident",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "FM 1008 Corridor Landowner / Former Inmate",
+      "status": "Center of Texas Rangers Lozano Investigation",
+      "risk_score": 74,
+      "anchors": [
+        "Texas Rangers Investigative Report on Liberty PD",
+        "Liberty County Jail Visitation Logs (Nov 2025)",
+        "FM 1008 Corridor Easement Plats"
+      ],
+      "notes": "Kenefick property owner along the critical FM 1008 infrastructure easement. Arrested following the Sept 2025 pond incident involving his wife Jessica Quintana. While held at Liberty County Jail, received unauthorized clandestine visits and personal transport from Liberty PD Lt. Ramiro Lozano, triggering an official Texas Rangers investigation and Lozano's immediate termination."
+    },
+    {
+      "id": "jessica_quintana",
+      "label": "Jessica Quintana",
+      "category": "resident",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "FM 1008 Property Co-Owner / Indicted Defendant",
+      "status": "Indicted ($3M Bond, Felony Injury to a Child)",
+      "risk_score": 72,
+      "anchors": [
+        "Sept 29, 2025 Indictment (Liberty County Grand Jury)",
+        "Liberty County Sheriff Emergency CAD 2025-09-29",
+        "FM 1008 Land Title Records"
+      ],
+      "notes": "Indicted on multiple counts of Felony Injury to a Child and Assault after drugging three children and attempting to drown them in a pond on rural family acreage along FM 1008 near Kenefick. Held on $3M bond. Property sits squarely in the high-stakes utility easement corridor connecting Colony Ridge expansion to FM 1008."
+    },
+    {
+      "id": "christian_dolcefino",
+      "label": "Christian Dolcefino, Esq.",
+      "category": "whistleblower",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Lead Legal Counsel, Dolcefino Consulting / Khawaja Law Firm",
+      "status": "Active Litigant (Cause CV24-00192 v. LCSO)",
+      "risk_score": 15,
+      "anchors": [
+        "Cause No. CV24-00192 (Dolcefino v. LCSO)",
+        "Texas OAG Letter Ruling OR2025-Novosad",
+        "Motion for Recusal of Judge Chap Cain"
+      ],
+      "notes": "Litigation attorney with The Khawaja Law Firm, PLLC representing Wayne Dolcefino and Kathy Hatcher. Filed formal Texas Public Information Act lawsuits and motions for recusal against Judge Chap Cain and Sheriff Bobby Rader to compel production of unredacted bodycam and 911 dispatch audio in the Sherry Novosad homicide cover-up."
     }
   ],
   "edges": [
@@ -3078,6 +3792,831 @@
       "relation": "Highway Arterial Residential Subdivisions",
       "type": "deed_overlap",
       "weight": 0.9
+    },
+    {
+      "source": "trey_harris",
+      "target": "buckeye_pac",
+      "relation": "Seven-Figure Primary Warchest Underwriter",
+      "type": "campaign_finance",
+      "weight": 0.99
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "judge_jay_knight",
+      "relation": "Commissioners Court Presiding Judge Slate Funding",
+      "type": "campaign_finance",
+      "weight": 0.94
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "bruce_karbowski",
+      "relation": "Pct 1 Commissioner Re-Election Slate Funding",
+      "type": "campaign_finance",
+      "weight": 0.93
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "greg_arthur",
+      "relation": "Pct 2 Commissioner Slate Endorsement & Financing",
+      "type": "campaign_finance",
+      "weight": 0.92
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "matthew_poston",
+      "relation": "County Attorney Slate Backing & Non-Enforcement Concord",
+      "type": "campaign_finance",
+      "weight": 0.91
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "ricky_brown",
+      "relation": "Tax Assessor-Collector Slate Financing",
+      "type": "campaign_finance",
+      "weight": 0.89
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "zack_harkness",
+      "relation": "Pct 6 Constable Campaign Slate Allocation",
+      "type": "campaign_finance",
+      "weight": 0.93
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "david_hunter",
+      "relation": "Pct 5 Constable Campaign Slate Allocation",
+      "type": "campaign_finance",
+      "weight": 0.9
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "tammy_bishop",
+      "relation": "Pct 1 Constable Campaign Slate Allocation",
+      "type": "campaign_finance",
+      "weight": 0.88
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "robbie_thornton",
+      "relation": "Pct 4 Constable Campaign Slate Allocation",
+      "type": "campaign_finance",
+      "weight": 0.88
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "john_tucker",
+      "relation": "Pct 2 Constable Campaign Slate Allocation",
+      "type": "campaign_finance",
+      "weight": 0.87
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "lee_chambers",
+      "relation": "County Clerk Campaign Slate Endorsement",
+      "type": "campaign_finance",
+      "weight": 0.89
+    },
+    {
+      "source": "buckeye_pac",
+      "target": "murphy_nasica",
+      "relation": "Campaign Management, Polling & Direct Mail Contract",
+      "type": "financial_conduit",
+      "weight": 0.95
+    },
+    {
+      "source": "murphy_nasica",
+      "target": "jennifer_bergman",
+      "relation": "Direct Campaign Consulting & Media Placement",
+      "type": "campaign_finance",
+      "weight": 0.94
+    },
+    {
+      "source": "colony_ridge",
+      "target": "american_values_first_pac",
+      "relation": "Corporate PAC Contribution Bypass",
+      "type": "campaign_finance",
+      "weight": 0.96
+    },
+    {
+      "source": "american_values_first_pac",
+      "target": "judge_jay_knight",
+      "relation": "Judicial / County Leadership Campaign Support",
+      "type": "campaign_finance",
+      "weight": 0.91
+    },
+    {
+      "source": "american_values_first_pac",
+      "target": "jennifer_bergman",
+      "relation": "Prosecutorial Campaign Conduit",
+      "type": "campaign_finance",
+      "weight": 0.93
+    },
+    {
+      "source": "american_values_first_pac",
+      "target": "bruce_karbowski",
+      "relation": "Pct 1 Commissioner PAC Support",
+      "type": "campaign_finance",
+      "weight": 0.9
+    },
+    {
+      "source": "american_values_first_pac",
+      "target": "david_whitmire",
+      "relation": "Pct 3 Commissioner PAC Support",
+      "type": "campaign_finance",
+      "weight": 0.9
+    },
+    {
+      "source": "mmd_1",
+      "target": "trey_harris",
+      "relation": "Beneficial Developer Sponsor & Road Dedication",
+      "type": "corporate",
+      "weight": 0.96
+    },
+    {
+      "source": "mmd_1",
+      "target": "wasteline_eng",
+      "relation": "District Engineering & SWPPP Certification",
+      "type": "vendor_contract",
+      "weight": 0.92
+    },
+    {
+      "source": "mmd_1",
+      "target": "mud_15",
+      "relation": "Inter-District Infrastructure & Sludge Transfer Interlock",
+      "type": "bond_authorization",
+      "weight": 0.95
+    },
+    {
+      "source": "mmd_1",
+      "target": "judge_jay_knight",
+      "relation": "Commissioners Court Statutory Approval & Oversight",
+      "type": "governance",
+      "weight": 0.91
+    },
+    {
+      "source": "mmd_1",
+      "target": "bruce_karbowski",
+      "relation": "Pct 1 Commissioner Court Bond Consent",
+      "type": "governance",
+      "weight": 0.9
+    },
+    {
+      "source": "savannah_crihfield",
+      "target": "mud_15",
+      "relation": "Governing Board Member",
+      "type": "bond_authorization",
+      "weight": 0.88
+    },
+    {
+      "source": "ryan_crihfield",
+      "target": "mud_15",
+      "relation": "Governing Board Member",
+      "type": "bond_authorization",
+      "weight": 0.88
+    },
+    {
+      "source": "damaris_watson",
+      "target": "mud_15",
+      "relation": "Governing Board Member",
+      "type": "bond_authorization",
+      "weight": 0.87
+    },
+    {
+      "source": "clifton_cadle",
+      "target": "mud_15",
+      "relation": "Governing Board Member",
+      "type": "bond_authorization",
+      "weight": 0.87
+    },
+    {
+      "source": "patrick_thiel",
+      "target": "mud_15",
+      "relation": "Governing Board Member",
+      "type": "bond_authorization",
+      "weight": 0.86
+    },
+    {
+      "source": "ernesto_garcia",
+      "target": "mud_15",
+      "relation": "Governing Board Member",
+      "type": "bond_authorization",
+      "weight": 0.86
+    },
+    {
+      "source": "colony_ridge",
+      "target": "mud_14",
+      "relation": "District Expansion Sponsorship",
+      "type": "bond_authorization",
+      "weight": 0.94
+    },
+    {
+      "source": "mud_14",
+      "target": "wasteline_eng",
+      "relation": "Infrastructure Engineering Contracts",
+      "type": "vendor_contract",
+      "weight": 0.9
+    },
+    {
+      "source": "trinity_valley_sud",
+      "target": "daryl_farrell",
+      "relation": "Board Governance",
+      "type": "corporate",
+      "weight": 0.85
+    },
+    {
+      "source": "trinity_valley_sud",
+      "target": "steven_howsmon",
+      "relation": "Board Governance",
+      "type": "corporate",
+      "weight": 0.85
+    },
+    {
+      "source": "trinity_valley_sud",
+      "target": "tarkington_expansion_corridor",
+      "relation": "Utility Easements & Water Interconnects",
+      "type": "deed_overlap",
+      "weight": 0.89
+    },
+    {
+      "source": "cory_anderson",
+      "target": "andco_rentals",
+      "relation": "Co-Owner & Commercial Manager",
+      "type": "corporate",
+      "weight": 0.95
+    },
+    {
+      "source": "cory_anderson",
+      "target": "mmd_1",
+      "relation": "Assistant Secretary & Cross-District Coordinator",
+      "type": "governance",
+      "weight": 0.92
+    },
+    {
+      "source": "cory_anderson",
+      "target": "tisd_board",
+      "relation": "Former Trustee & School Board Crossover",
+      "type": "governance",
+      "weight": 0.88
+    },
+    {
+      "source": "brenda_burns",
+      "target": "tisd_board",
+      "relation": "Trustee & Bond Oversight",
+      "type": "governance",
+      "weight": 0.92
+    },
+    {
+      "source": "brenda_burns",
+      "target": "burns_architecture",
+      "relation": "Commercial Entity Affiliation",
+      "type": "corporate",
+      "weight": 0.94
+    },
+    {
+      "source": "burns_architecture",
+      "target": "tisd_board",
+      "relation": "Public Architectural Design Contracts",
+      "type": "vendor_contract",
+      "weight": 0.91
+    },
+    {
+      "source": "dwayne_stovall",
+      "target": "tisd_board",
+      "relation": "Trustee & Facilities Vote",
+      "type": "governance",
+      "weight": 0.89
+    },
+    {
+      "source": "mckenna_contracting",
+      "target": "colony_ridge",
+      "relation": "Civil Excavation & Dirt-Work Subcontracts",
+      "type": "vendor_contract",
+      "weight": 0.88
+    },
+    {
+      "source": "mckenna_contracting",
+      "target": "mmd_1",
+      "relation": "Paving & Drainage Subcontracts",
+      "type": "vendor_contract",
+      "weight": 0.87
+    },
+    {
+      "source": "marek_brothers_co",
+      "target": "heath_marek",
+      "relation": "Commercial Affiliate & Credit Syndicate",
+      "type": "corporate",
+      "weight": 0.95
+    },
+    {
+      "source": "marek_brothers_co",
+      "target": "bell_silva",
+      "relation": "Credit Manager & Mechanic Lien Custodian",
+      "type": "corporate",
+      "weight": 0.92
+    },
+    {
+      "source": "bell_silva",
+      "target": "cynthia_silva",
+      "relation": "Family Nexus (Credit Manager & Local Reporter)",
+      "type": "familial",
+      "weight": 0.89
+    },
+    {
+      "source": "cynthia_silva",
+      "target": "investigative_media_coalition",
+      "relation": "Bluebonnet News Reporting Beat",
+      "type": "governance",
+      "weight": 0.85
+    },
+    {
+      "source": "ernest_bailes",
+      "target": "mmd_1",
+      "relation": "Authored HB 4341 Creating District (2017)",
+      "type": "bond_authorization",
+      "weight": 0.98
+    },
+    {
+      "source": "ernest_bailes",
+      "target": "mud_12",
+      "relation": "Authored HB 5323 Creating District (2023)",
+      "type": "bond_authorization",
+      "weight": 0.98
+    },
+    {
+      "source": "ernest_bailes",
+      "target": "trey_harris",
+      "relation": "Legislative Champion & PAC Beneficiary",
+      "type": "campaign_finance",
+      "weight": 0.94
+    },
+    {
+      "source": "robert_nichols",
+      "target": "mmd_1",
+      "relation": "Senate Sponsor for HB 4341 (Unanimous 31-0)",
+      "type": "bond_authorization",
+      "weight": 0.95
+    },
+    {
+      "source": "susan_bailes",
+      "target": "ernest_bailes",
+      "relation": "Spouse",
+      "type": "familial",
+      "weight": 0.99
+    },
+    {
+      "source": "susan_bailes",
+      "target": "jennifer_bergman",
+      "relation": "Health Center of Southeast Texas Board Colleague",
+      "type": "governance",
+      "weight": 0.92
+    },
+    {
+      "source": "janis_holt",
+      "target": "ernest_bailes",
+      "relation": "Unseated in 2024 GOP Primary on Anti-Colony Ridge Platform",
+      "type": "governance",
+      "weight": 0.95
+    },
+    {
+      "source": "bruce_stratton",
+      "target": "jennifer_bergman",
+      "relation": "County Power Elder & Hospital District Alignment",
+      "type": "governance",
+      "weight": 0.88
+    },
+    {
+      "source": "cedric_mcduffie",
+      "target": "jennifer_bergman",
+      "relation": "Cleveland City Council Vote Conflict & 2011 Recall",
+      "type": "governance",
+      "weight": 0.9
+    },
+    {
+      "source": "higher_spirit_holding",
+      "target": "zachary_yanta",
+      "relation": "Agricultural Grazing Lease for 1-D-1 Ag Exemption",
+      "type": "deed_overlap",
+      "weight": 0.93
+    },
+    {
+      "source": "higher_spirit_holding",
+      "target": "scott_ellis",
+      "relation": "Appraisal Review Board Valuation Assessment",
+      "type": "governance",
+      "weight": 0.89
+    },
+    {
+      "source": "higher_spirit_holding",
+      "target": "ricky_brown",
+      "relation": "Ad Valorem Tax Roll Administration",
+      "type": "governance",
+      "weight": 0.87
+    },
+    {
+      "source": "wayne_dolcefino",
+      "target": "sherry_novosad",
+      "relation": "Homicide Cover-Up & Forensic DNA Expos\u00e9",
+      "type": "investigation",
+      "weight": 0.99
+    },
+    {
+      "source": "kathy_hatcher",
+      "target": "sherry_novosad",
+      "relation": "Mother of Decedent",
+      "type": "familial",
+      "weight": 1.0
+    },
+    {
+      "source": "kathy_hatcher",
+      "target": "wayne_dolcefino",
+      "relation": "Retained Dolcefino Consulting for Death Investigation",
+      "type": "investigation",
+      "weight": 0.98
+    },
+    {
+      "source": "wayne_dolcefino",
+      "target": "ralph_fuller",
+      "relation": "Investigating Rushed Inquest 2024-11 Suicide Ruling",
+      "type": "investigation",
+      "weight": 0.95
+    },
+    {
+      "source": "wayne_dolcefino",
+      "target": "jennifer_bergman",
+      "relation": "Investigating Bodycam Suppression & Inaction",
+      "type": "investigation",
+      "weight": 0.94
+    },
+    {
+      "source": "kathy_hatcher",
+      "target": "james_mcqueen",
+      "relation": "Demanded Buccal Swab for Scene Foreign DNA Match",
+      "type": "dna_exclusion",
+      "weight": 0.96
+    },
+    {
+      "source": "kathy_hatcher",
+      "target": "bobby_rader",
+      "relation": "Challenged LCSO Staged Suicide Ruling",
+      "type": "police_coverup",
+      "weight": 0.95
+    },
+    {
+      "source": "maria_acevedo",
+      "target": "colony_ridge",
+      "relation": "Federal Witness & $68M Settlement Formal Objection",
+      "type": "corporate",
+      "weight": 0.98
+    },
+    {
+      "source": "maria_acevedo",
+      "target": "cedric_mcduffie",
+      "relation": "Audited Flock ALPR Hotlist Surveillance Dragnet (TPIA)",
+      "type": "police_coverup",
+      "weight": 0.97
+    },
+    {
+      "source": "maria_acevedo",
+      "target": "investigative_media_coalition",
+      "relation": "Released Recorded Deeds & Repossession Notes via Social Media",
+      "type": "governance",
+      "weight": 0.95
+    },
+    {
+      "source": "maria_acevedo",
+      "target": "bobby_rader",
+      "relation": "TPIA Audit on Sheriff ALPR Inter-Agency Data Sharing",
+      "type": "police_coverup",
+      "weight": 0.92
+    },
+    {
+      "source": "maria_acevedo",
+      "target": "jennifer_bergman",
+      "relation": "Reported Developer Predatory Lending & Fraud (Zero Action)",
+      "type": "governance",
+      "weight": 0.9
+    },
+    {
+      "source": "mandy_anderson",
+      "target": "cory_anderson",
+      "relation": "Spouse & Business Partner",
+      "type": "familial",
+      "weight": 1.0
+    },
+    {
+      "source": "mandy_anderson",
+      "target": "andco_rentals",
+      "relation": "Co-Owner & Authorized Commercial Signatory",
+      "type": "corporate",
+      "weight": 0.98
+    },
+    {
+      "source": "cory_anderson",
+      "target": "mud_12",
+      "relation": "Special District Expansion Coordination",
+      "type": "governance",
+      "weight": 0.88
+    },
+    {
+      "source": "melanie_hunter",
+      "target": "david_hunter",
+      "relation": "Spouse & Campaign Treasurer",
+      "type": "familial",
+      "weight": 1.0
+    },
+    {
+      "source": "melanie_hunter",
+      "target": "buckeye_pac",
+      "relation": "Coordinated Slate Campaign Finance Administration",
+      "type": "campaign_finance",
+      "weight": 0.92
+    },
+    {
+      "source": "melanie_hunter",
+      "target": "andco_rentals",
+      "relation": "Donation & Sponsorship Receipt Coordinator",
+      "type": "financial_conduit",
+      "weight": 0.9
+    },
+    {
+      "source": "tarkington_student_foundation",
+      "target": "tisd_board",
+      "relation": "Off-Balance-Sheet Real Estate Vehicle",
+      "type": "governance",
+      "weight": 0.95
+    },
+    {
+      "source": "tarkington_student_foundation",
+      "target": "m_club_foundation",
+      "relation": "Interlocked Booster Treasury & Shadow Accounts",
+      "type": "financial_conduit",
+      "weight": 0.96
+    },
+    {
+      "source": "tarkington_student_foundation",
+      "target": "tom_johnson",
+      "relation": "Founding Director & Land Transaction Manager",
+      "type": "corporate",
+      "weight": 0.94
+    },
+    {
+      "source": "tarkington_student_foundation",
+      "target": "susan_rollins",
+      "relation": "Board Trustee & Non-Profit Controller",
+      "type": "corporate",
+      "weight": 0.92
+    },
+    {
+      "source": "tarkington_student_foundation",
+      "target": "kevin_johnson",
+      "relation": "Booster & Construction Procurement Nexus",
+      "type": "corporate",
+      "weight": 0.91
+    },
+    {
+      "source": "mud_12",
+      "target": "mud_15",
+      "relation": "Sister Developer Utility Districts",
+      "type": "bond_authorization",
+      "weight": 0.94
+    },
+    {
+      "source": "mud_12",
+      "target": "trey_harris",
+      "relation": "Developer Sponsor & Land Donor",
+      "type": "corporate",
+      "weight": 0.97
+    },
+    {
+      "source": "mud_12",
+      "target": "john_harris",
+      "relation": "Co-Developer & Master Bond Guarantor",
+      "type": "corporate",
+      "weight": 0.96
+    },
+    {
+      "source": "mud_12",
+      "target": "ernest_bailes",
+      "relation": "Legislative Sponsor of HB 5323 (88th Legislature)",
+      "type": "bond_authorization",
+      "weight": 0.98
+    },
+    {
+      "id": "david_meyers-bobby_rader-governance",
+      "source": "david_meyers",
+      "target": "bobby_rader",
+      "relation": "LCSO CID Command Staff",
+      "type": "governance",
+      "weight": 1.0
+    },
+    {
+      "id": "david_meyers-james_mcqueen-police_coverup",
+      "source": "david_meyers",
+      "target": "james_mcqueen",
+      "relation": "CID Detective Supervisor & Case Steering",
+      "type": "police_coverup",
+      "weight": 0.95
+    },
+    {
+      "id": "david_meyers-sherry_novosad-forensic_suppression",
+      "source": "david_meyers",
+      "target": "sherry_novosad",
+      "relation": "Death Scene Narrative & Media Spokesperson",
+      "type": "forensic_suppression",
+      "weight": 0.95
+    },
+    {
+      "id": "david_meyers-texas_rangers-governance",
+      "source": "david_meyers",
+      "target": "texas_rangers",
+      "relation": "Official DPS Ranger Agency Liaison",
+      "type": "governance",
+      "weight": 0.85
+    },
+    {
+      "id": "david_meyers-cedric_mcduffie-governance",
+      "source": "david_meyers",
+      "target": "cedric_mcduffie",
+      "relation": "Inter-Agency Command & Information Coordination",
+      "type": "governance",
+      "weight": 0.8
+    },
+    {
+      "id": "ted_novosad-sherry_novosad-familial",
+      "source": "ted_novosad",
+      "target": "sherry_novosad",
+      "relation": "Surviving Spouse & Industrial Settlement Beneficiary",
+      "type": "familial",
+      "weight": 0.9
+    },
+    {
+      "id": "ted_novosad-james_mcqueen-dna_exclusion",
+      "source": "ted_novosad",
+      "target": "james_mcqueen",
+      "relation": "Forensic DNA Exclusion / Non-Interference Baseline",
+      "type": "dna_exclusion",
+      "weight": 0.9
+    },
+    {
+      "id": "wayne_dolcefino-ted_novosad-forensic_suppression",
+      "source": "wayne_dolcefino",
+      "target": "ted_novosad",
+      "relation": "Commissioned DNA Testing Conclusively Excluding Spouse",
+      "type": "forensic_suppression",
+      "weight": 0.85
+    },
+    {
+      "id": "kenny_burns-burns_architecture-corporate",
+      "source": "kenny_burns",
+      "target": "burns_architecture",
+      "relation": "Co-Principal & Managing Architect",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "id": "kenny_burns-brenda_burns-familial",
+      "source": "kenny_burns",
+      "target": "brenda_burns",
+      "relation": "Spousal & Corporate Business Partnership",
+      "type": "familial",
+      "weight": 1.0
+    },
+    {
+      "id": "kenny_burns-tom_johnson-financial_conduit",
+      "source": "kenny_burns",
+      "target": "tom_johnson",
+      "relation": "Shared Address & Infrastructure Clearing Nexus",
+      "type": "financial_conduit",
+      "weight": 0.85
+    },
+    {
+      "id": "domingo_quintana-jessica_quintana-familial",
+      "source": "domingo_quintana",
+      "target": "jessica_quintana",
+      "relation": "Spouse & FM 1008 Property Co-Owner",
+      "type": "familial",
+      "weight": 0.85
+    },
+    {
+      "id": "ramiro_lozano-domingo_quintana-police_coverup",
+      "source": "ramiro_lozano",
+      "target": "domingo_quintana",
+      "relation": "Unauthorized Clandestine Jail Visits & Transport",
+      "type": "police_coverup",
+      "weight": 1.0
+    },
+    {
+      "id": "texas_rangers-domingo_quintana-governance",
+      "source": "texas_rangers",
+      "target": "domingo_quintana",
+      "relation": "Ranger Criminal Audit of Jail Breach",
+      "type": "governance",
+      "weight": 0.9
+    },
+    {
+      "id": "marco_jacquez-burns_architecture-vendor_contract",
+      "source": "marco_jacquez",
+      "target": "burns_architecture",
+      "relation": "Arson Exposed Defective $1.1M Electronic Cell Locks",
+      "type": "vendor_contract",
+      "weight": 0.85
+    },
+    {
+      "id": "marco_jacquez-bobby_rader-governance",
+      "source": "marco_jacquez",
+      "target": "bobby_rader",
+      "relation": "Custodial Facility Arson & Security Breach",
+      "type": "governance",
+      "weight": 0.8
+    },
+    {
+      "id": "christian_dolcefino-wayne_dolcefino-corporate",
+      "source": "christian_dolcefino",
+      "target": "wayne_dolcefino",
+      "relation": "Legal Counsel & Investigative Partner",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "id": "christian_dolcefino-sherry_novosad-forensic_suppression",
+      "source": "christian_dolcefino",
+      "target": "sherry_novosad",
+      "relation": "TPIA Counsel for Decedent Estate & Hatcher",
+      "type": "forensic_suppression",
+      "weight": 0.95
+    },
+    {
+      "id": "christian_dolcefino-bobby_rader-police_coverup",
+      "source": "christian_dolcefino",
+      "target": "bobby_rader",
+      "relation": "Cause CV24-00192 Litigant Compelling Bodycam Release",
+      "type": "police_coverup",
+      "weight": 0.95
+    },
+    {
+      "id": "christian_dolcefino-chap_cain-ch171_conflict",
+      "source": "christian_dolcefino",
+      "target": "chap_cain",
+      "relation": "Formal Motion to Recuse Presiding District Judge",
+      "type": "ch171_conflict",
+      "weight": 0.9
+    },
+    {
+      "id": "walter_dean-mud_15-financial_conduit",
+      "source": "walter_dean",
+      "target": "mud_15",
+      "relation": "Vendor Disbursements & Infrastructure Land Assembly",
+      "type": "financial_conduit",
+      "weight": 0.85
+    },
+    {
+      "id": "walter_dean-cesar_javier_garcia-corporate_shell",
+      "source": "walter_dean",
+      "target": "cesar_javier_garcia",
+      "relation": "Asset Transfer Co-Managing Member",
+      "type": "corporate_shell",
+      "weight": 0.9
+    },
+    {
+      "id": "texas_rangers-jason_grindstaff-governance",
+      "source": "texas_rangers",
+      "target": "jason_grindstaff",
+      "relation": "Indicted Officer on Ranger Oppression Referral",
+      "type": "governance",
+      "weight": 1.0
+    },
+    {
+      "id": "texas_rangers-ramiro_lozano-governance",
+      "source": "texas_rangers",
+      "target": "ramiro_lozano",
+      "relation": "Investigation Triggered Immediate Termination",
+      "type": "governance",
+      "weight": 1.0
+    },
+    {
+      "id": "texas_rangers-klint_bush-governance",
+      "source": "texas_rangers",
+      "target": "klint_bush",
+      "relation": "Investigated LCHA $163K Theft of Public Funds",
+      "type": "governance",
+      "weight": 1.0
+    },
+    {
+      "id": "texas_rangers-emily_cook-governance",
+      "source": "texas_rangers",
+      "target": "emily_cook",
+      "relation": "Audited Fiduciary Misapplication of LCHA Vouchers",
+      "type": "governance",
+      "weight": 1.0
+    },
+    {
+      "id": "texas_rangers-william_hergemueller-governance",
+      "source": "texas_rangers",
+      "target": "william_hergemueller",
+      "relation": "Arrested County Fire Marshal for Inspection Theft",
+      "type": "governance",
+      "weight": 1.0
     }
   ],
   "vectors": [
@@ -3104,6 +4643,12 @@
       "name": "School Bond, CAD & Land Speculation",
       "color": "#f59e0b",
       "description": "Burns Architecture $612K pass-through, Tom Johnson M-Club fund, and Tarkington ISD bond deals."
+    },
+    {
+      "id": "BUSINESS_SHELL",
+      "name": "Business, Corporate Shells & Financial Conduits",
+      "color": "#10b981",
+      "description": "Private corporate LLCs, vendor shell conduits, architectural pass-throughs, and commercial contracting firms linked to public officials."
     }
   ]
 }

@@ -45,14 +45,22 @@ async function loadStaticFallback() {
  */
 async function initEntities() {
   try {
-    const snap = await getDocs(collection(db, 'entities'));
-    if (snap.empty) {
+    const [entitiesSnap, edgesSnap] = await Promise.all([
+      getDocs(collection(db, 'entities')),
+      getDocs(collection(db, 'edges'))
+    ]);
+
+    if (entitiesSnap.empty) {
       console.log('[Firestore] entities collection empty, loading static fallback');
       await loadStaticFallback();
       return;
     }
 
-    // Real-time listener
+    // Populate data immediately so synchronous callers have full dataset
+    entitiesData = entitiesSnap.docs.map(d => ({ id: d.id, ...d.data() }));
+    edgesData = edgesSnap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+    // Real-time listener for ongoing updates
     onSnapshot(collection(db, 'entities'), (snapshot) => {
       entitiesData = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
       if (onEntitiesUpdate) onEntitiesUpdate(entitiesData);

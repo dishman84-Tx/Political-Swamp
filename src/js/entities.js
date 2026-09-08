@@ -7,14 +7,15 @@ import { getEdges } from './firestore.js';
 
 const CARTEL_BADGE = {
   'Developer & Bond Syndicate':                    'cartel-developer',
+  'Business, Corporate Shells & Financial Conduits': 'cartel-business',
   'Law Enforcement, Inquest & Death Suppression':  'cartel-law',
   'School Board, CAD & Construction Arbitrage':    'cartel-school',
   'Judicial & Prosecutorial Family Dynasty':       'cartel-judicial',
 };
 
 let allEntities = [];
-let sortKey = 'risk_score';
-let sortDir = -1; // -1 = desc
+let sortKey = 'label';
+let sortDir = 1; // 1 = asc (Alphabetical A-Z)
 
 function getRiskClass(score) {
   if (score >= 90) return 'risk-critical';
@@ -45,7 +46,7 @@ function renderTable(entities) {
         </td>
         <td class="px-4 py-3">
           <span class="px-2 py-0.5 rounded-full text-[11px] font-mono font-bold ${badgeClass}">
-            ${e.cartel === 'Developer & Bond Syndicate' ? 'Developer' : e.cartel === 'Law Enforcement, Inquest & Death Suppression' ? 'Law Enf / Inquest' : e.cartel === 'School Board, CAD & Construction Arbitrage' ? 'School / CAD' : 'Judicial Dynasty'}
+            ${e.cartel === 'Developer & Bond Syndicate' ? 'Developer' : e.cartel === 'Business, Corporate Shells & Financial Conduits' ? 'Business / Shells' : e.cartel === 'Law Enforcement, Inquest & Death Suppression' ? 'Law Enf / Inquest' : e.cartel === 'School Board, CAD & Construction Arbitrage' ? 'School / CAD' : 'Judicial Dynasty'}
           </span>
         </td>
         <td class="px-4 py-3 hidden lg:table-cell">

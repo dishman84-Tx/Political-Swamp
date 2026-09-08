@@ -1,11 +1,12 @@
 /**
  * Drawer Module — Slide-out entity detail panel
  */
-import { getEdges } from './firestore.js';
+import { getEdges, getEntities } from './firestore.js';
 import { getEvidenceDossier } from './evidence_dossier.js';
 
 const CARTEL_BADGE_CLASS = {
   'Developer & Bond Syndicate':                    'cartel-developer',
+  'Business, Corporate Shells & Financial Conduits': 'cartel-business',
   'Law Enforcement, Inquest & Death Suppression':  'cartel-law',
   'School Board, CAD & Construction Arbitrage':    'cartel-school',
   'Judicial & Prosecutorial Family Dynasty':       'cartel-judicial',
@@ -25,6 +26,56 @@ function getRiskColor(score) {
   return '#22c55e';
 }
 
+// Global helper for opening entity drawer by ID from notes links or timeline
+window.__openEntityDrawer = (entityId) => {
+  const entity = getEntities().find(e => e.id === entityId) || { id: entityId, label: entityId.replace(/_/g, ' ') };
+  openDrawer(entity, getEdges());
+};
+
+/**
+ * Scan notes text and wrap mentions of tracked entities with interactive click links
+ */
+function linkifyNotes(notesText, currentEntityId) {
+  if (!notesText) return 'No investigative notes available.';
+  const entities = getEntities();
+  if (!entities.length) return notesText;
+
+  // Sort candidates by string length descending to match full names before substrings
+  const sorted = [...entities]
+    .filter(e => e.id !== currentEntityId && (e.label || e.id).length >= 3)
+    .sort((a, b) => (b.label || b.id).length - (a.label || a.id).length);
+
+  let html = notesText;
+  for (const ent of sorted) {
+    const rawLabel = ent.label || ent.id;
+    const cleanLabel = rawLabel.replace(/^(comm\.|judge|rep\.|sen\.|sheriff|constable|capt\.|lt\.|chief)\s+/i, '').trim();
+    const searchTerms = [rawLabel];
+    if (cleanLabel !== rawLabel && cleanLabel.length >= 3) searchTerms.push(cleanLabel);
+
+    // Also support nickname like "Trey Harris" if label is "William 'Trey' Harris III"
+    const nickMatch = rawLabel.match(/'([^']+)'/);
+    if (nickMatch) {
+      const lastName = rawLabel.split(' ').pop();
+      searchTerms.push(`${nickMatch[1]} ${lastName}`);
+    }
+
+    for (const term of searchTerms) {
+      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`\\b${escaped}\\b`, 'gi');
+      html = html.replace(regex, (match) => {
+        return `[[LINK:${ent.id}:${match}]]`;
+      });
+    }
+  }
+
+  // Convert marker tokens to clickable button links
+  html = html.replace(/\[\[LINK:([^:]+):([^\]]+)\]\]/g, (match, id, text) => {
+    return `<button type="button" class="font-semibold text-teal-400 hover:text-teal-200 underline decoration-teal-500/50 hover:decoration-teal-200 cursor-pointer inline transition-colors" onclick="window.__openEntityDrawer && window.__openEntityDrawer('${id}')">${text}</button>`;
+  });
+
+  return html;
+}
+
 /**
  * Open the entity detail drawer
  */
@@ -36,7 +87,7 @@ export function openDrawer(nodeData, edgesOverride) {
   document.getElementById('drawerLabel').textContent = nodeData.label || nodeData.id;
   document.getElementById('drawerRole').textContent = nodeData.role || '';
   document.getElementById('drawerStatus').textContent = nodeData.status || 'Active';
-  document.getElementById('drawerNotes').textContent = nodeData.notes || 'No investigative notes available.';
+  document.getElementById('drawerNotes').innerHTML = linkifyNotes(nodeData.notes, nodeData.id);
 
   // Cartel badge
   const badge = document.getElementById('drawerCartelBadge');
@@ -83,16 +134,26 @@ export function openDrawer(nodeData, edgesOverride) {
 
   if (connected.length) {
     edgesContainer.innerHTML = connected.map(e => {
-      const other = e.source === nodeData.id ? e.target : e.source;
+      const otherId = e.source === nodeData.id ? e.target : e.source;
+      const otherEnt = getEntities().find(ent => ent.id === otherId);
+      const otherName = otherEnt ? (otherEnt.label || otherId) : otherId.replace(/_/g, ' ');
+      const otherScore = otherEnt ? (otherEnt.risk_score || 0) : 0;
       const typeLabel = (e.label || e.type || '').replace(/_/g, ' ');
       return `
-        <div class="flex items-center justify-between p-2.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 cursor-pointer hover:bg-zinc-800 transition-colors"
-             onclick="window.__focusNode && window.__focusNode('${other}')">
-          <div class="flex items-center gap-2">
-            <span class="text-zinc-400">→</span>
-            <span class="text-zinc-200 text-sm font-medium">${other.replace(/_/g, ' ')}</span>
+        <div class="flex items-center justify-between p-2.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 hover:bg-zinc-800 transition-colors group">
+          <div class="flex items-center gap-2 min-w-0 cursor-pointer" onclick="window.__openEntityDrawer && window.__openEntityDrawer('${otherId}')">
+            <span class="text-teal-400 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+            <div class="min-w-0">
+              <span class="text-zinc-200 text-sm font-medium group-hover:text-teal-300 block truncate">${otherName}</span>
+              <span class="text-[10px] font-mono text-zinc-500 block truncate">${typeLabel}</span>
+            </div>
           </div>
-          <span class="text-xs font-mono text-zinc-500">${typeLabel}</span>
+          <div class="flex items-center gap-2 shrink-0">
+            <span class="text-xs font-mono font-bold" style="color: ${getRiskColor(otherScore)}">${otherScore}</span>
+            <button class="p-1 text-zinc-400 hover:text-teal-400 transition-colors cursor-pointer" title="Locate in Network Graph" onclick="window.__focusNode && window.__focusNode('${otherId}')">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </button>
+          </div>
         </div>
       `;
     }).join('');
