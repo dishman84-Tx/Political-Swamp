@@ -1,11 +1,11 @@
 {
   "version": "3.0.0",
-  "generated_at": "2026-09-08T10:39:08.722022",
+  "generated_at": "2026-09-08T10:51:57.455951",
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
     "total_nodes": 43,
-    "total_edges": 69,
+    "total_edges": 77,
     "cartels": 4,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
@@ -50,7 +50,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Co-owner Liberty Paving LLC; top contributor to Buckeye Values PAC and local county slates.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "john_harris",
@@ -86,7 +86,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Authorized $88.36M in public developer debt via exactly 2 voters; primary vehicle to absorb $48M Fund A infrastructure capital.",
-      "degree_connectivity": 5
+      "degree_connectivity": 6
     },
     {
       "id": "mmd_1",
@@ -105,7 +105,7 @@
         "A-103"
       ],
       "notes": "Awarded $22.5M in road paving contracts to board member-owned entities via Tex. Loc. Gov't Code \u00a7 171.004 loop.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "daniel_land_co",
@@ -125,7 +125,7 @@
         "Isaiah Fields A-35"
       ],
       "notes": "Controls strategic perimeter blocking tracts positioned along development boundary to receive drainage buyout flips.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "liberty_paving",
@@ -143,7 +143,7 @@
         "A-10"
       ],
       "notes": "Co-owned by Heath Marek (MMD 1 VP) and Trey Harris; absorbed $22.5M in district disbursements.",
-      "degree_connectivity": 3
+      "degree_connectivity": 4
     },
     {
       "id": "buckeye_pac",
@@ -480,7 +480,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "Physical address identical to Brenda Burns; controls M-Club shadow account; major contractor on TISD and TxDOT right-of-way.",
-      "degree_connectivity": 5
+      "degree_connectivity": 6
     },
     {
       "id": "tarkington_isd",
@@ -624,7 +624,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Voted for MMD 1 paving approvals funding Liberty Paving LLC; indicted April 2025; key voting nexus for Colony Ridge expansion.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "greg_arthur",
@@ -668,19 +668,27 @@
       "category": "infrastructure",
       "cartel": "Developer & Bond Syndicate",
       "role": "Grand Parkway to FM 321 Arterial Corridor",
-      "status": "Delayed: TxDOT ROW Bottlenecks & Bond Caps",
-      "risk_score": 92,
+      "status": "Delayed: TxDOT ROW Bottlenecks & Landowner Pushback",
+      "risk_score": 94,
       "anchors": [
-        "TxDOT Form 1295 ROW Dockets",
-        "Tarkington ISD Bond Resolution",
-        "Southern MMD 1 $119M Ceiling"
+        "Liberty County Deed Doc #2018010778 (Timbervest 5,794-Acre Transfer A-208)",
+        "Liberty County Deed Doc #2026017008 (John Harris Director Lot #5 MMD 1 Straw Deed)",
+        "Liberty County Instrument #2025041525 (Bell Silva Credit Line / MMD 1 $119M)",
+        "Liberty County Deed Doc #W2025018238 (ANDCO LLC / Cory Anderson 61.05 Ac A-208)",
+        "Liberty County Deed Doc #2016016901 (Tom Johnson / Burns TxDOT Clearing Overlap)",
+        "Pipeline ROW Doc #2019009376 (ONEOK Arbuckle II 300.6 Ac A-354)",
+        "Liberty CAD PID 10125 (Daniel Land Co. Blocking Tract A-10)"
       ],
       "surveys": [
+        "Ann Holshousen A-208",
+        "Barton Tarkington A-354",
         "Aaron Cherry A-10",
-        "Phillip Miller A-800"
+        "Phillip Miller A-800",
+        "J.F. DeRumayor A-103",
+        "Isaiah Fields A-35"
       ],
-      "notes": "Stalled expansion artery connecting Colony Ridge to FM 321 in Tarkington Prairie; blocked by landowners and drainage pushback.",
-      "degree_connectivity": 4
+      "notes": "Northeast expansion artery designed to connect SH 99 Grand Parkway through Colony Ridge to FM 321 in Tarkington Prairie. Delayed by landowner eminent domain resistance, MUD 15 runoff litigation, and MMD 1 debt caps.",
+      "degree_connectivity": 12
     },
     {
       "id": "kevin_johnson",
@@ -698,7 +706,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "TISD Trustee directing school bond contracts to his own clearing entities and co-managing off-book booster accounts with Tom Johnson.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3
     },
     {
       "id": "jimmy_rollins_cad",
@@ -1276,6 +1284,62 @@
       "relation": "Investigating Liberty PD Nov 2025 Hit-and-Run Logs",
       "type": "investigative_inquiry",
       "weight": 0.9
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "trey_harris",
+      "relation": "Arterial Corridor Land Accumulation & Expansion Plats",
+      "type": "corporate",
+      "weight": 0.95
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "mmd_1",
+      "relation": "Corridor Infrastructure Bond Underwriting ($119M Cap)",
+      "type": "financial_conduit",
+      "weight": 0.95
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "liberty_paving",
+      "relation": "Arterial Paving & Expansion Contracts ($22.5M)",
+      "type": "vendor_contract",
+      "weight": 0.92
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "kevin_johnson",
+      "relation": "Corridor Dirt Clearing & TISD Bond Alignment",
+      "type": "vendor_contract",
+      "weight": 0.88
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "tom_johnson",
+      "relation": "TxDOT ROW Clearing Subcontracts (Doc #2016016901)",
+      "type": "vendor_contract",
+      "weight": 0.9
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "david_whitmire",
+      "relation": "Pct 3 Unanimous Plat & Corridor Arterial Approval",
+      "type": "governance",
+      "weight": 0.9
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "mud_15",
+      "relation": "Drainage Easements & Luce Bayou Sludge Watershed",
+      "type": "infrastructure",
+      "weight": 0.85
+    },
+    {
+      "source": "tarkington_expansion_corridor",
+      "target": "daniel_land_co",
+      "relation": "Perimeter Blocking & Drainage Canal Servitude (PID 10125)",
+      "type": "deed_overlap",
+      "weight": 0.88
     }
   ],
   "vectors": [

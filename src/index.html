@@ -329,6 +329,76 @@
       </div>
     </aside>
 
+    <!-- EVIDENCE DETAIL MODAL -->
+    <div id="evidenceModalBackdrop" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-3 sm:p-6" aria-hidden="true">
+      <div id="evidenceModal" class="relative w-full max-w-3xl max-h-[90vh] bg-zinc-900 border border-teal-500/40 rounded-2xl shadow-2xl shadow-teal-950/60 flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200">
+        <!-- Modal Header -->
+        <div class="p-5 border-b border-zinc-800 flex items-start justify-between bg-zinc-950/60">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span id="evidenceModalCategory" class="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold"></span>
+              <span id="evidenceModalEntity" class="text-xs font-mono text-zinc-400"></span>
+            </div>
+            <h3 id="evidenceModalTitle" class="text-xl font-bold text-zinc-100 font-mono tracking-tight"></h3>
+          </div>
+          <button id="btnCloseEvidenceModal" class="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+
+        <!-- Modal Body (Scrollable) -->
+        <div class="p-6 overflow-y-auto space-y-6 text-sm">
+          <!-- Plain English Meaning -->
+          <div class="p-4 rounded-xl bg-teal-950/30 border border-teal-500/30">
+            <h4 class="text-xs font-mono font-bold uppercase text-teal-400 mb-2 flex items-center gap-1.5">
+              <span>💡</span> WHAT THIS MEANS (PLAIN ENGLISH)
+            </h4>
+            <p id="evidenceModalMeaning" class="text-zinc-200 leading-relaxed"></p>
+          </div>
+
+          <!-- Forensic Breakdown -->
+          <div>
+            <h4 class="text-xs font-mono font-bold uppercase text-zinc-400 mb-3 flex items-center gap-1.5">
+              <span>🔍</span> FORENSIC EVIDENCE &amp; METRICS
+            </h4>
+            <div id="evidenceModalBreakdown" class="grid grid-cols-1 gap-2"></div>
+          </div>
+
+          <!-- Statutory Violations -->
+          <div>
+            <h4 class="text-xs font-mono font-bold uppercase text-red-400 mb-3 flex items-center gap-1.5">
+              <span>⚖️</span> STATUTORY PROVISIONS &amp; LEGAL EXPOSURE
+            </h4>
+            <div id="evidenceModalStatutes" class="space-y-2"></div>
+          </div>
+
+          <!-- Verified Source Documentation -->
+          <div>
+            <h4 class="text-xs font-mono font-bold uppercase text-amber-400 mb-3 flex items-center gap-1.5">
+              <span>🔗</span> OFFICIAL SOURCE DOCUMENTATION &amp; VERIFICATION LINKS
+            </h4>
+            <div id="evidenceModalSources" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
+          </div>
+
+          <!-- Subpoena & Grand Jury Targets -->
+          <div class="p-4 rounded-xl bg-zinc-950 border border-zinc-800">
+            <h4 class="text-xs font-mono font-bold uppercase text-zinc-400 mb-2 flex items-center gap-1.5">
+              <span>📁</span> MANDATORY SUBPOENA &amp; TPIA TARGETS
+            </h4>
+            <ul id="evidenceModalSubpoenas" class="list-disc pl-5 space-y-1 text-xs text-zinc-400 font-mono"></ul>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="p-4 border-t border-zinc-800 bg-zinc-950/60 flex items-center justify-between">
+          <span class="text-xs font-mono text-zinc-500">Liberty County Public Integrity Investigation</span>
+          <button id="btnDismissEvidenceModal" class="px-4 py-2 rounded-lg text-sm font-medium bg-zinc-800 hover:bg-zinc-700 text-zinc-200 transition-colors">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="border-t border-zinc-800/60 bg-zinc-900/40 py-3">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-xs text-zinc-500 font-mono">
