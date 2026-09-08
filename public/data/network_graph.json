@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "generated_at": "2026-09-08T10:31:59.757935",
+  "generated_at": "2026-09-08T10:34:20.671159",
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
@@ -170,12 +170,12 @@
       "status": "Nepotism & Recusal Grid Center",
       "risk_score": 96,
       "anchors": [
-        "Chapter 171 Disclosures",
-        "Cause No. 25-399780 Cross-Index",
-        "RQ0550KP Legal Cost Opinion"
+        "Tex. Loc. Gov't Code Ch. 171 (Family Nepotism & Vendor Abstention Loophole)",
+        "State v. Karbowski (Nepotism Indictment Dismissal 'In Interest of Justice')",
+        "Texas AG Opinion RQ-0550-KP (Taxpayer Funding of DA's Private Defense Fees)"
       ],
       "surveys": [],
-      "notes": "Spouse is Pct 6 Constable Zack Harkness; Father was County Engineer Louis Bergman; Uncle is Comm. Bruce Karbowski.",
+      "notes": "Spouse is Pct 6 Constable Zack Harkness; Father was County Engineer Louis Bergman; Uncle is Comm. Bruce Karbowski. Dismissed nepotism indictment against uncle; county paid private legal defense fees via AG RQ-0550-KP.",
       "degree_connectivity": 6
     },
     {
@@ -222,11 +222,12 @@
       "status": "Familial Office Holder",
       "risk_score": 82,
       "anchors": [
-        "Commissioners Court Minutes Pct 1",
-        "Campaign Filings 2022"
+        "Tex. Loc. Gov't Code Ch. 171 (Family Nepotism & Vendor Abstention Loophole)",
+        "State v. Karbowski (Nepotism Indictment Dismissal 'In Interest of Justice')",
+        "Commissioners Court Minutes Pct 1"
       ],
       "surveys": [],
-      "notes": "Maternal uncle to DA Jennifer Bergman; vote alignment on road paving and drainage variances.",
+      "notes": "Maternal uncle to DA Jennifer Bergman; vote alignment on road paving, drainage variances, and family vendor contracts.",
       "degree_connectivity": 1
     },
     {
