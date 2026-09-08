@@ -175,11 +175,17 @@ function init() {
   // 3. Set default active tab
   switchTab('graph');
 
-  // 4. Graph controls
+  // 4. Graph controls (both header toolbar and in-canvas controls)
   document.getElementById('btnResetLayout')?.addEventListener('click', resetLayout);
   document.getElementById('btnFitGraph')?.addEventListener('click', fitGraph);
   document.getElementById('btnZoomIn')?.addEventListener('click', zoomIn);
   document.getElementById('btnZoomOut')?.addEventListener('click', zoomOut);
+
+  // Colored high-visibility navigation bar controls
+  document.getElementById('btnNavZoomIn')?.addEventListener('click', zoomIn);
+  document.getElementById('btnNavZoomOut')?.addEventListener('click', zoomOut);
+  document.getElementById('btnNavFitGraph')?.addEventListener('click', fitGraph);
+  document.getElementById('btnNavResetLayout')?.addEventListener('click', resetLayout);
 
   // 5. Jump to entity search
   const searchInput = document.getElementById('graphEntitySearch');
