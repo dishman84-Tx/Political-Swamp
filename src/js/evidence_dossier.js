@@ -575,7 +575,8 @@ export const EVIDENCE_DOSSIER = {
     ],
     subpoenaTargets: [
       "IRS Form 990 / 990-EZ filings and donor schedules for M Club of Tarkington Inc (2018–2026)",
-      "Depository bank statements and check register ledgers for EIN 93-1956613",
+      "Depository bank statements and check register ledgers for EIN 93-1956613"
+    ]
   },
 
   "Flock Safety ALPR Hotlist & Surveillance Targeting Audit (Citizen TPIA)": {
