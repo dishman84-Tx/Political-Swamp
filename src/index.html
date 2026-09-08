@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="dark h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Liberty County Public Integrity & Overlap Intelligence Grid</title>
+  <meta name="description" content="Autonomous forensic intelligence portal tracking municipal, judicial, law enforcement, and developer overlap across Liberty County, Texas.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#09090b">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.4/cytoscape.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#14b8a6',
+              orange: '#f97316',
+              purple: '#a855f7',
+              red: '#ef4444',
+              emerald: '#34d399'
+            }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased min-h-full flex flex-col selection:bg-teal-500/30 selection:text-teal-200">
+
+  <!-- AUTH GATE (shown before sign-in) -->
+  <div id="authGate" class="fixed inset-0 z-50 bg-zinc-950 flex items-center justify-center">
+    <div class="text-center space-y-6 max-w-md px-6">
+      <div class="h-16 w-16 mx-auto rounded-2xl bg-gradient-to-br from-teal-500/20 to-zinc-800 border border-teal-500/40 flex items-center justify-center text-teal-400 font-mono font-bold text-2xl">
+        LC
+      </div>
+      <h1 class="text-2xl font-bold text-zinc-100">Liberty County <span class="text-teal-400">Intelligence Grid</span></h1>
+      <p class="text-zinc-400 text-sm">Authorized access only. Sign in with your Google account to continue.</p>
+      <button id="btnGoogleSignIn" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-white text-zinc-900 font-semibold text-base hover:bg-zinc-200 transition-colors shadow-lg">
+        <svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        Sign in with Google
+      </button>
+      <p id="authError" class="text-red-400 text-xs hidden"></p>
+    </div>
+  </div>
+
+  <!-- MAIN APP (hidden until auth) -->
+  <div id="mainApp" class="hidden flex flex-col min-h-full">
+
+    <!-- TOP EXECUTIVE BANNER -->
+    <header class="border-b border-zinc-800/80 bg-zinc-900/60 backdrop-blur sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center space-x-3.5">
+          <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-teal-500/20 to-zinc-800 border border-teal-500/40 flex items-center justify-center text-teal-400 font-mono font-bold text-sm">
+            LC
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <h1 class="text-base sm:text-lg font-bold tracking-tight text-zinc-100">
+                LIBERTY COUNTY <span class="text-teal-400 font-semibold">INTELLIGENCE GRID</span>
+              </h1>
+              <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-zinc-800 text-zinc-400 border border-zinc-700/60">
+                v4.0
+              </span>
+              <span id="liveIndicator" class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                ● LIVE
+              </span>
+            </div>
+            <p class="text-xs text-zinc-400 font-mono">
+              Autonomous Public Integrity &amp; Multi-Vector Overlap System • TCPA Privileged
+            </p>
+          </div>
+        </div>
+
+        <!-- USER & SIGN OUT -->
+        <div class="flex items-center gap-3">
+          <span id="userDisplayName" class="text-xs text-zinc-400 font-mono hidden sm:inline"></span>
+          <img id="userAvatar" class="h-8 w-8 rounded-full border border-zinc-700 hidden" alt="User avatar">
+          <button id="btnSignOut" class="text-xs text-zinc-500 hover:text-zinc-300 font-mono transition-colors">Sign Out</button>
+        </div>
+      </div>
+
+      <!-- WORKSPACE TABS -->
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2 flex items-center space-x-1 overflow-x-auto no-scrollbar">
+        <button data-tab="graph" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg text-sm font-medium transition-all">
+          Network Graph
+        </button>
+        <button data-tab="entities" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg text-sm font-medium transition-all">
+          Entity Matrix
+        </button>
+        <button data-tab="intake" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg text-sm font-medium transition-all">
+          Intake Studio
+        </button>
+        <button data-tab="timeline" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg text-sm font-medium transition-all">
+          Schemes &amp; Timeline
+        </button>
+        <button data-tab="auditlog" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg text-sm font-medium transition-all">
+          Audit Log
+        </button>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-6">
+
+      <!-- TAB 1: NETWORK GRAPH -->
+      <section id="panelGraph" class="tab-panel">
+        <!-- Desktop graph -->
+        <div id="graphDesktop" class="hidden md:block">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h2 class="text-xl font-bold text-zinc-100">Network Overlap</h2>
+              <p class="text-sm text-zinc-400 mt-0.5">Force-directed entity relationship graph • Click any node to inspect</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <input id="graphEntitySearch" type="text" placeholder="Jump to entity..." list="graphEntityList"
+                class="px-3 py-1.5 rounded-lg text-xs bg-zinc-900 border border-zinc-700 text-zinc-200 placeholder-zinc-500 focus:border-teal-500 focus:outline-none w-48 font-mono">
+              <datalist id="graphEntityList"></datalist>
+
+              <button id="btnZoomIn" title="Zoom In" class="px-2.5 py-1.5 rounded-lg text-xs font-mono font-bold bg-zinc-800 text-zinc-300 border border-zinc-700 hover:bg-zinc-700 transition-colors">
+                +
+              </button>
+              <button id="btnZoomOut" title="Zoom Out" class="px-2.5 py-1.5 rounded-lg text-xs font-mono font-bold bg-zinc-800 text-zinc-300 border border-zinc-700 hover:bg-zinc-700 transition-colors">
+                −
+              </button>
+              <button id="btnFitGraph" title="Fit All in View" class="px-3 py-1.5 rounded-lg text-xs font-mono bg-zinc-800 text-zinc-300 border border-zinc-700 hover:bg-zinc-700 transition-colors">
+                Fit All
+              </button>
+              <button id="btnResetLayout" title="Re-spread Network" class="px-3 py-1.5 rounded-lg text-xs font-mono bg-zinc-800 text-zinc-300 border border-zinc-700 hover:bg-zinc-700 transition-colors">
+                Spread
+              </button>
+            </div>
+          </div>
+
+          <!-- Legend -->
+          <div class="flex flex-wrap items-center gap-4 mb-4 text-xs font-mono">
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-teal-500"></span> Developer &amp; Bond Syndicate (10)</span>
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500"></span> Law Enforcement &amp; Death Suppression (9)</span>
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-amber-500"></span> School Board, CAD &amp; Arbitrage (8)</span>
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-purple-500"></span> Judicial &amp; Prosecutorial Dynasty (5)</span>
+          </div>
+
+          <div id="cy" class="rounded-xl border border-zinc-800/60"></div>
+        </div>
+
+        <!-- Mobile card fallback -->
+        <div id="graphMobile" class="md:hidden">
+          <div class="mb-4">
+            <h2 class="text-xl font-bold text-zinc-100">Entities</h2>
+            <p class="text-sm text-zinc-400 mt-0.5">Tap any card to inspect • Sorted by risk score</p>
+          </div>
+          <div id="mobileCardList" class="space-y-3"></div>
+        </div>
+      </section>
+
+      <!-- TAB 2: ENTITY MATRIX -->
+      <section id="panelEntities" class="tab-panel hidden">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-3">
+          <div>
+            <h2 class="text-xl font-bold text-zinc-100">Entity Matrix</h2>
+            <p class="text-sm text-zinc-400 mt-0.5">All tracked entities with risk scores and connections</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <input id="entitySearch" type="text" placeholder="Search entities…"
+              class="px-3 py-2 rounded-lg text-sm bg-zinc-900 border border-zinc-700 text-zinc-200 placeholder-zinc-500 focus:border-teal-500 focus:outline-none w-64">
+            <select id="entityFilter" class="px-3 py-2 rounded-lg text-sm bg-zinc-900 border border-zinc-700 text-zinc-200 focus:border-teal-500 focus:outline-none">
+              <option value="all">All Cartels</option>
+              <option value="Developer & Bond Syndicate">Developer & Bond Syndicate</option>
+              <option value="Law Enforcement, Inquest & Death Suppression">Law Enforcement & Death Suppression</option>
+              <option value="School Board, CAD & Construction Arbitrage">School Board, CAD & Arbitrage</option>
+              <option value="Judicial & Prosecutorial Family Dynasty">Judicial & Prosecutorial Dynasty</option>
+            </select>
+          </div>
+        </div>
+        <div class="overflow-x-auto rounded-xl border border-zinc-800/60">
+          <table class="w-full text-sm">
+            <thead class="bg-zinc-900/80 text-zinc-400 text-left">
+              <tr>
+                <th class="px-4 py-3 font-medium cursor-pointer hover:text-zinc-200" data-sort="label">Name ↕</th>
+                <th class="px-4 py-3 font-medium hidden sm:table-cell">Category</th>
+                <th class="px-4 py-3 font-medium cursor-pointer hover:text-zinc-200" data-sort="cartel">Cartel ↕</th>
+                <th class="px-4 py-3 font-medium hidden lg:table-cell">Role</th>
+                <th class="px-4 py-3 font-medium cursor-pointer hover:text-zinc-200 text-right" data-sort="risk_score">Risk ↕</th>
+                <th class="px-4 py-3 font-medium text-center">Links</th>
+                <th class="px-4 py-3 font-medium text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="entityTableBody" class="divide-y divide-zinc-800/50"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 3: INTAKE STUDIO -->
+      <section id="panelIntake" class="tab-panel hidden">
+        <div class="mb-4">
+          <h2 class="text-xl font-bold text-zinc-100">Intake Studio</h2>
+          <p class="text-sm text-zinc-400 mt-0.5">Upload documents for entity extraction • Processing runs locally via Gemini 2.0 Flash</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Upload zone -->
+          <div>
+            <div id="dropZone" class="border-2 border-dashed border-zinc-700 rounded-xl p-8 text-center hover:border-teal-500/50 transition-colors cursor-pointer">
+              <svg class="w-12 h-12 mx-auto text-zinc-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+              <p class="text-zinc-300 font-medium mb-1">Drop files here or click to upload</p>
+              <p class="text-zinc-500 text-xs font-mono">PDF • DOCX • TXT • JPG/PNG • Max 25MB</p>
+              <input id="fileInput" type="file" class="hidden" accept=".pdf,.docx,.txt,.jpg,.jpeg,.png" multiple>
+            </div>
+
+            <div class="mt-4 space-y-2">
+              <label class="block text-xs text-zinc-400 font-mono">Or paste raw text:</label>
+              <textarea id="pasteInput" rows="4" placeholder="Paste document text, social media post, or meeting minutes…"
+                class="w-full px-3 py-2 rounded-lg text-sm bg-zinc-900 border border-zinc-700 text-zinc-200 placeholder-zinc-500 focus:border-teal-500 focus:outline-none resize-none"></textarea>
+              <button id="btnSubmitPaste" class="px-4 py-2 rounded-lg text-sm font-medium bg-teal-600 text-white hover:bg-teal-500 transition-colors">
+                Submit for Processing
+              </button>
+            </div>
+          </div>
+
+          <!-- Processing queue -->
+          <div>
+            <h3 class="text-sm font-bold text-zinc-300 mb-3 font-mono">PROCESSING QUEUE</h3>
+            <div id="processingQueue" class="space-y-3">
+              <div class="p-4 rounded-lg bg-zinc-900/50 border border-zinc-800 text-center text-zinc-500 text-sm">
+                No documents in queue. Upload a file to begin.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: SCHEMES & TIMELINE -->
+      <section id="panelTimeline" class="tab-panel hidden">
+        <div class="mb-4">
+          <h2 class="text-xl font-bold text-zinc-100">Schemes &amp; Timeline</h2>
+          <p class="text-sm text-zinc-400 mt-0.5">Chronological forensic events and corruption scheme mapping</p>
+        </div>
+        <div id="timelineContainer" class="space-y-4"></div>
+      </section>
+
+      <!-- TAB 5: AUDIT LOG -->
+      <section id="panelAuditlog" class="tab-panel hidden">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-xl font-bold text-zinc-100">Audit Log</h2>
+            <p class="text-sm text-zinc-400 mt-0.5">Real-time pipeline activity, entity changes, and user actions</p>
+          </div>
+          <select id="auditFilter" class="px-3 py-2 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-700 text-zinc-200">
+            <option value="all">All Events</option>
+            <option value="upload">Uploads</option>
+            <option value="extraction">Extractions</option>
+            <option value="merge">Merges</option>
+            <option value="auth">Auth Events</option>
+          </select>
+        </div>
+        <div id="auditLogFeed" class="space-y-2"></div>
+      </section>
+    </main>
+
+    <!-- SLIDE-OUT DRAWER -->
+    <div id="drawerBackdrop" class="fixed inset-0 z-40 bg-black/60 hidden" aria-hidden="true"></div>
+    <aside id="entityDrawer" class="fixed top-0 right-0 z-50 h-full w-full sm:w-[440px] bg-zinc-900 border-l border-zinc-800 drawer-transition translate-x-full overflow-y-auto">
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-6">
+          <span id="drawerCartelBadge" class="px-3 py-1 rounded-full text-xs font-mono font-bold"></span>
+          <button id="btnCloseDrawer" class="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <h2 id="drawerLabel" class="text-2xl font-bold text-zinc-100 mb-1"></h2>
+        <p id="drawerRole" class="text-sm text-zinc-400 mb-4"></p>
+
+        <div class="space-y-5">
+          <!-- Status -->
+          <div>
+            <span class="text-xs text-zinc-500 font-mono block mb-1">STATUS</span>
+            <p id="drawerStatus" class="text-sm text-zinc-200"></p>
+          </div>
+
+          <!-- Risk Score -->
+          <div>
+            <span class="text-xs text-zinc-500 font-mono block mb-1">RISK SCORE</span>
+            <div class="flex items-center gap-3">
+              <span id="drawerRiskNum" class="text-3xl font-bold font-mono"></span>
+              <div class="flex-1 h-3 bg-zinc-800 rounded-full overflow-hidden">
+                <div id="drawerRiskBar" class="h-full rounded-full transition-all duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Evidence Anchors -->
+          <div>
+            <span class="text-xs text-zinc-500 font-mono block mb-2">EVIDENCE ANCHORS</span>
+            <ul id="drawerAnchors" class="space-y-1.5 text-sm text-zinc-300"></ul>
+          </div>
+
+          <!-- Connected Entities -->
+          <div>
+            <span class="text-xs text-zinc-500 font-mono block mb-2">CONNECTED ENTITIES</span>
+            <div id="drawerEdges" class="space-y-2"></div>
+          </div>
+
+          <!-- Surveys -->
+          <div id="drawerSurveysSection" class="hidden">
+            <span class="text-xs text-zinc-500 font-mono block mb-2">SURVEYS</span>
+            <ul id="drawerSurveys" class="space-y-1 text-sm text-zinc-300 font-mono"></ul>
+          </div>
+
+          <!-- Notes -->
+          <div>
+            <span class="text-xs text-zinc-500 font-mono block mb-2">INVESTIGATIVE NOTES</span>
+            <p id="drawerNotes" class="text-sm text-zinc-300 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-zinc-800/60 bg-zinc-900/40 py-3">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-xs text-zinc-500 font-mono">
+        <span>TCPA Privileged • Tex. Civ. Prac. &amp; Rem. Code Ch. 27</span>
+        <span id="entityCount">0 Entities • 0 Edges</span>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

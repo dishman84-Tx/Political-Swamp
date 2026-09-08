@@ -1,0 +1,43 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Allowlist check: explicit Kelly admin email OR entry in /allowlist/{email}
+    function isAllowed() {
+      return request.auth != null && (
+        request.auth.token.email == 'kellyldishman84@gmail.com' ||
+        exists(/databases/$(database)/documents/allowlist/$(request.auth.token.email))
+      );
+    }
+
+    // Entities — read-only for authenticated allowlisted users
+    match /entities/{entityId} {
+      allow read: if isAllowed();
+      allow write: if false; // Only Python admin SDK writes
+    }
+
+    // Edges — read-only
+    match /edges/{edgeId} {
+      allow read: if isAllowed();
+      allow write: if false;
+    }
+
+    // Documents — team can log uploads, only admin can update status
+    match /documents/{docId} {
+      allow read: if isAllowed();
+      allow create: if isAllowed();
+      allow update, delete: if false; // Python admin SDK only
+    }
+
+    // Audit log — read-only
+    match /audit_log/{logId} {
+      allow read: if isAllowed();
+      allow write: if false; // Python admin SDK only
+    }
+
+    // Allowlist — fully locked, admin SDK only
+    match /allowlist/{email} {
+      allow read, write: if false;
+    }
+  }
+}

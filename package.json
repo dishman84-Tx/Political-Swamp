@@ -1,0 +1,25 @@
+{
+  "name": "political-swamp",
+  "version": "4.0.0",
+  "description": "Liberty County Public Integrity & Overlap Intelligence Grid",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && firebase deploy --only hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dishman84-Tx/Political-Swamp.git"
+  },
+  "author": "Kelly Dishman",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "firebase": "^12.18.0"
+  }
+}

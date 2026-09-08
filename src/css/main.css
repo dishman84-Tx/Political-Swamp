@@ -1,0 +1,91 @@
+/* ===== Political Swamp v4.0 — Main Stylesheet ===== */
+
+/* Custom scrollbars */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #09090b; }
+::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+
+/* Hide scrollbar for tab overflow */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Graph Canvas */
+#cy {
+  width: 100%;
+  height: 750px;
+  min-height: 650px;
+  background-color: #09090b;
+  background-image: radial-gradient(rgba(39, 39, 42, 0.45) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Drawer slide animation */
+.drawer-transition {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Tab button states */
+.tab-btn {
+  color: #a1a1aa;
+  background: transparent;
+}
+.tab-btn:hover {
+  color: #e4e4e7;
+  background: rgba(39, 39, 42, 0.5);
+}
+.tab-btn.active {
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Risk score bar colors */
+.risk-critical { background: linear-gradient(90deg, #ef4444, #dc2626); }
+.risk-high     { background: linear-gradient(90deg, #f97316, #ea580c); }
+.risk-medium   { background: linear-gradient(90deg, #eab308, #ca8a04); }
+.risk-low      { background: linear-gradient(90deg, #22c55e, #16a34a); }
+
+/* Mobile entity cards */
+.entity-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.entity-card:active {
+  transform: scale(0.98);
+}
+
+/* Timeline connector line */
+.timeline-line {
+  position: relative;
+}
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #27272a;
+}
+
+/* Audit log entry fade-in */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.audit-entry {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Cartel badge colors */
+.cartel-developer   { background: rgba(20, 184, 166, 0.15); color: #14b8a6; border: 1px solid rgba(20, 184, 166, 0.35); }
+.cartel-law         { background: rgba(239, 68, 68, 0.15);  color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.35); }
+.cartel-school      { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.35); }
+.cartel-judicial    { background: rgba(168, 85, 247, 0.15); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.35); }
+
+/* Processing queue status badges */
+.status-pending    { background: rgba(161, 161, 170, 0.15); color: #a1a1aa; border: 1px solid rgba(161, 161, 170, 0.3); }
+.status-processing { background: rgba(59, 130, 246, 0.15);  color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.3); }
+.status-verified   { background: rgba(34, 197, 94, 0.15);   color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); }
+.status-merged     { background: rgba(20, 184, 166, 0.15);  color: #14b8a6; border: 1px solid rgba(20, 184, 166, 0.3); }

@@ -1,7 +1,46 @@
-﻿.DS_Store
+# OS
+.DS_Store
 Thumbs.db
-AI Logs/
-_Archive_Duplicates_And_Screenshots/
-.firebase/
+
+# Dependencies
 node_modules/
+
+# Build output
+dist/
+
+# Firebase
+.firebase/
+
+# Logs
 *.log
+AI Logs/
+
+# Evidence files (large, stored in Google Drive only)
+01_evidence/
+02_reports/
+03_media/
+04_data/
+05_tools/
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.xlsx
+*.csv
+*.mp4
+
+# Google Drive shortcuts (cannot be versioned)
+*.gdoc
+*.gsheet
+
+# Archives
+_Archive_Duplicates_And_Screenshots/
+App Builds/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Misc
+~$*
+*.tmp
