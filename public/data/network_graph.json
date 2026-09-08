@@ -4,8 +4,8 @@
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
-    "total_nodes": 44,
-    "total_edges": 83,
+    "total_nodes": 53,
+    "total_edges": 105,
     "cartels": 4,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
@@ -215,11 +215,11 @@
     },
     {
       "id": "bruce_karbowski",
-      "label": "Bruce Karbowski",
+      "label": "Bruce Karbowski (Former Comm. Pct 1)",
       "category": "official",
       "cartel": "Judicial & Prosecutorial Family Dynasty",
-      "role": "Former County Commissioner, Pct 1",
-      "status": "Familial Office Holder",
+      "role": "Former County Commissioner, Precinct 1",
+      "status": "Indicted (Nepotism) / Acquitted without Evidence",
       "risk_score": 82,
       "anchors": [
         "Tex. Loc. Gov't Code Ch. 171 (Family Nepotism & Vendor Abstention Loophole)",
@@ -227,7 +227,7 @@
         "Commissioners Court Minutes Pct 1"
       ],
       "surveys": [],
-      "notes": "Maternal uncle to DA Jennifer Bergman; vote alignment on road paving, drainage variances, and family vendor contracts.",
+      "notes": "Former County Commissioner for Precinct 1. Maternal uncle of DA Jennifer Bergman. Indicted for nepotism in 2020; after Bergman took office, her office prosecuted the case and presented zero evidence at trial, securing an acquittal. Presiding Judge Mark Morefield was later publicly admonished by SCJC.",
       "degree_connectivity": 1
     },
     {
@@ -956,6 +956,242 @@
       "surveys": [],
       "notes": "Presiding Judge of Montgomery County 457th District Court. Exposed by Wayne Dolcefino for hearing cases involving the spouse of another sitting Montgomery County judge and refusing mandatory recusal.",
       "degree_connectivity": 2
+    },
+    {
+      "id": "texas_rangers",
+      "label": "Texas Rangers (DPS Division)",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "State Public Integrity Investigative Division (Company A)",
+      "status": "Active Public Integrity & Corruption Inquiries",
+      "risk_score": 15,
+      "anchors": [
+        "Texas Rangers Inquiry: Jason Grindstaff (Official Oppression/Indecent Assault)",
+        "Texas Rangers Inquiry: Lt. Ramiro Lozano (Unauthorized Jail Access)",
+        "Texas Rangers Inquiry: William Hergemueller (Fire Marshal Theft/Inspections)",
+        "Texas Rangers Inquiry: Klint Bush & Emily Cook (LCHA Fiduciary Theft)"
+      ],
+      "surveys": [],
+      "notes": "State investigative branch of the Texas Department of Public Safety (DPS Company A). Handled criminal inquiries resulting in grand jury indictments of Officer Jason Grindstaff, Fire Marshal William Hergemueller, and LCHA administrators Klint Bush and Emily Kebodeaux Cook.",
+      "degree_connectivity": 6,
+      "overlaps_and_oversight": [
+        {
+          "title": "Public Integrity Referrals",
+          "statute": "Tex. Gov't Code \u00a7 411.022",
+          "description": "Primary statewide authority investigating municipal and county official oppression, fiduciary theft, and jail misconduct in Liberty County."
+        }
+      ]
+    },
+    {
+      "id": "judge_mark_morefield",
+      "label": "Hon. Mark Morefield",
+      "category": "judiciary",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "Former 75th District Court Judge",
+      "status": "Publicly Admonished by SCJC (CJC No. 23-0537)",
+      "risk_score": 85,
+      "anchors": [
+        "State Commission on Judicial Conduct Public Admonition CJC No. 23-0537",
+        "State v. Karbowski (Bench Trial Directed Acquittal)",
+        "75th District Court Minutes (2020-2022)"
+      ],
+      "surveys": [],
+      "notes": "Former 75th District Court Judge who presided over the nepotism trial of Comm. Bruce Karbowski. Formally admonished by the State Commission on Judicial Conduct after admitting judicial bias and prejudice based on 'county rumor and speculation' while presiding over the DA-controlled prosecution.",
+      "degree_connectivity": 3,
+      "overlaps_and_oversight": [
+        {
+          "title": "SCJC Public Admonition for Bias",
+          "statute": "Tex. Code of Jud. Conduct Canon 3B(5)",
+          "description": "Failed to maintain judicial impartiality in high-profile county official prosecution, relying on extrajudicial rumors."
+        }
+      ]
+    },
+    {
+      "id": "judge_jd_delaney",
+      "label": "Judge J.D. Delaney (Visiting Judge)",
+      "category": "judiciary",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "Visiting Presiding Judge (Assigned from Brazos County)",
+      "status": "Assigned Following Judge Cain Recusal",
+      "risk_score": 30,
+      "anchors": [
+        "Cause No. CV24-00192 (Dolcefino v. LCSO & Sheriff Rader)",
+        "Second Administrative Judicial Region Assignment Order",
+        "TPIA Bodycam Disclosure Compulsion Hearings"
+      ],
+      "surveys": [],
+      "notes": "Assigned visiting judge presiding over the civil public records lawsuits against Sheriff Bobby Rader and LCSO following the formal recusal of local 75th District Judge Chap B. Cain III.",
+      "degree_connectivity": 2,
+      "overlaps_and_oversight": [
+        {
+          "title": "Out-of-County Judicial Assignment",
+          "statute": "Tex. Gov't Code \u00a7 74.056",
+          "description": "Appointed to bypass deep-seated local Liberty County courthouse conflicts in public records and evidence suppression litigation."
+        }
+      ]
+    },
+    {
+      "id": "liberty_cad_board",
+      "label": "Liberty County Central Appraisal District (CAD) Board",
+      "category": "agency",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Property Tax Valuation & Board of Directors",
+      "status": "Spousal & Indicted Director Nexus",
+      "risk_score": 93,
+      "anchors": [
+        "Tex. Tax Code \u00a7 6.035 (Spousal Appraisal Nexus)",
+        "Liberty CAD Board Resolutions (2022-2026)",
+        "Emily Kebodeaux Cook CAD Board Seat & CR37244",
+        "Jimmy Rollins Chief Appraiser Administration"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10",
+        "Phillip Miller A-800",
+        "Isaiah Fields A-35"
+      ],
+      "notes": "Governing appraisal authority for Liberty County. Key personnel intersections: Chief Appraiser Jimmy Rollins (husband of TISD Trustee Susan Rollins) and former board member Emily Kebodeaux Cook (indicted for fiduciary theft while holding a CAD seat). Sets developer agricultural exemptions, commercial valuations, and school tax base assessments.",
+      "degree_connectivity": 5,
+      "overlaps_and_oversight": [
+        {
+          "title": "School Board / CAD Board Spousal Control",
+          "statute": "Tex. Tax Code \u00a7 6.035",
+          "description": "Chief Appraiser Jimmy Rollins oversees tax assessments while spouse Susan Rollins serves as Tarkington ISD Trustee."
+        },
+        {
+          "title": "Felony Indictment of Sitting Director",
+          "statute": "Tex. Penal Code \u00a7 32.45",
+          "description": "Board member Emily Kebodeaux Cook indicted for felony misapplication of fiduciary property while sitting on the tax appraisal board."
+        }
+      ]
+    },
+    {
+      "id": "mud_12",
+      "label": "Liberty County MUD No. 12",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Special Utility, Taxing & Eminent Domain District (764 Acres)",
+      "status": "Created by SB 2580 (88th Leg.)",
+      "risk_score": 90,
+      "anchors": [
+        "Texas SB 2580 (88th Legislature)",
+        "TCEQ Special District Registry No. 12",
+        "TIRZ / Infrastructure Reimbursement Agreement"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10",
+        "Ann Holshousen A-208"
+      ],
+      "notes": "Created by SB 2580 in 2023 granting broad taxing, bond-issuing, and eminent domain powers over 764 acres within Colony Ridge expansion perimeter, structured with provisions enabling division into multiple subsidiary developer-controlled districts.",
+      "degree_connectivity": 3,
+      "overlaps_and_oversight": [
+        {
+          "title": "Legislative Special District Arbitrage",
+          "statute": "Tex. Water Code Ch. 54",
+          "description": "Special legislation granting private developer sweeping eminent domain and multi-tier bond issuance powers."
+        }
+      ]
+    },
+    {
+      "id": "mmd_2",
+      "label": "Liberty County MMD No. 2",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Municipal Management District (236 Acres / Cleveland ETJ)",
+      "status": "Created by SB 2594 (88th Leg.)",
+      "risk_score": 88,
+      "anchors": [
+        "Texas SB 2594 (88th Legislature)",
+        "City of Cleveland ETJ Annexation Agreement",
+        "Special District Infrastructure Authority"
+      ],
+      "surveys": [
+        "Aaron Cherry A-103",
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Created by SB 2594 in 2023 to expand developer-controlled infrastructure debt and road powers into 236 acres within the city limits and ETJ of Cleveland, mirroring MMD 1 vendor pass-through operations.",
+      "degree_connectivity": 3,
+      "overlaps_and_oversight": [
+        {
+          "title": "ETJ Regulatory Bypass",
+          "statute": "Tex. Spec. Dist. Code Ch. 3994",
+          "description": "Allows developer self-regulation and private assessment powers inside municipal ETJ without city council controls."
+        }
+      ]
+    },
+    {
+      "id": "william_hergemueller",
+      "label": "William Hergemueller (Former Fire Marshal)",
+      "category": "indicted_official",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Former Liberty County Fire Marshal",
+      "status": "Terminated & Charged (Theft & Unauthorized Inspections)",
+      "risk_score": 90,
+      "anchors": [
+        "Liberty County Grand Jury Indictment 2024",
+        "Commissioners Court Termination Order Dec 2024",
+        "Unauthorized Commercial Inspection Fee Audit"
+      ],
+      "surveys": [],
+      "notes": "Former Liberty County Fire Marshal fired alongside two deputies in late 2024 and criminally charged with theft and conducting unauthorized inspections on commercial businesses.",
+      "degree_connectivity": 2,
+      "overlaps_and_oversight": [
+        {
+          "title": "Unauthorized Commercial Extortion/Inspections",
+          "statute": "Tex. Penal Code \u00a7 39.02",
+          "description": "Operating unauthorized fire inspections and pocketing illicit fees outside county auditor oversight."
+        }
+      ]
+    },
+    {
+      "id": "ramiro_lozano",
+      "label": "Lt. Ramiro Lozano (Former Liberty PD)",
+      "category": "indicted_official",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Former Lieutenant, Liberty Police Department",
+      "status": "Terminated (Nov 2025 Texas Rangers Investigation)",
+      "risk_score": 88,
+      "anchors": [
+        "City of Liberty Termination Order Nov 13, 2025",
+        "Texas Rangers Investigation File (Unauthorized Jail Access)",
+        "Liberty County Jail Inmate Contact Logs (Domingo Quintana)"
+      ],
+      "surveys": [],
+      "notes": "Terminated on November 13, 2025 following an official Texas Rangers investigation into allegations of unauthorized access to inmate Domingo Quintana inside the Liberty County Jail.",
+      "degree_connectivity": 3,
+      "overlaps_and_oversight": [
+        {
+          "title": "Unauthorized Jail Access & Inmate Contraband",
+          "statute": "Tex. Penal Code \u00a7 38.11",
+          "description": "Breaching custodial perimeter and jail regulations under Texas Rangers criminal investigation."
+        }
+      ]
+    },
+    {
+      "id": "investigative_media_coalition",
+      "label": "Independent Media & OSINT Press Corps",
+      "category": "media",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Unfiltered Investigative & Public Records Media",
+      "status": "Active Independent Scrutiny & Cross-Examination",
+      "risk_score": 10,
+      "anchors": [
+        "Bluebonnet News (Vanesa Brashier Reporting)",
+        "The Liberty Vindicator (Historical & Court Archives)",
+        "Houston Chronicle Investigations (DOJ & Colony Ridge Land)",
+        "ABC 13 Eyewitness News (Dolcefino & Drainage Probes)",
+        "Montgomery County Police Reporter (Scott Engle Coverage)",
+        "Grizzy's Hood News (Real-Time Raw Ground Footage)"
+      ],
+      "surveys": [],
+      "notes": "Independent press and citizen journalism outlets that broke the silence on Liberty County public corruption: Bluebonnet News (indictments, meetings), The Liberty Vindicator (public legal notices), Houston Chronicle (predatory lending/DOJ suits), ABC 13 & Dolcefino (Sherry Novosad death cover-up), Montgomery County Police Reporter (arrests, SWAT calls, scene footage), and Grizzy's Hood News (unfiltered community reporting).",
+      "degree_connectivity": 8,
+      "overlaps_and_oversight": [
+        {
+          "title": "First Amendment & Texas Anti-SLAPP Shield",
+          "statute": "Tex. Civ. Prac. & Rem. Code Ch. 27",
+          "description": "Countering official intimidation, retaliatory lawsuits, and unlawful NDAs to expose public agency malfeasance."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1539,6 +1775,160 @@
       "relation": "Enrollment Surge & Unfunded Infrastructure Deficit",
       "type": "demographic_impact",
       "weight": 0.85
+    },
+    {
+      "source": "texas_rangers",
+      "target": "jason_grindstaff",
+      "relation": "Investigated & Referred Indictment (Official Oppression)",
+      "type": "law_enforcement",
+      "weight": 0.98
+    },
+    {
+      "source": "texas_rangers",
+      "target": "ramiro_lozano",
+      "relation": "Investigated Unauthorized Jail Access Leading to Firing",
+      "type": "law_enforcement",
+      "weight": 0.95
+    },
+    {
+      "source": "texas_rangers",
+      "target": "william_hergemueller",
+      "relation": "Investigated Fire Marshal Theft & Inspection Scam",
+      "type": "law_enforcement",
+      "weight": 0.95
+    },
+    {
+      "source": "texas_rangers",
+      "target": "klint_bush",
+      "relation": "Statewide Public Integrity Inquiry (LCHA Thefts)",
+      "type": "law_enforcement",
+      "weight": 0.92
+    },
+    {
+      "source": "texas_rangers",
+      "target": "david_whitmire",
+      "relation": "Coordinated Sexual Assault / Official Oppression Referral",
+      "type": "law_enforcement",
+      "weight": 0.95
+    },
+    {
+      "source": "judge_mark_morefield",
+      "target": "bruce_karbowski",
+      "relation": "Presided over Directed Acquittal / SCJC Admonished",
+      "type": "judicial_ties",
+      "weight": 0.95
+    },
+    {
+      "source": "judge_mark_morefield",
+      "target": "jennifer_bergman",
+      "relation": "Presided over Zero-Evidence Prosecutorial Dismissal",
+      "type": "judicial_ties",
+      "weight": 0.92
+    },
+    {
+      "source": "judge_jd_delaney",
+      "target": "bobby_rader",
+      "relation": "Presides over Bodycam & Record Compulsion Suit",
+      "type": "judicial_ties",
+      "weight": 0.9
+    },
+    {
+      "source": "judge_jd_delaney",
+      "target": "wayne_dolcefino",
+      "relation": "Hearing Dolcefino TPIA Disclosure Motions",
+      "type": "judicial_ties",
+      "weight": 0.88
+    },
+    {
+      "source": "liberty_cad_board",
+      "target": "jimmy_rollins_cad",
+      "relation": "Employs Chief Appraiser / Directs Appraisal Policy",
+      "type": "agency_governance",
+      "weight": 0.98
+    },
+    {
+      "source": "liberty_cad_board",
+      "target": "emily_cook",
+      "relation": "Former Board Member Indicted for Fiduciary Theft",
+      "type": "indicted_official",
+      "weight": 0.95
+    },
+    {
+      "source": "liberty_cad_board",
+      "target": "tarkington_isd",
+      "relation": "Certifies School District Tax Roll & Bond Capacity",
+      "type": "tax_assessment",
+      "weight": 0.92
+    },
+    {
+      "source": "liberty_cad_board",
+      "target": "colony_ridge",
+      "relation": "Oversees Ag-Exempt Valuations & Subdivided Tax Accounts",
+      "type": "tax_assessment",
+      "weight": 0.95
+    },
+    {
+      "source": "mud_12",
+      "target": "colony_ridge",
+      "relation": "SB 2580 764-Acre Developer Debt & Eminent Domain Vehicle",
+      "type": "bond_authorization",
+      "weight": 0.96
+    },
+    {
+      "source": "mmd_2",
+      "target": "colony_ridge",
+      "relation": "SB 2594 236-Acre Cleveland ETJ Debt Vehicle",
+      "type": "bond_authorization",
+      "weight": 0.95
+    },
+    {
+      "source": "judge_jay_knight",
+      "target": "mud_12",
+      "relation": "Commissioners Court Statutory Consent",
+      "type": "governance",
+      "weight": 0.9
+    },
+    {
+      "source": "investigative_media_coalition",
+      "target": "colony_ridge",
+      "relation": "Exposed Predatory Lending, Flooding & DOJ Lawsuit",
+      "type": "media_investigation",
+      "weight": 0.98
+    },
+    {
+      "source": "investigative_media_coalition",
+      "target": "jennifer_bergman",
+      "relation": "Documented Campaign Disclosures, Recusals & Conflicts",
+      "type": "media_investigation",
+      "weight": 0.92
+    },
+    {
+      "source": "investigative_media_coalition",
+      "target": "david_whitmire",
+      "relation": "Broke Official Oppression & Sexual Assault Indictment",
+      "type": "media_investigation",
+      "weight": 0.95
+    },
+    {
+      "source": "investigative_media_coalition",
+      "target": "jason_grindstaff",
+      "relation": "Reported Texas Rangers Indictment & Surrender",
+      "type": "media_investigation",
+      "weight": 0.95
+    },
+    {
+      "source": "investigative_media_coalition",
+      "target": "klint_bush",
+      "relation": "Exposed LCHA Theft, 2-Voter MUD 15 & Arrests",
+      "type": "media_investigation",
+      "weight": 0.98
+    },
+    {
+      "source": "investigative_media_coalition",
+      "target": "bobby_rader",
+      "relation": "Audited Sherry Novosad Death Cover-Up & TPIA Withholding",
+      "type": "media_investigation",
+      "weight": 0.96
     }
   ],
   "vectors": [
