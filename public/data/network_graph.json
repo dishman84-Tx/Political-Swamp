@@ -4,8 +4,8 @@
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
-    "total_nodes": 59,
-    "total_edges": 144,
+    "total_nodes": 73,
+    "total_edges": 164,
     "cartels": 4,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
@@ -32,7 +32,7 @@
         "Barton Tarkington A-354"
       ],
       "notes": "Bypassed direct victim restitution; $68M settlement split into $48M SWPPP/drainage and $20M law enforcement facilitation.",
-      "degree_connectivity": 21
+      "degree_connectivity": 22
     },
     {
       "id": "trey_harris",
@@ -50,7 +50,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Co-owner Liberty Paving LLC; top contributor to Buckeye Values PAC and local county slates.",
-      "degree_connectivity": 3
+      "degree_connectivity": 5
     },
     {
       "id": "john_harris",
@@ -86,7 +86,7 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Authorized $88.36M in public developer debt via exactly 2 voters; primary vehicle to absorb $48M Fund A infrastructure capital.",
-      "degree_connectivity": 8
+      "degree_connectivity": 10
     },
     {
       "id": "mmd_1",
@@ -105,7 +105,7 @@
         "A-103"
       ],
       "notes": "Awarded $22.5M in road paving contracts to board member-owned entities via Tex. Loc. Gov't Code \u00a7 171.004 loop.",
-      "degree_connectivity": 3
+      "degree_connectivity": 4
     },
     {
       "id": "daniel_land_co",
@@ -176,7 +176,7 @@
       ],
       "surveys": [],
       "notes": "Spouse is Pct 6 Constable Zack Harkness; Father was County Engineer Louis Bergman; Uncle is Comm. Bruce Karbowski. Dismissed nepotism indictment against uncle; county paid private legal defense fees via AG RQ-0550-KP.",
-      "degree_connectivity": 12
+      "degree_connectivity": 14
     },
     {
       "id": "louis_bergman",
@@ -260,7 +260,7 @@
       ],
       "surveys": [],
       "notes": "Suppressed deputy bodycam and cell phone extraction for 14+ months under Gov Code \u00a7 552.108 pretext; attempted mandatory NDA.",
-      "degree_connectivity": 14
+      "degree_connectivity": 15
     },
     {
       "id": "james_mcqueen",
@@ -431,7 +431,7 @@
       ],
       "surveys": [],
       "notes": "Command Lieutenant over Liberty PD Patrol Division (direct supervisor of Jason Grindstaff); operational commander of multi-county Flock ALPR surveillance hotlists. Recalled from Cleveland City Council Place 3 (May 14, 2011) after firing City Manager Philip Cook, creating deep political rivalry with DA Jennifer Bergman. Key bridge between Liberty PD municipal operations, LCSO joint surveillance, and county prosecutorial gatekeeping.",
-      "degree_connectivity": 7
+      "degree_connectivity": 10
     },
     {
       "id": "klint_bush",
@@ -482,7 +482,7 @@
       ],
       "surveys": [],
       "notes": "Patrol officer under Lt. Cedric McDuffie at City of Liberty PD; resigned Feb 27, 2026 under Texas Rangers investigation; indicted for Official Oppression and Indecent Assault; surrendered July 3, 2026 and held at Liberty County Jail under Sheriff Bobby Rader. Core link between municipal police misconduct and county jail detention apparatus.",
-      "degree_connectivity": 4
+      "degree_connectivity": 5
     },
     {
       "id": "burns_arch",
@@ -521,7 +521,7 @@
         "Phillip Miller A-800"
       ],
       "notes": "Physical address identical to Brenda Burns; controls M-Club shadow account; major contractor on TISD and TxDOT right-of-way.",
-      "degree_connectivity": 8
+      "degree_connectivity": 9
     },
     {
       "id": "tarkington_isd",
@@ -687,7 +687,7 @@
       ],
       "surveys": [],
       "notes": "Presides over Commissioners Court 100% developer consent votes; appointed LCHA board whose administrators were indicted for theft.",
-      "degree_connectivity": 9
+      "degree_connectivity": 10
     },
     {
       "id": "david_whitmire",
@@ -1050,7 +1050,7 @@
         "Isaiah Fields A-35"
       ],
       "notes": "Governing appraisal authority for Liberty County. Key personnel intersections: Chief Appraiser Jimmy Rollins (husband of TISD Trustee Susan Rollins) and former board member Emily Kebodeaux Cook (indicted for fiduciary theft while holding a CAD seat). Sets developer agricultural exemptions, commercial valuations, and school tax base assessments.",
-      "degree_connectivity": 6,
+      "degree_connectivity": 7,
       "overlaps_and_oversight": [
         {
           "title": "School Board / CAD Board Spousal Control",
@@ -1284,7 +1284,7 @@
         "J.F. DeRumayor A-103"
       ],
       "notes": "Municipal government where DA Jennifer Bergman served as council member alongside opposing faction leader Lt. Cedric McDuffie (recalled in 2011). Council voted to annex private developer land owned by Bergman family companies (Windwood Development) and approve ETJ municipal management district boundaries.",
-      "degree_connectivity": 3
+      "degree_connectivity": 4
     },
     {
       "id": "m_club_foundation",
@@ -1303,6 +1303,251 @@
         "Phillip Miller A-800"
       ],
       "notes": "Off-book 501(c)(3) foundation co-managed by Tom Johnson, Kevin Johnson, and Jimmy Rollins. Bypasses Texas Education Code competitive bidding and TPIA oversight for athletic equipment, land improvements, and campus projects.",
+      "degree_connectivity": 4
+    },
+    {
+      "id": "walter_dean",
+      "label": "Walter Dean",
+      "category": "land_syndicate",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Managing Member, Dudley Estate 1938 LLC / Financial Conduit",
+      "status": "MUD 15 Fund Absorption Conduit",
+      "risk_score": 91,
+      "anchors": [
+        "Dudley Estate 1938 LLC Texas SOS Filings",
+        "MUD 15 Repeated Vendor Ledgers",
+        "Jennifer Bergman Law Practice Payment Records (2018)"
+      ],
+      "surveys": [
+        "Donahoe Survey (FM 1008)"
+      ],
+      "notes": "Controls Dudley Estate 1938 LLC, a shell entity that absorbed public MUD 15 funds. Maintained documented financial transactions with DA Jennifer Bergman's private law office prior to her taking public office.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "cesar_javier_garcia",
+      "label": "C\u00e9sar Javier Garc\u00eda",
+      "category": "land_syndicate",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Convicted Drug Trafficker / Monarquias Magnolia LLC",
+      "status": "Asset Transfer Nexus to Bergman/Harkness Family",
+      "risk_score": 95,
+      "anchors": [
+        "Federal Criminal Judgment / Asset Seizure Logs",
+        "Monarquias Magnolia LLC Corporate Filings (10712 Thomas T Trail)",
+        "FM 1008 Land Transfer Records"
+      ],
+      "surveys": [
+        "FM 1008 Corridor"
+      ],
+      "notes": "Convicted drug trafficker who partnered with Lozano family entities in Monarquias Magnolia LLC and allegedly transferred land assets along the FM 1008 corridor to entities tied to the Bergman/Harkness family enterprise.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "scott_ellis",
+      "label": "Scott Ellis",
+      "category": "official",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Member, Liberty CAD Appraisal Review Board (ARB)",
+      "status": "CAD Regulatory & Property Speculation Nexus",
+      "risk_score": 85,
+      "anchors": [
+        "Liberty CAD Appraisal Review Board Roster",
+        "Donahoe Survey Deed Overlaps (FM 1008 Area)"
+      ],
+      "surveys": [
+        "Donahoe Survey"
+      ],
+      "notes": "Sitting member of the Liberty CAD Appraisal Review Board whose family/commercial surname appears repeatedly across property transactions in the FM 1008 development corridor, creating an internal tax protest conflict.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "john_p_hebert",
+      "label": "John P. Hebert",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Board Member, Liberty County MUD No. 15",
+      "status": "MUD 15 Public Bond Fund Allocator",
+      "risk_score": 89,
+      "anchors": [
+        "MUD 15 Board Meeting Minutes & Resolutions",
+        "MUD 15 Check Register / Vendor Disbursements"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Sitting director on the 2-voter Liberty County MUD No. 15 board authorizing payments to engineering and shell vendor entities including Wasteline Engineering and Dudley Estate 1938 LLC.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "lee_chambers",
+      "label": "Lee Chambers",
+      "category": "official",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "Liberty County Clerk",
+      "status": "Records Custodian & Judicial Candidate",
+      "risk_score": 82,
+      "anchors": [
+        "Liberty County Clerk Official Oaths & Records",
+        "Campaign Finance Repository Custody",
+        "Judicial Candidacy Filings"
+      ],
+      "surveys": [],
+      "notes": "Official custodian of all Liberty County deed, probate, commissioners court, and local campaign finance filings; announced local judicial candidacy while maintaining sole control over courthouse document access.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "gary_martin",
+      "label": "Chief Gary Martin (Ret.)",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Former Chief of Police, City of Liberty PD",
+      "status": "Retired Feb 2025 Prior to Ranger Indictments",
+      "risk_score": 78,
+      "anchors": [
+        "City of Liberty Police Chief Separation Notice",
+        "Liberty PD Administration Rosters (2015-2025)"
+      ],
+      "surveys": [],
+      "notes": "Longtime Chief of Police for the City of Liberty who retired in February 2025 prior to the public integrity indictments of Patrol Officer Jason Grindstaff and Lt. Ramiro Lozano.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "rick_ashe",
+      "label": "Chief Richard 'Rick' Ashe",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Chief of Police, City of Liberty PD",
+      "status": "Appointed Permanent Chief April 2025",
+      "risk_score": 75,
+      "anchors": [
+        "City of Liberty Council Appointment Resolution April 2025",
+        "Liberty PD Internal Affairs & Separation Files"
+      ],
+      "surveys": [],
+      "notes": "Appointed Chief of Police in April 2025; oversaw the internal F-5 separation of Jason Grindstaff and internal investigation into the Nov 20, 2025 patrol mirror collision.",
+      "degree_connectivity": 2
+    },
+    {
+      "id": "roger_brookes",
+      "label": "Roger Brookes",
+      "category": "official",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Asst. Fire Chief & Public Works Director, City of Cleveland",
+      "status": "Fire Station 2 Land Donation Negotiator",
+      "risk_score": 80,
+      "anchors": [
+        "Cleveland VFD Station 2 Land Donation Agreement",
+        "Grand Oaks Reserve Infrastructure Minutes",
+        "McKinley Development Group Developer Accord"
+      ],
+      "surveys": [
+        "J.F. DeRumayor A-103"
+      ],
+      "notes": "Simultaneously held positions as City of Cleveland Public Works Director and Assistant Fire Chief; negotiated municipal land donations from McKinley Development Group (Grand Oaks Reserve) for Cleveland VFD Station 2.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "donald_burton",
+      "label": "Donald Burton",
+      "category": "special_district",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Former Board Member, Liberty County MUD No. 1 (2020-2023)",
+      "status": "Early Special District Platting Signatory",
+      "risk_score": 82,
+      "anchors": [
+        "Liberty County MUD No. 1 Board Minutes",
+        "TCEQ District Formation Dockets"
+      ],
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Served on Liberty County MUD No. 1 alongside developer affiliates, approving early utility debt models before Southern MMD 1 was spun off.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "sheriff_clint_mcrae",
+      "label": "Sheriff Clint McRae",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Sheriff, Walker County",
+      "status": "Controversial Early Release of Trey Harris",
+      "risk_score": 88,
+      "anchors": [
+        "Walker County Jail Booking & Early Release Orders (Oct 2023)",
+        "TEC Campaign Finance Reports (Harris Family Donations)",
+        "State of Texas v. William Trey Harris III DWI Dockets"
+      ],
+      "surveys": [],
+      "notes": "Walker County Sheriff whose campaign received record donations from the Harris developer family, followed immediately by the controversial early release of Trey Harris from the Walker County Jail on felony DWI charges.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "sheriff_wesley_doolittle",
+      "label": "Sheriff Wesley Doolittle",
+      "category": "law_enforcement",
+      "cartel": "Law Enforcement, Inquest & Death Suppression",
+      "role": "Sheriff, Montgomery County (MCSO)",
+      "status": "Flock ALPR Multi-County Sharing & Developer Donor Nexus",
+      "risk_score": 84,
+      "anchors": [
+        "Montgomery County Sheriff Campaign Finance Filings (Harris Family)",
+        "Cross-County Flock Safety ALPR Sharing Interlocals",
+        "MCSO FY2025 Law Enforcement Expansion"
+      ],
+      "surveys": [],
+      "notes": "Montgomery County Sheriff elected after a 22-year DPS career; received campaign contributions from Colony Ridge developers while his agency participates in the regional Flock ALPR network connecting Montgomery and Liberty counties.",
+      "degree_connectivity": 3
+    },
+    {
+      "id": "jason_holston",
+      "label": "Jason Holston",
+      "category": "witness",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Citizen Whistleblower & Taxpayer Advocate",
+      "status": "Opposition to Cleveland ISD Developer Bond Debt",
+      "risk_score": 15,
+      "anchors": [
+        "Cleveland ISD Bond Hearing Public Comments (2024-2025)",
+        "TEA Financial Accountability Records Demands"
+      ],
+      "surveys": [],
+      "notes": "Local citizen and taxpayer advocate who documented the crushing impact of Colony Ridge enrollment surges on Cleveland ISD and spearheaded grassroots opposition to recurring developer school bonds.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "aimee_lamb",
+      "label": "Aimee Lamb",
+      "category": "witness",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Citizen Whistleblower & Community Organizer",
+      "status": "Tarkington / Cleveland Community Oversight Advocate",
+      "risk_score": 15,
+      "anchors": [
+        "Community School Impact Testimonials",
+        "Messenger Whistleblower Evidence Archive"
+      ],
+      "surveys": [],
+      "notes": "Citizen whistleblower who organized local community tracking of school board conflicts, developer annexation impacts, and M-Club shadow spending.",
+      "degree_connectivity": 1
+    },
+    {
+      "id": "dudley_estate_llc",
+      "label": "Dudley Estate 1938, LLC",
+      "category": "land_syndicate",
+      "cartel": "Developer & Bond Syndicate",
+      "role": "Developer Shell Entity (Managed by Walter Dean)",
+      "status": "MUD 15 Public Fund Recipient",
+      "risk_score": 93,
+      "anchors": [
+        "Texas SOS Filing (Dudley Estate 1938 LLC)",
+        "10712 Thomas T Trail Corporate Address",
+        "MUD 15 Repeated Vendor Ledgers"
+      ],
+      "surveys": [
+        "Donahoe Survey (FM 1008)"
+      ],
+      "notes": "Corporate shell entity headquartered at 10712 Thomas T Trail, managed by Walter Dean. Allegedly received public MUD 15 bond proceeds for real estate and right-of-way transfers in the FM 1008 corridor.",
       "degree_connectivity": 4
     }
   ],
@@ -2313,6 +2558,146 @@
       "target": "mud_12",
       "relation": "Utility Infrastructure Engineering Design",
       "type": "vendor_contract",
+      "weight": 0.9
+    },
+    {
+      "source": "walter_dean",
+      "target": "dudley_estate_llc",
+      "relation": "Managing Member & Registered Agent",
+      "type": "corporate",
+      "weight": 1.0
+    },
+    {
+      "source": "dudley_estate_llc",
+      "target": "mud_15",
+      "relation": "Public MUD Vendor Disbursements",
+      "type": "financial_conduit",
+      "weight": 0.95
+    },
+    {
+      "source": "walter_dean",
+      "target": "jennifer_bergman",
+      "relation": "Prior Law Office Payment Conduit (2018)",
+      "type": "financial_conduit",
+      "weight": 0.9
+    },
+    {
+      "source": "cesar_javier_garcia",
+      "target": "dudley_estate_llc",
+      "relation": "Asset & Real Estate Transfer Nexus",
+      "type": "deed_overlap",
+      "weight": 0.92
+    },
+    {
+      "source": "scott_ellis",
+      "target": "liberty_cad_board",
+      "relation": "Sitting ARB Member",
+      "type": "agency_governance",
+      "weight": 0.95
+    },
+    {
+      "source": "john_p_hebert",
+      "target": "mud_15",
+      "relation": "Governing Board Member",
+      "type": "agency_governance",
+      "weight": 0.98
+    },
+    {
+      "source": "john_p_hebert",
+      "target": "dudley_estate_llc",
+      "relation": "Voted to Authorize Vendor Warrants",
+      "type": "financial_conduit",
+      "weight": 0.9
+    },
+    {
+      "source": "lee_chambers",
+      "target": "judge_jay_knight",
+      "relation": "Courthouse Administration & Commissioners Records",
+      "type": "governance",
+      "weight": 0.9
+    },
+    {
+      "source": "lee_chambers",
+      "target": "jennifer_bergman",
+      "relation": "Elections & Official Campaign Filings Custody",
+      "type": "governance",
+      "weight": 0.88
+    },
+    {
+      "source": "gary_martin",
+      "target": "cedric_mcduffie",
+      "relation": "Supervised Patrol Division & Command Staff",
+      "type": "law_enforcement",
+      "weight": 0.9
+    },
+    {
+      "source": "rick_ashe",
+      "target": "cedric_mcduffie",
+      "relation": "Current Police Chief over Patrol Division",
+      "type": "law_enforcement",
+      "weight": 0.95
+    },
+    {
+      "source": "rick_ashe",
+      "target": "jason_grindstaff",
+      "relation": "F-5 Separation & Internal Disciplinary Referral",
+      "type": "law_enforcement",
+      "weight": 0.92
+    },
+    {
+      "source": "roger_brookes",
+      "target": "cleveland_city_council",
+      "relation": "Public Works Director & Station 2 Negotiator",
+      "type": "agency_governance",
+      "weight": 0.92
+    },
+    {
+      "source": "donald_burton",
+      "target": "mmd_1",
+      "relation": "Early MUD No. 1 Director Preceding MMD Split",
+      "type": "agency_governance",
+      "weight": 0.88
+    },
+    {
+      "source": "sheriff_clint_mcrae",
+      "target": "trey_harris",
+      "relation": "Largest Campaign Donor / Early Jail Release",
+      "type": "quid_pro_quo",
+      "weight": 0.98
+    },
+    {
+      "source": "sheriff_wesley_doolittle",
+      "target": "trey_harris",
+      "relation": "Colony Ridge Campaign Contributions",
+      "type": "campaign_finance",
+      "weight": 0.9
+    },
+    {
+      "source": "sheriff_wesley_doolittle",
+      "target": "cedric_mcduffie",
+      "relation": "Cross-County Flock ALPR Interlocal Sharing",
+      "type": "police_surveillance",
+      "weight": 0.92
+    },
+    {
+      "source": "sheriff_wesley_doolittle",
+      "target": "bobby_rader",
+      "relation": "Regional Sheriff Mutual Aid & Task Forces",
+      "type": "law_enforcement",
+      "weight": 0.88
+    },
+    {
+      "source": "jason_holston",
+      "target": "colony_ridge",
+      "relation": "Exposed School Overcrowding & Bond Saturation",
+      "type": "media_investigation",
+      "weight": 0.9
+    },
+    {
+      "source": "aimee_lamb",
+      "target": "tom_johnson",
+      "relation": "Documented M-Club & Land Syndicate Conflicts",
+      "type": "media_investigation",
       "weight": 0.9
     }
   ],
