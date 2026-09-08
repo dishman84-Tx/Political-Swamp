@@ -4,8 +4,8 @@
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
-    "total_nodes": 53,
-    "total_edges": 105,
+    "total_nodes": 55,
+    "total_edges": 114,
     "cartels": 4,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
@@ -1192,6 +1192,41 @@
           "description": "Countering official intimidation, retaliatory lawsuits, and unlawful NDAs to expose public agency malfeasance."
         }
       ]
+    },
+    {
+      "id": "lcha",
+      "label": "Liberty County Housing Authority (LCHA)",
+      "category": "agency",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Public Housing Authority ($163K+ Theft Syndicate)",
+      "status": "Epicenter of Bush & Cook Felony Indictments",
+      "risk_score": 98,
+      "anchors": [
+        "LCHA 14 Public Fund Transactions ($163K+ Stolen)",
+        "HUD Office of Inspector General Audit",
+        "Cypritech Shell Payment Invoices",
+        "Cause No. CR37190 & CR37244"
+      ],
+      "surveys": [],
+      "notes": "County public housing authority whose board and administration were co-opted: Chairman Klint Bush and Commissioner Emily Kebodeaux Cook indicted for misapplying public funds and steering money to private shell companies.",
+      "degree_connectivity": 6
+    },
+    {
+      "id": "chandler_cook_law",
+      "label": "Chandler, Cook & Fitzgerald Law Firm",
+      "category": "vendor",
+      "cartel": "Judicial & Prosecutorial Family Dynasty",
+      "role": "Private Law Firm / Municipal & Real Estate Counsel",
+      "status": "Conduit for Self-Dealt Legal Fee Payments",
+      "risk_score": 90,
+      "anchors": [
+        "State Bar of Texas Roster #24089984 (Emily K. Cook)",
+        "LCHA Unauthorized Legal Fee Disbursements (2019-2022)",
+        "Liberty County Title & Real Estate Records"
+      ],
+      "surveys": [],
+      "notes": "Private law practice of Partner Emily Kebodeaux Cook; recipient of unauthorized legal payments authorized while Cook sat as an LCHA board commissioner.",
+      "degree_connectivity": 3
     }
   ],
   "edges": [
@@ -1928,6 +1963,69 @@
       "target": "bobby_rader",
       "relation": "Audited Sherry Novosad Death Cover-Up & TPIA Withholding",
       "type": "media_investigation",
+      "weight": 0.96
+    },
+    {
+      "source": "emily_cook",
+      "target": "lcha",
+      "relation": "Former Commissioner & Legal Payee",
+      "type": "agency_governance",
+      "weight": 0.98
+    },
+    {
+      "source": "emily_cook",
+      "target": "chandler_cook_law",
+      "relation": "Partner / Law Firm Conduit",
+      "type": "corporate",
+      "weight": 0.95
+    },
+    {
+      "source": "emily_cook",
+      "target": "liberty_cad_board",
+      "relation": "Sitting CAD Director Under Felony Indictment",
+      "type": "agency_governance",
+      "weight": 0.98
+    },
+    {
+      "source": "emily_cook",
+      "target": "jennifer_bergman",
+      "relation": "Announced 2028 DA Challenger / Factional Opponent",
+      "type": "electoral_rivalry",
+      "weight": 0.9
+    },
+    {
+      "source": "emily_cook",
+      "target": "judge_jay_knight",
+      "relation": "Commissioners Court Public Board Appointee",
+      "type": "governance",
+      "weight": 0.88
+    },
+    {
+      "source": "klint_bush",
+      "target": "lcha",
+      "relation": "Former Director Indicted for $163K Theft",
+      "type": "financial_theft",
+      "weight": 1.0
+    },
+    {
+      "source": "lcha",
+      "target": "tommy_brents",
+      "relation": "Cypritech $2,000 Shell Retainer Payment",
+      "type": "financial_conduit",
+      "weight": 0.92
+    },
+    {
+      "source": "judge_jay_knight",
+      "target": "lcha",
+      "relation": "Commissioners Court Appoints LCHA Board",
+      "type": "governance",
+      "weight": 0.92
+    },
+    {
+      "source": "texas_rangers",
+      "target": "lcha",
+      "relation": "Criminal Public Integrity Investigation",
+      "type": "law_enforcement",
       "weight": 0.96
     }
   ],
