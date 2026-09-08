@@ -93,6 +93,9 @@ export function openDrawer(nodeData, edgesOverride) {
     surveysSection.classList.add('hidden');
   }
 
+  // Campaign Finance & Disclosures integration
+  renderCampaignFinance(nodeData);
+
   // Show drawer
   drawer.classList.remove('translate-x-full');
   backdrop.classList.remove('hidden');
@@ -116,8 +119,106 @@ export function closeDrawer() {
 export function initDrawer() {
   document.getElementById('btnCloseDrawer')?.addEventListener('click', closeDrawer);
   document.getElementById('drawerBackdrop')?.addEventListener('click', closeDrawer);
-
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeDrawer();
   });
 }
+
+let campaignFinanceData = null;
+
+async function loadCampaignFinance() {
+  if (campaignFinanceData) return campaignFinanceData;
+  try {
+    const res = await fetch('./data/campaign_finance.json');
+    if (res.ok) {
+      campaignFinanceData = await res.json();
+    }
+  } catch (err) {
+    console.warn('Could not load campaign_finance.json:', err);
+  }
+  return campaignFinanceData || [];
+}
+
+async function renderCampaignFinance(nodeData) {
+  const section = document.getElementById('drawerFinanceSection');
+  const content = document.getElementById('drawerFinanceContent');
+  if (!section || !content) return;
+
+  const data = await loadCampaignFinance();
+  if (!data || !data.length) {
+    section.classList.add('hidden');
+    return;
+  }
+
+  // Normalize search tokens
+  const label = (nodeData.label || '').toLowerCase();
+  const id = (nodeData.id || '').replace(/_/g, ' ').toLowerCase();
+
+  // Match candidate profile
+  const match = data.find(c => {
+    const cName = c.candidate.toLowerCase();
+    return cName.includes(label) || label.includes(cName.split('\n')[0].toLowerCase()) ||
+           cName.includes(id) || id.includes(cName.split('\n')[0].toLowerCase());
+  });
+
+  if (!match) {
+    section.classList.add('hidden');
+    return;
+  }
+
+  // Parse lines
+  const lines = match.filings_notes_flags.split('\n');
+  const filings = [];
+  const notes = [];
+  const flags = [];
+  let currentSection = 'filings';
+
+  lines.forEach(l => {
+    const trimmed = l.trim();
+    if (!trimmed) return;
+    if (trimmed.startsWith('Notes:')) { currentSection = 'notes'; return; }
+    if (trimmed.startsWith('Flags:')) { currentSection = 'flags'; return; }
+    if (trimmed.startsWith('Filings:')) { currentSection = 'filings'; return; }
+
+    if (currentSection === 'filings') filings.push(trimmed.replace(/^•\s*/, ''));
+    else if (currentSection === 'notes') notes.push(trimmed);
+    else if (currentSection === 'flags') flags.push(trimmed);
+  });
+
+  const candidateHeader = match.candidate.split('\n');
+
+  content.innerHTML = `
+    <div class="border-b border-zinc-800 pb-2 mb-2">
+      <div class="text-zinc-200 font-bold text-sm">${candidateHeader[0]}</div>
+      <div class="text-zinc-400 text-xs">${candidateHeader.slice(1).join(' • ')}</div>
+    </div>
+
+    ${flags.length ? `
+      <div class="space-y-1">
+        <span class="text-amber-400 font-bold text-[11px] uppercase tracking-wider block">⚠️ Ethics & Audit Flags</span>
+        <div class="space-y-1 pl-1">
+          ${flags.map(f => `<div class="text-amber-300 bg-amber-950/40 border border-amber-800/40 p-1.5 rounded text-[11px] leading-relaxed">${f}</div>`).join('')}
+        </div>
+      </div>
+    ` : ''}
+
+    ${notes.length ? `
+      <div class="space-y-1 mt-2">
+        <span class="text-teal-400 font-bold text-[11px] uppercase tracking-wider block">Financial Audit Notes</span>
+        <div class="text-zinc-300 pl-1 text-[11px] leading-relaxed">${notes.join('<br>')}</div>
+      </div>
+    ` : ''}
+
+    ${filings.length ? `
+      <div class="space-y-1 mt-2">
+        <span class="text-zinc-400 font-bold text-[11px] uppercase tracking-wider block">C/OH Filings Disclosed (${filings.length})</span>
+        <ul class="space-y-1 pl-1 text-zinc-400 text-[11px]">
+          ${filings.map(fil => `<li class="flex items-start gap-1.5"><span class="text-teal-500">📄</span><span>${fil}</span></li>`).join('')}
+        </ul>
+      </div>
+    ` : ''}
+  `;
+
+  section.classList.remove('hidden');
+}
+

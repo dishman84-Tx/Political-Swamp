@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "generated_at": "2026-09-08T10:34:20.671159",
+  "generated_at": "2026-09-08T10:39:08.722022",
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
@@ -321,15 +321,21 @@
       "label": "JP Ralph Fuller",
       "category": "official",
       "cartel": "Law Enforcement, Inquest & Death Suppression",
-      "role": "Justice of the Peace, Precinct 6",
-      "status": "Statutory Inquest Coroner Rubber-Stamp",
+      "role": "Justice of the Peace, Precinct 6 (Acting Statutory Coroner)",
+      "status": "Inquest Gatekeeper & Discretionary Autopsy Authority",
       "risk_score": 93,
       "anchors": [
-        "Tex. Code Crim. Proc. Art. 49.04 Records",
-        "Inquest Docket 2024-11"
+        "Inquest Docket 2024-11 (Sherry Novosad Staged Suicide Ruling)",
+        "Tex. CCP Art. 49.04 Statutory Coroner Authority (Non-Medical Death Determinations)",
+        "Colony Ridge Drainage Basin & Ditch Drowning Inquests (Plum Grove/Santa Fe)",
+        "Railroad Corridor & Industrial Electrocution Scene Determinations (Cleveland/Dayton)",
+        "Discretionary Autopsy Referral Gatekeeping (Jefferson/Harris County ME Orders)",
+        "Unattended & Timberland Death Certification Pipeline"
       ],
-      "surveys": [],
-      "notes": "Lacks medical training; rubber-stamped suicide ruling on Sherry Novosad to terminate criminal inquiry without gunshot stippling audit.",
+      "surveys": [
+        "Aaron Cherry A-10"
+      ],
+      "notes": "Under Texas CCP Art. 49.04, non-medical JPs serve as sole coroners in Liberty County. Fuller routinely responds to unattended deaths, industrial fatalities, Colony Ridge drownings, and firearm scenes. In the Sherry Novosad case (178 CR 2223, A-10), ruled a .410 gunshot wound to the neck as 'suicide' within hours without gunshot residue testing or forensic ballistics, effectively shutting down an active homicide investigation and shielding LCSO detective Lt. James McQueen.",
       "degree_connectivity": 2
     },
     {
