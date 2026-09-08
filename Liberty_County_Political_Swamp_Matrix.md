@@ -41,8 +41,7 @@ Applying the [[Rule 3.03]] (Candor to the Tribunal) and *Ex parte Chabot* preced
 
 ## 6. ACTIVE OVERSIGHT AUDITS (Sept 2026 Integration)
 *   **MUD 15 & Pct 5 Financial Audits:** The ongoing 7-year financial audit of Pct 5 and the MUD 15 Exposure Report are now cross-indexed against the  Colony Ridge infrastructure settlement. Any sudden influx of capital or new no-bid contracts in Q3/Q4 2026 must be flagged as potential settlement diversion.
-*   **Flock Camera / Law Enforcement Audits:** The Maria Acevedo Flock Audit and MCSO budget reviews are now cross-indexed against the  Colony Ridge law enforcement/287(g) settlement bucket.
-*   **Flock Camera / Law Enforcement Audits:** The Maria Acevedo Flock Audit and MCSO budget reviews are now cross-indexed against the  Colony Ridge law enforcement/287(g) settlement bucket.
+*   **Flock Camera / Law Enforcement Surveillance Audits:** Citizen TPIA audit requests (including Maria Acevedo's formal records demand for Flock ALPR search logs, hotlist entries, and TLETS queries) and MCSO budget reviews are cross-indexed against the multi-agency surveillance dragnet and law enforcement settlement funds.
 
 
 ## 7. VERIFIED CRIMINAL DOCKETS & CUSTODY TIMELINES (Sept 2026 Update)

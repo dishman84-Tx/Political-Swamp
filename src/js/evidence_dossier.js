@@ -576,7 +576,34 @@ export const EVIDENCE_DOSSIER = {
     subpoenaTargets: [
       "IRS Form 990 / 990-EZ filings and donor schedules for M Club of Tarkington Inc (2018–2026)",
       "Depository bank statements and check register ledgers for EIN 93-1956613",
-      "Donation solicitation letters and receipts issued using Tarkington ISD facilities and branding"
+  },
+
+  "Flock Safety ALPR Hotlist & Surveillance Targeting Audit (Citizen TPIA)": {
+    title: "Flock Safety ALPR Hotlist & Surveillance Targeting Audit (Citizen TPIA)",
+    category: "Civil Liberties & Multi-Agency Surveillance Dragnet",
+    badgeColor: "bg-red-500/20 text-red-400 border-red-500/30",
+    plainMeaning: "Formal Texas Public Information Act (TPIA) records requests were filed demanding user access audit trails, system logs, search histories, and custom hotlist entries from Liberty PD's Flock Safety automated license plate reader (ALPR) system. The demand specifically audits the unauthorized surveillance, license plate querying, and multi-county tracking targeting local citizen Maria Acevedo across Liberty, Montgomery, and Harris counties under Lt. Cedric McDuffie's command, examining whether local police databases were weaponized against private citizens without reasonable suspicion or active criminal warrants.",
+    forensicBreakdown: [
+      { label: "Surveillance Technology", value: "Flock Safety Automated License Plate Recognition (ALPR) cameras & regional network" },
+      { label: "Target Citizen", value: "Maria Acevedo (Target of law enforcement ALPR queries and vehicle hotlisting)" },
+      { label: "Command Authority", value: "Lt. Cedric McDuffie (Liberty PD Patrol Division / Flock ALPR Administrator)" },
+      { label: "Records Demanded", value: "User access logs, exact officer badge numbers, CAD case reasons, and TLETS/TCIC query histories" },
+      { label: "Inter-Agency Scope", value: "Cross-county ALPR sharing between Liberty PD, MCSO, and regional constable offices" }
+    ],
+    statutes: [
+      { code: "Tex. Gov't Code Ch. 552", desc: "Texas Public Information Act — Right of citizens to inspect digital audit trails and surveillance search logs." },
+      { code: "4th Amendment, U.S. Const.", desc: "Prohibition against unreasonable searches, warrant-less dragnet surveillance, and official harassment." },
+      { code: "Tex. Penal Code § 39.02", desc: "Abuse of Official Capacity — Using governmental surveillance tools for unauthorized personal or political monitoring." }
+    ],
+    sources: [
+      { name: "Texas Public Information Act Handbook (OAG)", url: "https://www.texasattorneygeneral.gov/open-government" },
+      { name: "Flock Safety Transparency & Audit Trail Guidelines", url: "https://www.flocksafety.com/" },
+      { name: "City of Liberty Police Department TPIA Records Portal", url: "https://www.cityofliberty.org/police" }
+    ],
+    subpoenaTargets: [
+      "Flock Safety Inc. master administrative query audit trail for Liberty PD portal",
+      "TLETS / TCIC transaction audit logs for Maria Acevedo's driver's license and vehicle plates",
+      "Internal Liberty PD CAD/RMS logs correlating vehicle detections with officer dispatches"
     ]
   }
 };
