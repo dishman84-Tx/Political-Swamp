@@ -241,6 +241,26 @@ export function initGraph(entities, edges) {
   if (countEl) {
     countEl.textContent = `${entities.length} Entities • ${edges.length} Edges`;
   }
+
+  // Update HUD Cartel Legend Counts Dynamically
+  const counts = {
+    'Developer & Bond Syndicate': 0,
+    'Law Enforcement, Inquest & Death Suppression': 0,
+    'School Board, CAD & Construction Arbitrage': 0,
+    'Judicial & Prosecutorial Family Dynasty': 0
+  };
+  entities.forEach(e => {
+    if (counts[e.cartel] !== undefined) counts[e.cartel]++;
+  });
+
+  const devEl = document.getElementById('countDeveloper');
+  if (devEl) devEl.textContent = counts['Developer & Bond Syndicate'];
+  const leEl = document.getElementById('countLawEnf');
+  if (leEl) leEl.textContent = counts['Law Enforcement, Inquest & Death Suppression'];
+  const scEl = document.getElementById('countSchoolCad');
+  if (scEl) scEl.textContent = counts['School Board, CAD & Construction Arbitrage'];
+  const judEl = document.getElementById('countJudicial');
+  if (judEl) judEl.textContent = counts['Judicial & Prosecutorial Family Dynasty'];
 }
 
 /**
