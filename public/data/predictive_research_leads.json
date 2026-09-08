@@ -1,0 +1,86 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-09-08T10:56:00",
+  "radar_focus": "Liberty County Political Swamp & Corridor Expansion",
+  "predictive_research_leads": [
+    {
+      "lead_id": "LEAD-001",
+      "priority": "CRITICAL",
+      "target_entity": "Tarkington ISD Board & 50-Acre Land Deal",
+      "status": "UNINSPECTED_CONTRACT_PENDING",
+      "lead_type": "Real Estate / School Bond Capital Arbitrage",
+      "lead_description": "TISD Board closed-session deliberations under Tex. Gov't Code § 551.072 regarding 50-acre site acquisition for proposed $95M bond. Site sits directly on the SH 99 ➔ FM 321 corridor path.",
+      "research_action": "Execute TexasFile Grantee/Grantor run-sheet for 'Tarkington Independent School District' and cross-match adjacent parcel owners against Tom Johnson, PBK Holdings LLC, and Rollins family entities in Phillip Miller Survey A-800.",
+      "search_parameters": {
+        "repository": "texasfile.com",
+        "county": "Liberty",
+        "grantee": "Tarkington ISD*",
+        "surveys": ["Phillip Miller A-800", "Aaron Cherry A-10"],
+        "document_types": ["Deed", "Option", "ROW", "Easement"]
+      },
+      "subpoena_target": "TISD § 551.072 Executive Session real property meeting minutes and confidential land option contracts."
+    },
+    {
+      "lead_id": "LEAD-002",
+      "priority": "HIGH",
+      "target_entity": "Southern Liberty County MMD No. 1 / Liberty Paving LLC",
+      "status": "ACTIVE_AUDIT_EXPOSURE",
+      "lead_type": "Vendor Contract / Chapter 171 Loophole",
+      "lead_description": "Audit of $22.5M in road paving disbursements authorized under the $119M MMD 1 bond cap. Board VP Heath Marek co-owns Liberty Paving LLC while John Harris sits on board via straw deed Doc #2026017008.",
+      "research_action": "Subpoena MMD 1 warrants payable and draw requests against the Bell Silva Credit Line (Instrument #2025041525). Audit whether paving invoices reflect competitive bid tabs or sole-source developer pass-through markups.",
+      "search_parameters": {
+        "repository": "Texas Bond Review Board & Liberty County Clerk",
+        "instrument": "2025041525",
+        "entities": ["Liberty Paving LLC", "Southern Liberty County MMD No. 1", "Bell Silva"]
+      },
+      "subpoena_target": "MMD 1 bank statements, invoice payment vouchers, and subcontractor tier ledgers for Liberty Paving LLC."
+    },
+    {
+      "lead_id": "LEAD-003",
+      "priority": "CRITICAL",
+      "target_entity": "Tarkington Woods FEMA HMGP $812K Buyout Parcels",
+      "status": "INVESTIGATIVE_SMOKING_GUN",
+      "lead_type": "FEMA Floodplain Grant Timing Anomaly",
+      "lead_description": "14 parcels along CR 2223 (Aaron Cherry Survey A-10) acquired post-disaster declaration and submitted to Liberty County for $812K in taxpayer-funded buyout compensation.",
+      "research_action": "Pull chain of title on CR 2223 Block 4 & 5 lots in TexasFile. Compare grantor conveyance dates against FEMA DR-4332 / DR-4485 declaration dates to mathematically confirm post-declaration acquisition flip.",
+      "search_parameters": {
+        "repository": "texasfile.com & Liberty CAD",
+        "survey": "Aaron Cherry Survey A-10",
+        "subdivision": "Tarkington Woods",
+        "cad_pid": "10125 and adjacent lots"
+      },
+      "subpoena_target": "FEMA HMGP Form 44 C.F.R. § 206.434 application packages signed by Floodplain Administrator Louis Bergman."
+    },
+    {
+      "lead_id": "LEAD-004",
+      "priority": "HIGH",
+      "target_entity": "MUD 15 Wastewater Sludge Transport & TCEQ Permit WQ0016839001",
+      "status": "ENVIRONMENTAL_RUNOFF_THREAT",
+      "lead_type": "TCEQ Permit Non-Compliance & Floodway Dumping",
+      "lead_description": "MUD 15 WWTP #1 engineered by Wasteline Engineering (Glenn & Jason Breisch) discharging wastewater sludge into the Luce Bayou regional drainage basin, impacting Tarkington Prairie.",
+      "research_action": "Scrape TCEQ Central Registry for Permit WQ0016839001 compliance logs, Notice of Violations (NOVs), discharge monitoring reports (DMRs), and off-site sludge transport manifests to Austin.",
+      "search_parameters": {
+        "repository": "tceq.texas.gov Central Registry",
+        "permit_number": "WQ0016839001",
+        "applicant": "Liberty County MUD No. 15",
+        "engineer": "Wasteline Engineering, Inc."
+      },
+      "subpoena_target": "TCEQ Region 12 Beaumont inspection notes and sludge hauler trip tickets."
+    },
+    {
+      "lead_id": "LEAD-005",
+      "priority": "HIGH",
+      "target_entity": "Buckeye Values PAC & American Values First PAC 2026 Filings",
+      "status": "CAMPAIGN_FINANCE_RADAR",
+      "lead_type": "Political Action Committee / Straw Donor Conduit",
+      "lead_description": "Developer-funded PACs ($1M+ warchest) underwriting County Judge and Commissioner campaigns to safeguard MUD bond approvals and judicial immunity.",
+      "research_action": "Scrape Texas Ethics Commission (TEC) 30-day and 8-day pre-election campaign finance reports (Form SPAC) to map new corporate donors, shell LLC contributions, and independent expenditure expenditures for county slates.",
+      "search_parameters": {
+        "repository": "ethics.state.tx.us",
+        "pacs": ["Buckeye Values PAC", "American Values First PAC"],
+        "candidates": ["Jay Knight", "David Whitmire", "Bruce Karbowski", "Greg Arthur", "Leon Wilson"]
+      },
+      "subpoena_target": "TEC contributor schedules and direct corporate expenditure disclosures."
+    }
+  ]
+}

@@ -459,6 +459,125 @@ export const EVIDENCE_DOSSIER = {
       "Right-of-Way Agreement Doc #2019009376 and recorded survey plats",
       "Pipeline crossing agreements and road easement coordination documents"
     ]
+  },
+
+  // ==========================================
+  // TARKINGTON ISD & CAD CONFLICTS
+  // ==========================================
+  "TISD $95M Bond Deal (Prop A $50M / Prop B $45M)": {
+    title: "Tarkington ISD $95M Bond Referendum (Propositions A & B)",
+    category: "School District Capital Arbitrage & Land Speculation",
+    badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
+    plainMeaning: "Tarkington ISD proposed a massive $95,000,000 bond referendum divided into Proposition A ($50M for new elementary school construction) and Proposition B ($45M for confidential land acquisition and campus infrastructure). Under Texas Government Code § 551.072 executive session secrecy, the board conducted closed-door negotiations to purchase a 50-acre parcel in rural Tarkington near the expanding SH 99 / FM 321 corridor. The bond deal triggered fierce community backlash because Tarkington ISD had not passed a bond in over 20 years, and the proposed land purchase was negotiated while board members and their spouses held private real estate and tax appraisal interests in the immediate expansion zone.",
+    forensicBreakdown: [
+      { label: "Total Authorization", value: "$95,000,000 (Prop A $50M / Prop B $45M)" },
+      { label: "Land Acquisition Allocation", value: "$45M allocated under Proposition B (including 50-acre confidential site)" },
+      { label: "Governing Board", value: "Tarkington ISD Board of Trustees (Lane Gulledge, Kevin Johnson, Susan Rollins, Dwayne Stovall)" },
+      { label: "Community Pushback", value: "Followed narrow 441-452 defeat of May 2024 bond; community demands independent land appraisal" },
+      { label: "Corridor Connection", value: "Site selection positioned directly along SH 99 ➔ FM 321 arterial path" }
+    ],
+    statutes: [
+      { code: "Tex. Educ. Code Ch. 45", desc: "School District Funds and Bonds — Public debt issuance and capital expenditure." },
+      { code: "Tex. Gov't Code § 551.072", desc: "Deliberations Regarding Real Property (Closed Meeting Exception)." },
+      { code: "Tex. Loc. Gov't Code Ch. 171", desc: "Regulation of Conflicts of Interest of Officers of Local Governments." }
+    ],
+    sources: [
+      { name: "Tarkington ISD Board of Trustees Official Agendas & Minutes", url: "https://www.tarkingtonisd.net/board" },
+      { name: "Texas Bond Review Board (BRB) School District Bond Database", url: "https://www.brb.texas.gov/" },
+      { name: "Liberty CAD Public Property Search Portal", url: "https://esearch.libertycad.com/" }
+    ],
+    subpoenaTargets: [
+      "TISD Board Executive Session Minutes regarding § 551.072 real property negotiations",
+      "Draft purchase contracts and option agreements for the 50-acre proposed campus site",
+      "Financial advisory and bond underwriting fee ledgers for Series 2025/2026 proposals"
+    ]
+  },
+
+  "Susan Rollins / Jimmy Rollins Spousal CAD Conflict": {
+    title: "Susan Rollins & Jimmy Rollins Spousal CAD Conflict",
+    category: "Property Tax Valuation & Spousal Self-Dealing Nexus",
+    badgeColor: "bg-red-500/20 text-red-400 border-red-500/30",
+    plainMeaning: "A profound conflict of interest exists between the Tarkington ISD Board and the Liberty County Central Appraisal District (CAD). Trustee Susan Rollins sits on the Tarkington ISD Board of Trustees, voting on tax rate adoptions, multi-million dollar campus bond initiatives, and confidential school land purchases. Concurrently, her husband Jimmy Rollins sits on the Liberty CAD Board of Directors and serves as Chief Appraiser, controlling the property valuation rolls, agricultural rollback tax exemptions, and appraisal write-downs that dictate the school district's bonding capacity and tax levy. Jimmy Rollins also operates private construction ventures (J. Rollins Construction), creating an uninsulated spousal feedback loop between school construction capital and appraisal tax governance.",
+    forensicBreakdown: [
+      { label: "School Board Trustee", value: "Susan Rollins (Votes on $95M bond, property tax rate, and land purchases)" },
+      { label: "CAD Chief Appraiser / Director", value: "Jimmy Rollins (Husband; controls property valuations, tax rolls, and ag-shields across Liberty County)" },
+      { label: "Commercial Entity", value: "J. Rollins Construction (Commercial dirt work and construction operations)" },
+      { label: "CAD Board Overlap", value: "Sat on Liberty CAD Board alongside criminally indicted attorney Emily Kebodeaux Cook" },
+      { label: "Non-Profit Shadow Fund", value: "Co-organizers of M Club of Tarkington Inc (EIN 93-1956613)" }
+    ],
+    statutes: [
+      { code: "Tex. Tax Code § 6.035", desc: "Restrictions on Eligibility of Appraisal District Board Members and Chief Appraisers." },
+      { code: "Tex. Loc. Gov't Code § 171.004", desc: "Conflict of Interest Affidavit and Mandatory Abstention for Spousal Financial Interests." },
+      { code: "Tex. Penal Code § 39.02", desc: "Abuse of Official Capacity in Setting Public Property Valuations." }
+    ],
+    sources: [
+      { name: "Liberty County CAD Board of Directors Meeting Minutes", url: "https://www.libertycad.com/" },
+      { name: "Texas Comptroller Property Tax Assistance Division (PTAD) Audits", url: "https://comptroller.texas.gov/taxes/property-tax/" },
+      { name: "Texas Ethics Commission Personal Financial Statements (Form PFS)", url: "https://www.ethics.state.tx.us/" }
+    ],
+    subpoenaTargets: [
+      "Liberty CAD appraisal file notes and adjustment histories for Rollins family properties and expansion tracts",
+      "Chapter 171 Conflict Affidavits filed by Susan Rollins with Tarkington ISD Board Secretary",
+      "Communications between Liberty CAD leadership and Tarkington ISD Superintendent regarding bond tax bases"
+    ]
+  },
+
+  "Kevin Johnson / J-Con Services Vendor Awards": {
+    title: "Kevin Johnson (J-Con Services) Vendor Contracting Nexus",
+    category: "School Board Trustee Vendor Capture",
+    badgeColor: "bg-red-500/20 text-red-400 border-red-500/30",
+    plainMeaning: "Kevin Johnson serves as Vice President of the Tarkington ISD Board of Trustees while simultaneously owning and operating J-Con Services, a commercial dirt clearing and civil site work contracting firm. J-Con Services and linked Johnson clearing entities (including Tom Johnson's Encino Landscape and Johnson Construction Clearing LLC) have secured extensive campus dirt work, utility clearing, and county road subcontracts. Johnson co-manages off-book athletic booster funds (M-Club) that handle hundreds of thousands of dollars outside standard school district audit and procurement protocols.",
+    forensicBreakdown: [
+      { label: "Public Office", value: "Vice President, Tarkington ISD Board of Trustees" },
+      { label: "Commercial Firm", value: "J-Con Services / Johnson Clearing Affiliates" },
+      { label: "Contractual Flow", value: "Campus dirt clearing, drainage excavation, and county equipment subcontracts" },
+      { label: "Cross-Entity Link", value: "Direct operational nexus with Tom Johnson (Black Dog Land & Cattle / Encino Landscape)" },
+      { label: "Booster Conduit", value: "Co-organizer of M Club of Tarkington Inc (EIN 93-1956613)" }
+    ],
+    statutes: [
+      { code: "Tex. Loc. Gov't Code § 171.002", desc: "Substantial Interest in Business Entity (Trustee ownership of contracting vendor)." },
+      { code: "Tex. Educ. Code § 44.031", desc: "Purchasing Contracts — Mandatory competitive procurement thresholds for school districts." },
+      { code: "Tex. Penal Code § 39.02", desc: "Abuse of Official Capacity for Private Corporate Benefit." }
+    ],
+    sources: [
+      { name: "Tarkington ISD Accounts Payable & Warrant Check Registers", url: "https://www.tarkingtonisd.net/departments/business-office" },
+      { name: "Texas Secretary of State Business Filings (J-Con Services / J-Con Construction)", url: "https://mycpa.cpa.state.tx.us/coa/" },
+      { name: "Texas Ethics Commission Form CIS Disclosures", url: "https://www.ethics.state.tx.us/" }
+    ],
+    subpoenaTargets: [
+      "All purchase orders, bid score sheets, and warrants payable issued to J-Con Services by Tarkington ISD",
+      "Subcontractor payment manifests for county and school district construction projects",
+      "Bank records for M Club of Tarkington Inc showing disbursements to contractor-aligned accounts"
+    ]
+  },
+
+  "M-Club Shadow Budget (EIN 93-1956613)": {
+    title: "M Club of Tarkington Inc (EIN 93-1956613 Shadow Budget)",
+    category: "Non-Profit Off-Balance-Sheet Shadow Treasury",
+    badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
+    plainMeaning: "M Club of Tarkington Inc is a registered 501(c)(3) booster organization (EIN 93-1956613) co-organized by leaders of the Rollins and Johnson families. Investigative records reveal that the non-profit operates as an off-balance-sheet shadow treasury for athletic facilities, equipment procurement, and campus projects, bypassing Texas Education Code competitive bidding laws, independent school district annual financial audits, and Texas Public Information Act disclosure requirements. Community members and whistleblowers who attempted to audit M Club cash flows were subjected to coordinated political and social intimidation.",
+    forensicBreakdown: [
+      { label: "Entity Name", value: "M Club of Tarkington Inc" },
+      { label: "Federal Tax ID", value: "EIN 93-1956613" },
+      { label: "Key Organizers", value: "Rollins Family (Susan & Jimmy Rollins) & Johnson Family (Kevin & Tom Johnson)" },
+      { label: "Operational Function", value: "Off-book procurement of campus athletic equipment, dirt work, and booster disbursements" },
+      { label: "Audit Immunity", value: "Operates outside official TISD general ledger; immune to routine TEA and TPIA audit checks" }
+    ],
+    statutes: [
+      { code: "26 U.S.C. § 501(c)(3)", desc: "Internal Revenue Code — Prohibition against private inurement to corporate insiders." },
+      { code: "Tex. Bus. Org. Code Ch. 22", desc: "Nonprofit Corporations — Mandatory financial record-keeping and inspection rights." },
+      { code: "Tex. Penal Code § 32.45", desc: "Misapplication of Fiduciary Property." }
+    ],
+    sources: [
+      { name: "IRS Exempt Organizations Search (Search EIN 93-1956613)", url: "https://apps.irs.gov/app/eos/" },
+      { name: "ProPublica Nonprofit Explorer (M Club of Tarkington Inc)", url: "https://projects.propublica.org/nonprofits/" },
+      { name: "Texas Secretary of State Non-Profit Registry", url: "https://www.sos.state.tx.us/" }
+    ],
+    subpoenaTargets: [
+      "IRS Form 990 / 990-EZ filings and donor schedules for M Club of Tarkington Inc (2018–2026)",
+      "Depository bank statements and check register ledgers for EIN 93-1956613",
+      "Donation solicitation letters and receipts issued using Tarkington ISD facilities and branding"
+    ]
   }
 };
 

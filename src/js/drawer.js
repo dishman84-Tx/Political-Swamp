@@ -114,6 +114,39 @@ export function openDrawer(nodeData, edgesOverride) {
   // Campaign Finance & Disclosures integration
   renderCampaignFinance(nodeData);
 
+  // Flagged Overlaps & Regulatory Oversight
+  const overlapsSection = document.getElementById('drawerOverlapsSection');
+  const overlapsContent = document.getElementById('drawerOverlapsContent');
+  const overlaps = nodeData.overlaps_and_oversight || [];
+  if (overlaps.length && overlapsSection && overlapsContent) {
+    overlapsSection.classList.remove('hidden');
+    overlapsContent.innerHTML = overlaps.map(item => {
+      const title = typeof item === 'string' ? item : (item.title || item.breach || '');
+      const desc = typeof item === 'string' ? '' : (item.description || item.detail || '');
+      const statute = typeof item === 'string' ? '' : (item.statute || '');
+      return `
+        <div class="p-2.5 rounded-lg bg-red-950/30 border border-red-900/50 text-xs space-y-1">
+          <div class="flex items-start justify-between gap-1">
+            <span class="font-bold text-red-400 leading-snug">${title}</span>
+            ${statute ? `<span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-red-900/40 text-red-300 shrink-0">${statute}</span>` : ''}
+          </div>
+          ${desc ? `<p class="text-zinc-300 leading-snug text-[11px]">${desc}</p>` : ''}
+        </div>
+      `;
+    }).join('');
+  } else if (overlapsSection) {
+    overlapsSection.classList.add('hidden');
+  }
+
+  // Quick Trace in Matrix Button
+  const btnFocus = document.getElementById('btnDrawerFocusGraph');
+  if (btnFocus) {
+    btnFocus.onclick = () => {
+      closeDrawer();
+      if (window.__focusNode) window.__focusNode(nodeData.id);
+    };
+  }
+
   // Show drawer
   drawer.classList.remove('translate-x-full');
   backdrop.classList.remove('hidden');

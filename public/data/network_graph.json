@@ -1,11 +1,11 @@
 {
   "version": "3.0.0",
-  "generated_at": "2026-09-08T10:51:57.455951",
+  "generated_at": "2026-09-08T10:58:27.388999",
   "jurisdiction": "Liberty County, Texas",
   "statutory_privilege": "Tex. Civ. Prac. & Rem. Code Ch. 27 (TCPA) & \u00a7 73.002",
   "summary": {
-    "total_nodes": 43,
-    "total_edges": 77,
+    "total_nodes": 44,
+    "total_edges": 83,
     "cartels": 4,
     "verified_indictments": 4,
     "settlement_total": "$68,000,000",
@@ -32,7 +32,7 @@
         "Barton Tarkington A-354"
       ],
       "notes": "Bypassed direct victim restitution; $68M settlement split into $48M SWPPP/drainage and $20M law enforcement facilitation.",
-      "degree_connectivity": 12
+      "degree_connectivity": 13
     },
     {
       "id": "trey_harris",
@@ -307,14 +307,38 @@
       "status": "100% DNA Excluded",
       "risk_score": 60,
       "anchors": [
-        "STR Comparative Buccal Analysis (Bruce Jeffries)",
-        "DA Indictment Dismissal Order"
+        "STR Comparative Buccal Swab Analysis (Bruce Jeffries / 100% Excluded)",
+        "DA Jennifer Bergman Domestic Assault Indictment Dismissal",
+        "Multimillion-Dollar Industrial Lawsuit Proceeds (Insulated)",
+        "LCSO Scene Contamination & Untested Clothing Release"
       ],
       "surveys": [
-        "Aaron Cherry A-10"
+        "178 CR 2223 (Tarkington Woods / Aaron Cherry A-10)"
       ],
-      "notes": "Voluntarily provided buccal swab; conclusively excluded from foreign male blood found on window curtain and clock pendulum.",
-      "degree_connectivity": 1
+      "notes": "Surviving husband in Sherry Novosad death (178 CR 2223). Voluntarily provided buccal swab (100% excluded from scene foreign male blood). Pending domestic assault indictment unilaterally dismissed post-mortem by DA Jennifer Bergman, insulating multimillion-dollar industrial settlement proceeds.",
+      "degree_connectivity": 1,
+      "overlaps_and_oversight": [
+        {
+          "title": "Post-Mortem Domestic Assault Indictment Dismissal",
+          "statute": "Tex. CCP Art. 32.02",
+          "description": "DA Jennifer Bergman unilaterally dismissed pending domestic violence charges against Ted Novosad following Sherrys death without grand jury re-review or trial record."
+        },
+        {
+          "title": "Scene Forensics & Untested Evidence Release",
+          "statute": "Tex. Penal Code \u00a7 37.09",
+          "description": "LCSO and JP Ralph Fuller released bloody clothing to family without crime lab testing; independent lab (National Screening Center) subsequently recovered 100% foreign male DNA."
+        },
+        {
+          "title": "Multimillion-Dollar Lawsuit Shield",
+          "statute": "Tex. Fam. Code Ch. 3",
+          "description": "Sherrys death insulated Teds multimillion-dollar industrial accident lawsuit proceeds from community property division and divorce claims."
+        },
+        {
+          "title": "LCSO Deputy Voluntary DNA Swab Refusal",
+          "statute": "Brady v. Maryland",
+          "description": "Ted Novosad provided voluntary buccal swab (100% excluded); active LCSO Lt. James McQueen (extramarital affair) continues to refuse voluntary DNA submission."
+        }
+      ]
     },
     {
       "id": "ralph_fuller",
@@ -336,7 +360,24 @@
         "Aaron Cherry A-10"
       ],
       "notes": "Under Texas CCP Art. 49.04, non-medical JPs serve as sole coroners in Liberty County. Fuller routinely responds to unattended deaths, industrial fatalities, Colony Ridge drownings, and firearm scenes. In the Sherry Novosad case (178 CR 2223, A-10), ruled a .410 gunshot wound to the neck as 'suicide' within hours without gunshot residue testing or forensic ballistics, effectively shutting down an active homicide investigation and shielding LCSO detective Lt. James McQueen.",
-      "degree_connectivity": 2
+      "degree_connectivity": 2,
+      "overlaps_and_oversight": [
+        {
+          "title": "Statutory Non-Medical Coroner Ruling",
+          "statute": "Tex. CCP Art. 49.04",
+          "description": "Acts as inquest coroner without medical degree; ruled Sherry Novosad neck gunshot wound a suicide within hours without ballistics, trajectory, or GSR testing."
+        },
+        {
+          "title": "Discretionary Autopsy Referral Gatekeeping",
+          "statute": "Tex. CCP Art. 49.10",
+          "description": "Pattern of declining county-funded autopsies on suspicious Colony Ridge drainage ditch drownings, rail/industrial deaths, and unattended scenes."
+        },
+        {
+          "title": "LCSO Law Enforcement Shielding",
+          "statute": "Tex. Penal Code \u00a7 37.09",
+          "description": "Rapid suicide classification legally terminated homicide investigation, protecting LCSO Detective Lt. James McQueen from subpoenaed phone and DNA discovery."
+        }
+      ]
     },
     {
       "id": "wayne_dolcefino",
@@ -480,25 +521,49 @@
         "Phillip Miller A-800"
       ],
       "notes": "Physical address identical to Brenda Burns; controls M-Club shadow account; major contractor on TISD and TxDOT right-of-way.",
-      "degree_connectivity": 6
+      "degree_connectivity": 7
     },
     {
       "id": "tarkington_isd",
-      "label": "Tarkington ISD Board",
+      "label": "Tarkington ISD Board of Trustees",
       "category": "school_district",
       "cartel": "School Board, CAD & Construction Arbitrage",
-      "role": "Public Independent School District",
-      "status": "$95M Prop B Bond Speculation",
-      "risk_score": 89,
+      "role": "Board: Lane Gulledge (Pres), Kevin Johnson (VP), Susan Rollins, Dwayne Stovall",
+      "status": "$95M Bond Deal & Spousal Appraisal Conflict",
+      "risk_score": 95,
       "anchors": [
-        "TISD May 2025 Bond Resolution",
-        "Liberty CAD Land Appraisals 2025"
+        "TISD $95M Bond Deal (Prop A $50M / Prop B $45M)",
+        "Susan Rollins / Jimmy Rollins Spousal CAD Conflict",
+        "Kevin Johnson / J-Con Services Vendor Awards",
+        "Lane Gulledge / Gulledge Homes Construction Nexus",
+        "Dwayne Stovall / Diamond K Equipment Contracts",
+        "M-Club Shadow Budget (EIN 93-1956613)",
+        "Tex. Gov't Code \u00a7 551.072 Confidential Land Deals"
       ],
       "surveys": [
-        "Phillip Miller A-800"
+        "Phillip Miller A-800",
+        "Aaron Cherry A-10",
+        "Ann Holshousen A-208"
       ],
-      "notes": "Bond land acquisitions cross-referenced with Liberty CAD board members and Rollins construction subcontracts.",
-      "degree_connectivity": 5
+      "notes": "Governing board for Tarkington ISD (~1,874 students). Full Trustee Roster: Lane Gulledge (Board President / Gulledge Homes), Kevin Johnson (Vice President / J-Con Services), Susan Rollins (Trustee / spouse of Jimmy Rollins, CAD Chief Appraiser), Dwayne Stovall (Trustee / Diamond K Equipment), and Cory Anderson (Former Trustee / ANDCO LLC / MUD 1). Actively negotiating 50-acre confidential land purchase via $95M bond referendum while Trustee Susan Rollins' husband Jimmy Rollins controls CAD property tax valuations and ag-shields. Directing campus contracts to insider construction firms and co-managing off-book M-Club booster accounts.",
+      "degree_connectivity": 10,
+      "overlaps_and_oversight": [
+        {
+          "title": "50-Acre Confidential Land Deal (\u00a7 551.072)",
+          "statute": "Tex. Gov't Code \u00a7 551.072",
+          "description": "Negotiating confidential 50-acre land acquisition via  bond Proposition B ( allocation) along SH 99 / FM 321 expansion route."
+        },
+        {
+          "title": "Trustee Vendor Capture (J-Con / Gulledge / Diamond K)",
+          "statute": "Tex. Loc. Gov't Code Ch. 171",
+          "description": "Board leadership holds commercial ties to school contracts: Pres. Lane Gulledge (Gulledge Homes), VP Kevin Johnson (J-Con Services), Trustee Dwayne Stovall (Diamond K Equipment)."
+        },
+        {
+          "title": "CAD Spousal Entanglement",
+          "statute": "Tex. Tax Code \u00a7 6.035",
+          "description": "Trustee Susan Rollins married to Liberty CAD Chief Appraiser Jimmy Rollins."
+        }
+      ]
     },
     {
       "id": "jimmy_rollins",
@@ -517,7 +582,24 @@
         "A-35"
       ],
       "notes": "School board voting member whose construction entities receive bond subcontracts and CAD board land re-appraisals.",
-      "degree_connectivity": 2
+      "degree_connectivity": 2,
+      "overlaps_and_oversight": [
+        {
+          "title": "Spousal School Board & CAD Appraisal Nexus",
+          "statute": "Tex. Tax Code \u00a7 6.035",
+          "description": "Sets agricultural rollback tax write-downs and parcel valuations across Liberty CAD while wife Susan Rollins votes on campus bonds funded by those valuations."
+        },
+        {
+          "title": "Vendor Subcontracting via J. Rollins Construction",
+          "statute": "Tex. Penal Code \u00a7 39.02",
+          "description": "Operates private construction company receiving campus site work and county clearing contracts."
+        },
+        {
+          "title": "Shadow Booster Account Management",
+          "statute": "Tex. Bus. Org. Code Ch. 22",
+          "description": "Co-organizer of M Club of Tarkington Inc (EIN 93-1956613) with Tom Johnson."
+        }
+      ]
     },
     {
       "id": "marco_jacquez",
@@ -688,7 +770,29 @@
         "Isaiah Fields A-35"
       ],
       "notes": "Northeast expansion artery designed to connect SH 99 Grand Parkway through Colony Ridge to FM 321 in Tarkington Prairie. Delayed by landowner eminent domain resistance, MUD 15 runoff litigation, and MMD 1 debt caps.",
-      "degree_connectivity": 12
+      "degree_connectivity": 13,
+      "overlaps_and_oversight": [
+        {
+          "title": "TxDOT Right-of-Way Gridlock & Landowner Resistance",
+          "statute": "Tex. Transp. Code Ch. 228",
+          "description": "Eminent domain proceedings stalled by Tarkington Prairie landowners rejecting low-ball state compensation."
+        },
+        {
+          "title": "Special District Debt Saturation (+ Exposure)",
+          "statute": "Tex. Water Code Ch. 49",
+          "description": "Southern MMD 1 () and MUD 15 () bond underwriting capped following DOJ/CFPB civil enforcement decree."
+        },
+        {
+          "title": "Regional Floodway & Luce Bayou Drainage Dumping",
+          "statute": "40 C.F.R. \u00a7 122.26",
+          "description": "Channelized runoff and MUD 15 WWTP #1 wastewater dumping directly into Tarkington Woods and Luce Bayou drainage basins subject to FEMA HMGP buyout litigation."
+        },
+        {
+          "title": "Straw Director Parcel Qualification",
+          "statute": "Tex. Water Code \u00a7 49.052",
+          "description": "MMD 1 Director John Harris qualified via Director Lot #5 straw conveyance (Doc #2026017008) to award .5M paving contracts to Liberty Paving LLC."
+        }
+      ]
     },
     {
       "id": "kevin_johnson",
@@ -706,7 +810,43 @@
         "Phillip Miller A-800"
       ],
       "notes": "TISD Trustee directing school bond contracts to his own clearing entities and co-managing off-book booster accounts with Tom Johnson.",
-      "degree_connectivity": 3
+      "degree_connectivity": 4
+    },
+    {
+      "id": "susan_rollins",
+      "label": "Susan Rollins (TISD Trustee)",
+      "category": "official",
+      "cartel": "School Board, CAD & Construction Arbitrage",
+      "role": "Tarkington ISD Trustee",
+      "status": "$95M Bond Vote / Spousal Conflict",
+      "risk_score": 94,
+      "anchors": [
+        "TISD $95M Bond Resolution Vote",
+        "Susan Rollins / Jimmy Rollins Spousal CAD Conflict",
+        "M-Club Shadow Budget Co-Organizer"
+      ],
+      "surveys": [
+        "Phillip Miller A-800"
+      ],
+      "notes": "Tarkington ISD School Board Trustee who votes on campus bond land acquisitions and vendor awards while husband Jimmy Rollins sits on the Liberty CAD Board and serves as Chief Appraiser setting district tax valuations.",
+      "degree_connectivity": 2,
+      "overlaps_and_oversight": [
+        {
+          "title": "Spousal Appraisal District Conflict of Interest",
+          "statute": "Tex. Tax Code \u00a7 6.035",
+          "description": "Votes on  campus bond and property tax rate as TISD Trustee while husband Jimmy Rollins serves as Liberty CAD Chief Appraiser setting district tax valuation rolls."
+        },
+        {
+          "title": "Commercial Construction Self-Dealing",
+          "statute": "Tex. Loc. Gov't Code \u00a7 171.004",
+          "description": "Husband Jimmy Rollins owns J. Rollins Construction, receiving school campus and county equipment subcontracts."
+        },
+        {
+          "title": "Off-Balance-Sheet Shadow Treasury (M-Club)",
+          "statute": "26 U.S.C. \u00a7 501(c)(3)",
+          "description": "Co-manages M Club of Tarkington Inc (EIN 93-1956613) outside official district financial ledgers and TPIA oversight."
+        }
+      ]
     },
     {
       "id": "jimmy_rollins_cad",
@@ -725,7 +865,24 @@
         "A-35"
       ],
       "notes": "Husband of TISD Trustee Susan Rollins; controls agricultural tax shields and developer valuation write-downs across Liberty CAD.",
-      "degree_connectivity": 2
+      "degree_connectivity": 3,
+      "overlaps_and_oversight": [
+        {
+          "title": "Spousal School Board & CAD Appraisal Nexus",
+          "statute": "Tex. Tax Code \u00a7 6.035",
+          "description": "Sets agricultural rollback tax write-downs and parcel valuations across Liberty CAD while wife Susan Rollins votes on campus bonds funded by those valuations."
+        },
+        {
+          "title": "Vendor Subcontracting via J. Rollins Construction",
+          "statute": "Tex. Penal Code \u00a7 39.02",
+          "description": "Operates private construction company receiving campus site work and county clearing contracts."
+        },
+        {
+          "title": "Shadow Booster Account Management",
+          "statute": "Tex. Bus. Org. Code Ch. 22",
+          "description": "Co-organizer of M Club of Tarkington Inc (EIN 93-1956613) with Tom Johnson."
+        }
+      ]
     },
     {
       "id": "white_construction",
@@ -1340,6 +1497,48 @@
       "relation": "Perimeter Blocking & Drainage Canal Servitude (PID 10125)",
       "type": "deed_overlap",
       "weight": 0.88
+    },
+    {
+      "source": "tarkington_isd",
+      "target": "susan_rollins",
+      "relation": "Sitting School Board Trustee ($95M Bond Vote)",
+      "type": "governance",
+      "weight": 0.95
+    },
+    {
+      "source": "susan_rollins",
+      "target": "jimmy_rollins_cad",
+      "relation": "Spousal Property Tax & Appraisal Board Nexus",
+      "type": "family_nepotism",
+      "weight": 0.98
+    },
+    {
+      "source": "tarkington_isd",
+      "target": "kevin_johnson",
+      "relation": "Board Vice President & Vendor Contract Recipient",
+      "type": "vendor_contract",
+      "weight": 0.95
+    },
+    {
+      "source": "tarkington_isd",
+      "target": "tarkington_expansion_corridor",
+      "relation": "FM 321 Arterial Highway Land & Boundary Overlap",
+      "type": "infrastructure",
+      "weight": 0.9
+    },
+    {
+      "source": "tarkington_isd",
+      "target": "tom_johnson",
+      "relation": "M-Club Shadow Fund & Campus Clearing Contracts",
+      "type": "financial_conduit",
+      "weight": 0.9
+    },
+    {
+      "source": "tarkington_isd",
+      "target": "colony_ridge",
+      "relation": "Enrollment Surge & Unfunded Infrastructure Deficit",
+      "type": "demographic_impact",
+      "weight": 0.85
     }
   ],
   "vectors": [
