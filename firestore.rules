@@ -1,38 +1,39 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-
-    // Allow any authenticated Google user during setup
+    // Explicit allowlist and verified Google email are required for all reads.
+    // The allowlist collection itself remains server-admin only.
     function isAllowed() {
-      return request.auth != null;
+      return request.auth != null
+        && request.auth.token.email is string
+        && request.auth.token.email_verified == true
+        && exists(/databases/$(database)/documents/allowlist/$(request.auth.token.email));
     }
 
-    // Entities — read-only for authenticated allowlisted users
     match /entities/{entityId} {
       allow read: if isAllowed();
-      allow write: if false; // Only Python admin SDK writes
+      allow write: if false;
     }
 
-    // Edges — read-only
     match /edges/{edgeId} {
       allow read: if isAllowed();
       allow write: if false;
     }
 
-    // Documents — team can log uploads, only admin can update status
     match /documents/{docId} {
       allow read: if isAllowed();
-      allow create: if isAllowed();
-      allow update, delete: if false; // Python admin SDK only
+      // Client intake is a candidate, never authenticated evidence verification.
+      allow create: if isAllowed()
+        && request.resource.data.uploader_uid == request.auth.uid
+        && request.resource.data.processing_status == 'NEEDS_REVIEW';
+      allow update, delete: if false;
     }
 
-    // Audit log — read-only
     match /audit_log/{logId} {
       allow read: if isAllowed();
-      allow write: if false; // Python admin SDK only
+      allow write: if false;
     }
 
-    // Allowlist — fully locked, admin SDK only
     match /allowlist/{email} {
       allow read, write: if false;
     }
