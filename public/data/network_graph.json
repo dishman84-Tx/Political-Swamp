@@ -4054,14 +4054,14 @@
     },
     {
       "source": "cory_anderson",
-      "target": "tisd_board",
+      "target": "tarkington_isd",
       "relation": "Former Trustee & School Board Crossover",
       "type": "governance",
       "weight": 0.88
     },
     {
       "source": "brenda_burns",
-      "target": "tisd_board",
+      "target": "tarkington_isd",
       "relation": "Trustee & Bond Oversight",
       "type": "governance",
       "weight": 0.92
@@ -4075,14 +4075,14 @@
     },
     {
       "source": "burns_architecture",
-      "target": "tisd_board",
+      "target": "tarkington_isd",
       "relation": "Public Architectural Design Contracts",
       "type": "vendor_contract",
       "weight": 0.91
     },
     {
       "source": "dwayne_stovall",
-      "target": "tisd_board",
+      "target": "tarkington_isd",
       "relation": "Trustee & Facilities Vote",
       "type": "governance",
       "weight": 0.89
@@ -4341,7 +4341,7 @@
     },
     {
       "source": "tarkington_student_foundation",
-      "target": "tisd_board",
+      "target": "tarkington_isd",
       "relation": "Off-Balance-Sheet Real Estate Vehicle",
       "type": "governance",
       "weight": 0.95
