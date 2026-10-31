@@ -1,25 +1,14 @@
 """
-KELLY DISHMAN PUBLIC INTEGRITY INTELLIGENCE GRID
-Module: Automated Intake & Verification Test Suite
-Purpose: Verifies the end-to-end multi-agent pipeline:
-1. Intake Parsing (SHA-256 and text normalization)
-2. 18-Persona Expert Board Entity Extraction
-3. Fact-Consensus & Anti-Hallucination Audit
-4. Graph Schema & Node Link Integrity
+Offline intake regression tests. Tests parser and review classifications only.
+No Firebase credentials, network calls, independent employees, or assertions
+that allegations are verified are required.
 """
-
 import sys
 import json
 from pathlib import Path
 
-# Force UTF-8 output on Windows consoles
-if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
-
-# Add scripts directory to path
-scripts_dir = Path(__file__).resolve().parent
-sys.path.insert(0, str(scripts_dir))
-
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from intake_engine import ForensicIntakeEngine
 from expert_board_agents import ExpertBoardExtractionEngine
 from fact_consensus_auditor import FactConsensusAuditor
@@ -27,60 +16,55 @@ from compile_intelligence_graph import GraphCompiler
 
 
 def run_pipeline_test():
-    print("=" * 70)
-    print("STARTING MULTI-AGENT INTAKE & CORROBORATION PIPELINE AUDIT")
-    print("=" * 70)
+    intake = ForensicIntakeEngine(workspace_root=ROOT)
+    claim = ("Liberty County courthouse correspondence refers to "
+             "Shelby Cain Buchhorn and Judge Chap B Cain III. "
+             "A recorded mineral trust conveyance is mentioned, "
+             "but neither improper influence nor current ownership is established.")
+    received = intake.parse_text_or_social_post(claim, "regression_test")
+    assert len(received["sha256"]) == 64
+    assert received["extracted_text"] == claim
 
-    # 1. Test Intake Engine
-    print("\n[STEP 1] Testing Forensic Intake Engine...")
-    intake = ForensicIntakeEngine()
-    test_social_payload = """
-    URGENT NOTICE: Liberty County Sheriff Bobby Rader and Detective Lt. James McQueen 
-    are suppressing bodycam video from the November 18, 2024 scene of Sherry Lee Novosad.
-    JP Ralph Fuller ruled it a suicide within hours. Independent DNA tests confirmed foreign male blood.
-    Husband Ted Novosad was excluded. McQueen refuses a voluntary buccal swab!
-    This connects to Colony Ridge developers and MUD 15 bonds on the Aaron Cherry Survey A-10!
-    """
-    intake_result = intake.parse_text_or_social_post(test_social_payload, source_hint="social_media_test")
-    assert intake_result["sha256"], "Failed to generate SHA-256 hash"
-    print(f"[OK] Document normalized. SHA-256: {intake_result['sha256'][:16]}...")
-
-    # 2. Test 18-Persona Extraction
-    print("\n[STEP 2] Testing 18-Persona Expert Board Extraction...")
     extractor = ExpertBoardExtractionEngine()
-    extracted = extractor.analyze_intake_payload(intake_result["extracted_text"])
-    
-    print(f"[OK] Total Elements Extracted: {extracted['total_extracted_elements']}")
-    print(f"  - Title & Real Estate: {len(extracted['title_real_estate'])}")
-    print(f"  - MUD / Municipal: {len(extracted['municipal_mud'])}")
-    print(f"  - Police / TCOLE: {len(extracted['tcole_police'])}")
-    print(f"  - Trial / Constitutional: {len(extracted['trial_constitutional'])}")
-    assert extracted["total_extracted_elements"] > 0, "No entities extracted by expert board"
+    candidates = extractor.analyze_intake_payload(claim)
+    assert "total_extracted_elements" in candidates
+    auditor = FactConsensusAuditor(workspace_root=ROOT)
+    result = auditor.verify_candidate_entities(candidates)
+    assert result["verified_count"] == 0, "Unreviewed text cannot verify misconduct"
+    assert all(x["status"] != "VERIFIED" for x in result["findings"])
 
-    # 3. Test Anti-Hallucination Consensus Auditor
-    print("\n[STEP 3] Testing Anti-Hallucination Consensus Auditor...")
-    auditor = FactConsensusAuditor()
-    audit_results = auditor.verify_candidate_entities(extracted)
-    
-    print(f"[OK] Total Evaluated: {audit_results['total_evaluated']}")
-    print(f"[OK] Confirmed Ground Truth Matches: {audit_results['verified_count']}")
-    print(f"[OK] Quarantined Unverified Leads: {audit_results['quarantined_count']}")
-    assert audit_results["verified_count"] >= 3, "Failed to verify core ground truth entities"
+    # Positive: an exact known name can create an identity review candidate.
+    # Negative: overlapping subject or surname can never certify a relationship.
+    auditor.ground_truth = {"nodes": [
+        {"id": "shelby", "label": "Shelby Cain Buchhorn"},
+        {"id": "chap", "label": "Chap B Cain III"}
+    ]}
+    exact = auditor.verify_candidate_entities({"names": [
+        {"match": "Shelby Cain Buchhorn", "persona": "Identity review"},
+        {"match": "Shelby Cain", "persona": "Identity review"},
+        {"match": "Cain minerals", "persona": "Property review"},
+        {"match": "medical DWI discovery", "persona": "Public records"}
+    ]})
+    statuses = [f["status"] for f in exact["findings"]]
+    assert statuses == [
+        "IDENTITY_CANDIDATE", "QUARANTINED_LEAD",
+        "QUARANTINED_LEAD", "QUARANTINED_LEAD"
+    ], statuses
+    assert exact["verified_count"] == 0
 
-    for item in audit_results["findings"]:
-        if item["status"] == "VERIFIED":
-            print(f"  [VERIFIED {item['confidence_score']}%] {item['raw_match']} -> {item['notes']}")
-
-    # 4. Test Graph Compiler & Schema Validation
-    print("\n[STEP 4] Testing Graph Schema & Integrity Validation...")
-    compiler = GraphCompiler()
-    graph_data = compiler.load_graph()
-    compiler.validate_graph_schema(graph_data)
-    print(f"[OK] Graph schema validated: {len(graph_data['nodes'])} nodes, {len(graph_data['edges'])} edges across {len(graph_data['vectors'])} vectors.")
-
-    print("\n" + "=" * 70)
-    print("ALL 4 PIPELINE STAGES PASSED ZERO-HALLUCINATION AUDIT WITH 100% COMPLIANCE")
-    print("=" * 70)
+    # Graph integrity check must not mutate production output.
+    compiler = GraphCompiler(workspace_root=ROOT)
+    graph = compiler.load_graph()
+    compiler.validate_graph_schema(graph)
+    print(json.dumps({
+        "status": "PASS — OFFLINE REGRESSION ONLY",
+        "sha256_length": len(received["sha256"]),
+        "extractions": candidates["total_extracted_elements"],
+        "verified_allegations": exact["verified_count"],
+        "identity_test": statuses,
+        "nodes": len(graph["nodes"]),
+        "edges": len(graph["edges"])
+    }, indent=2))
     return 0
 
 
