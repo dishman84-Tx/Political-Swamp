@@ -1,0 +1,49 @@
+name: Verify code and evidence safeguards
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install JavaScript dependencies
+        run: npm ci
+      - name: Check JavaScript syntax
+        run: |
+          for file in src/js/*.js; do node --check "$file"; done
+      - name: Compile Python modules
+        run: python -m compileall -q scripts
+      - name: Offline identity and evidence regression
+        run: python scripts/test_intake_pipeline.py
+      - name: Verify graph endpoints and all IDs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          g=json.loads(Path('public/data/network_graph.json').read_text(encoding='utf-8-sig'))
+          ids=[n['id'] for n in g['nodes']]
+          assert len(ids)==len(set(ids)), "Duplicate node IDs"
+          bad=[e for e in g['edges'] if e['source'] not in ids or e['target'] not in ids]
+          assert not bad, f"{len(bad)} orphan graph edges: {bad[:3]}"
+          print(f"PASS: {len(ids)} unique nodes, {len(g['edges'])} linked edges")
+          PY
+      - name: Build web application
+        run: npm run build
